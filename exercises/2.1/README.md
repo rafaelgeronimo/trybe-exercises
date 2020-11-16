@@ -1,6 +1,6 @@
 # Exercícios - Git & GitHub
 ## Parte 1 - Instalação e configuração
-Nesse exercício, realizamos a instalação e a configuração do *Git* no sistema operacional.
+Nesse exercício, realizamos a instalação e a configuração do **Git** no sistema operacional.
 
 ### Instalação
 
@@ -16,7 +16,7 @@ sudo pacman -S git
 
 ### Identidade
 
-Para configurar nossa identidade devemos informar ao *Git* nosso nome e endereço de e-mail. Isso é feito através do comando:
+Para configurar nossa identidade devemos informar ao **Git** nosso nome e endereço de e-mail. Isso é feito através do comando:
 ```shell
 git config --global user.name "Seu nome"
 git config --global user.email seuemail@exemplo.com.br
@@ -24,13 +24,13 @@ git config --global user.email seuemail@exemplo.com.br
 
 ### Editor
 
-Aqui configuramos qual é o editor que usaremos para abrir o arquivo de configuração do *Git*, o `.gitconfig`.
+Aqui configuramos qual é o editor que usaremos para abrir o arquivo de configuração do **Git**, o `.gitconfig`.
 ```shel
 git config --global core.editor "code --wait"
 ```
 | Vamos usar o VS Code como editor durante todo o curso.
 
-Para acessar facilmente o arquivo de configuração do *Git*:
+Para acessar facilmente o arquivo de configuração do **Git**:
 ```shel
 code .gitconfig
 ```
@@ -38,7 +38,7 @@ code .gitconfig
 ### Verificação
 Vamos validar e verificar se está tudo certo!
 
-Verificar qual a versão do *Git* está instalada:
+Verificar qual a versão do **Git** está instalada:
 ```shel
 git --version
 ```
@@ -93,6 +93,16 @@ Copie a chave SSH para a memória com o comando:
 ```shell
 xclip -sel clip < ~/.ssh/id_rsa.pub
 ```
+
+A chave SSH deve ser adicionada ao GitHub, para permitir ao computador realizar _pushes_ para os repositórios da sua conta.
+
+- No GitHub, clique na sua foto de perfil e clique em **Settings**;
+- Na barra lateral esquerda, clique em **SSH and GPG keys**;
+- No campo `Título`, adicione uma descrição para a nova chave (costumo colocar algo que descreva o PC que estou usando, como LINUX-CASA, NOTEBOOK-WINDOWS, etc...);
+- Cole sua chave dentro do campo `Key`;
+- Clique em **Add SSH key**;
+- Se for solicitado, digite sua senha do **GitHub**.
+
 
 ## Parte 4 - Do `git init` ao `git push`
 
