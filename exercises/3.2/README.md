@@ -17,3 +17,10 @@
 - Coloque o tamanho do paragrafo com o tamanho de 3 vezes o padrão do body
 - Explore as propriedades font-style, line-height, text-align e text-decoration
 - Troque a cor de fundo de cada item da lista para a cor correspondente ao texto
+
+[>>Resultado<<](bloco_3/dia_2/exercicio2.html)
+
+## 3
+Coloque todo o CSS criado até agora nos exercícios anteriores em um arquivo externo.
+
+[>>Resultado<<](bloco_3/dia_2/exercicio3.html)
