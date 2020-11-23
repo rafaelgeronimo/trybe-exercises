@@ -1,4 +1,5 @@
 # Trybe Exercises
+
 Este repositório contém os exercícios desenvolvidos ao longo do meu (per)curso na [Trybe](https://betrybe.com) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho"_
