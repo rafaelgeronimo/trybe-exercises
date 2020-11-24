@@ -28,3 +28,6 @@ Após criar a página mostrando os fatos interessantes a respeito do `Stomatopod
 Vamos averiguar!
 
 Entre [nesse site](https://achecker.ca/checker/index.php), que valida se sua página é acessível ou não.
+
+### Screenshot do resultado:
+![](assets/img/screenshot.png)
