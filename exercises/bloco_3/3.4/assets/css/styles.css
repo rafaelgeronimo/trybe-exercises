@@ -47,15 +47,25 @@ header {
   width: auto;
   transform: translate(-50%, -15%);
 }
-
+article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+}
 aside {
   float: right;
   padding: 0 15px 15px;
+  margin-left: 15px;
   border-radius: 4px;
   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
-  /* border: 1px solid #333; */
+  background-color: #fff;
 }
 
-article {
-  max-width: 50vw;
+.video {
+  float: right;
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
 }
