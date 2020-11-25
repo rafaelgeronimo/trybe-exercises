@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 4.1</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Exercícios Bloco 4 - Aula 1 | Introdução à JavaScript e Lógica de Programação</h1>
+  </header>
+  <section id="operacoes-aritmeticas">
+    <h2>Operações aritméticas</h2>
+    <!-- Adição -->
+    <h3>Adição</h3>
+  
+    <input type="number" id="soma1" placeholder="Informe um número">
+    <strong>+</strong>
+    <input type="number" id="soma2" placeholder="Informe um número">
+    <button id="exibir-soma" onclick="soma()">Resultado: </button>
+    <div id="resultado-soma"></div>
+  
+    <!-- Subtração -->
+    <h3>Subtração</h3>
+  
+    <input type="number" id="menos1" placeholder="Informe um número">
+    <strong>-</strong>
+    <input type="number" id="menos2" placeholder="Informe um número">
+    <button id="exibir-subtracao" onclick="subtracao()">Resultado: </button>
+    <div id="resultado-subtracao"></div>
+  
+    <!-- Multiplicação -->
+    <h3>Multiplicação</h3>
+  
+    <input type="number" id="vezes1" placeholder="Informe um número">
+    <strong>x</strong>
+    <input type="number" id="vezes2" placeholder="Informe um número">
+    <button id="exibir-multiplicacao" onclick="multiplicacao()">Resultado: </button>
+    <div id="resultado-multiplicacao"></div>
+  
+    <!-- Divisão -->
+    <h3>Divisão</h3>
+  
+    <input type="number" id="divide1" placeholder="Informe um número">
+    <strong>/</strong>
+    <input type="number" id="divide2" placeholder="Informe um número">
+    <button id="exibir-divisao" onclick="divisao()">Resultado: </button>
+    <div id="resultado-divisao"></div>
+  
+    <!-- Módulo -->
+    <h3>Módulo</h3>
+  
+    <input type="number" id="resto1" placeholder="Informe um número">
+    <strong>%</strong>
+    <input type="number" id="resto2" placeholder="Informe um número">
+    <button id="exibir-modulo" onclick="modulo()">Resultado: </button>
+    <div id="resultado-modulo"></div>
+  </section>
+
+  <!-- Maior entre dois -->
+  <section id="maior">
+    <h2>Comparação - Maior entre dois números</h2>
+    <input type="number" id="maiorNum1d" placeholder="Informe um número">
+    <input type="number" id="maiorNum2d" placeholder="Informe um número">
+    <button id="comparar-maior-dois" onclick="comparaMaiorDois()">Comparar</button>
+    <div id="resultadoMaiorDois"></div>
+  </section>
+
+  <!-- Maior entre três -->
+  <section id="maiorDeTres">
+    <h2>Comparação - Maior entre três números</h2>
+    <input type="number" id="maiorNum1t" placeholder="Informe o primeiro número"><br>
+    <input type="number" id="maiorNum2t" placeholder="Informe o segundo número"><br>
+    <input type="number" id="maiorNum3t" placeholder="Informe o terceiro número"><br>
+    <button id="comparar-maior-tres" onclick="comparaMaiorTres()">Comparar</button>
+    <div id="resultadoMaiorTres"></div>
+  </section>
+
+  <!-- Positivo, negativo ou zero -->
+  <section id="positivo-negativo">
+    <h2>Positivo ou Negativo?</h2>
+    <input type="number" id="numPosNeg" placeholder="Informe um número qualquer">
+    <button id="positivoNegativo" onclick="positivoNegativo()">Comparar</button>
+    <div id="resultadoPositivoNegativo"></div>
+  </section>
+
+  <!-- Triângulo ou não? -->
+  <section id="triangulo">
+    <h2>É um triângulo?</h2>
+    <input type="number" id="triang1" placeholder="Informe o primeiro ângulo"><br>
+    <input type="number" id="triang2" placeholder="Informe o segundo ângulo"><br>
+    <input type="number" id="triang3" placeholder="Informe o terceiro ângulo"><br>
+    <button id="checaTriangulo" onclick="checaTriangulo()">Comparar</button>
+    <div id="resultadoTriangulo"></div>
+  </section>
+</body>
+
+</html>
