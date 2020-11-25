@@ -34,11 +34,24 @@ function modulo() {
 }
 
 function comparaMaiorDois() {
-  var maiorNum1 = parseInt(document.getElementById("maior-num1").value);
-  var maiorNum2 = parseInt(document.getElementById("maior-num2").value);
-  if (maiorNum1 > maiorNum2) {
-    document.getElementById("resultadoMaiorDois").innerHTML = 'O número ' + maiorNum1 + ' é maior que o número ' + maiorNum2;
+  var maiorNumD1 = parseInt(document.getElementById("maiorNum1d").value);
+  var maiorNumD2 = parseInt(document.getElementById("maiorNum2d").value);
+  if (maiorNumD1 > maiorNumD2) {
+    document.getElementById("resultadoMaiorDois").innerHTML = 'O número <strong>' + maiorNumD1 + '</strong> é <em>maior</em> que o número ' + maiorNumD2;
   } else {
-    document.getElementById("resultadoMaiorDois").innerHTML = 'O número ' + maiorNum1 + ' é menor que o número ' + maiorNum2;
+    document.getElementById("resultadoMaiorDois").innerHTML = 'O número ' + maiorNumD1 + ' é <em>menor</em> que o número <strong>' + maiorNumD2 + '</strong>';
+  }
+}
+
+function comparaMaiorTres() {
+  var maiorNumT1 = parseInt(document.getElementById("maiorNum1t").value);
+  var maiorNumT2 = parseInt(document.getElementById("maiorNum2t").value);
+  var maiorNumT3 = parseInt(document.getElementById("maiorNum3t").value);
+  if (maiorNumT1 >= maiorNumT2 && maiorNumT1 >= maiorNumT3) {
+    document.getElementById("resultadoMaiorTres").innerHTML = 'O maior número é <strong>' + maiorNumT1 + '</strong>';
+  } else if(maiorNumT2 >= maiorNumT1 && maiorNumT2 >= maiorNumT3) {
+    document.getElementById("resultadoMaiorTres").innerHTML = 'O maior número é <strong>' + maiorNumT2 + '</strong>';
+  } else {
+    document.getElementById("resultadoMaiorTres").innerHTML = 'O maior número é <strong>' + maiorNumT3 + '</strong>';
   }
 }
