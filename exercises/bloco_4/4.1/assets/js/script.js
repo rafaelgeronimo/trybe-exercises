@@ -65,5 +65,16 @@ function positivoNegativo() {
   } else {
     document.getElementById("resultadoPositivoNegativo").innerHTML = 'O número ' + numPosNeg + ' é <strong>zero (!!!)</strong>.';
   }
+}
 
+function checaTriangulo() {
+  var triang1 = parseInt(document.getElementById("triang1").value);
+  var triang2 = parseInt(document.getElementById("triang2").value);
+  var triang3 = parseInt(document.getElementById("triang3").value);
+  var somaAngulos = triang1 + triang2 + triang3;
+  if (somaAngulos == 180) {
+    document.getElementById("resultadoTriangulo").innerHTML = "Olha, isso aí é um triângulo!";
+  } else {
+    document.getElementById("resultadoTriangulo").innerHTML = "Isso não é um triângulo!";
+  }
 }

@@ -12,6 +12,7 @@ section {
   padding: 0 10px 20px;
 }
 
-#maiorDeTres input {
+#maiorDeTres input , 
+#triangulo input {
   margin-bottom: 10px;
 }
