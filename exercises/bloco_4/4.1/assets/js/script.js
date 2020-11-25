@@ -32,3 +32,13 @@ function modulo() {
   var resultado = resto1 % resto2;
   document.getElementById("resultado-modulo").innerHTML = resultado;
 }
+
+function comparaMaiorDois() {
+  var maiorNum1 = parseInt(document.getElementById("maior-num1").value);
+  var maiorNum2 = parseInt(document.getElementById("maior-num2").value);
+  if (maiorNum1 > maiorNum2) {
+    document.getElementById("resultadoMaiorDois").innerHTML = 'O número ' + maiorNum1 + ' é maior que o número ' + maiorNum2;
+  } else {
+    document.getElementById("resultadoMaiorDois").innerHTML = 'O número ' + maiorNum1 + ' é menor que o número ' + maiorNum2;
+  }
+}

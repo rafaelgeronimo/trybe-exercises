@@ -10,51 +10,65 @@
 </head>
 
 <body>
-  <h1>Exercícios Bloco 4 - Aula 1 | Introdução à JavaScript e Lógica de Programação</h1>
-  <!-- Adição -->
-  <h2>Adição</h2>
+  <header>
+    <h1>Exercícios Bloco 4 - Aula 1 | Introdução à JavaScript e Lógica de Programação</h1>
+  </header>
+  <section id="operacoes-aritmeticas">
+    <h2>Operações aritméticas</h2>
+    <!-- Adição -->
+    <h3>Adição</h3>
+  
+    <input type="number" id="soma1" placeholder="Informe um número">
+    <strong>+</strong>
+    <input type="number" id="soma2" placeholder="Informe um número">
+    <button id="exibir-soma" onclick="soma()">Resultado: </button>
+    <div id="resultado-soma"></div>
+  
+    <!-- Subtração -->
+    <h3>Subtração</h3>
+  
+    <input type="number" id="menos1" placeholder="Informe um número">
+    <strong>-</strong>
+    <input type="number" id="menos2" placeholder="Informe um número">
+    <button id="exibir-subtracao" onclick="subtracao()">Resultado: </button>
+    <div id="resultado-subtracao"></div>
+  
+    <!-- Multiplicação -->
+    <h3>Multiplicação</h3>
+  
+    <input type="number" id="vezes1" placeholder="Informe um número">
+    <strong>x</strong>
+    <input type="number" id="vezes2" placeholder="Informe um número">
+    <button id="exibir-multiplicacao" onclick="multiplicacao()">Resultado: </button>
+    <div id="resultado-multiplicacao"></div>
+  
+    <!-- Divisão -->
+    <h3>Divisão</h3>
+  
+    <input type="number" id="divide1" placeholder="Informe um número">
+    <strong>/</strong>
+    <input type="number" id="divide2" placeholder="Informe um número">
+    <button id="exibir-divisao" onclick="divisao()">Resultado: </button>
+    <div id="resultado-divisao"></div>
+  
+    <!-- Módulo -->
+    <h3>Módulo</h3>
+  
+    <input type="number" id="resto1" placeholder="Informe um número">
+    <strong>%</strong>
+    <input type="number" id="resto2" placeholder="Informe um número">
+    <button id="exibir-modulo" onclick="modulo()">Resultado: </button>
+    <div id="resultado-modulo"></div>
+  </section>
 
-  <input type="number" id="soma1" placeholder="Informe um número">
-  <strong>+</strong>
-  <input type="number" id="soma2" placeholder="Informe um número">
-  <button id="exibir-soma" onclick="soma()">Resultado: </button>
-  <span id="resultado-soma"></span>
-
-  <!-- Subtração -->
-  <h2>Subtração</h2>
-
-  <input type="number" id="menos1" placeholder="Informe um número">
-  <strong>-</strong>
-  <input type="number" id="menos2" placeholder="Informe um número">
-  <button id="exibir-subtracao" onclick="subtracao()">Resultado: </button>
-  <span id="resultado-subtracao"></span>
-
-  <!-- Multiplicação -->
-  <h2>Multiplicação</h2>
-
-  <input type="number" id="vezes1" placeholder="Informe um número">
-  <strong>x</strong>
-  <input type="number" id="vezes2" placeholder="Informe um número">
-  <button id="exibir-multiplicacao" onclick="multiplicacao()">Resultado: </button>
-  <span id="resultado-multiplicacao"></span>
-
-  <!-- Divisão -->
-  <h2>Divisão</h2>
-
-  <input type="number" id="divide1" placeholder="Informe um número">
-  <strong>/</strong>
-  <input type="number" id="divide2" placeholder="Informe um número">
-  <button id="exibir-divisao" onclick="divisao()">Resultado: </button>
-  <span id="resultado-divisao"></span>
-
-  <!-- Módulo -->
-  <h2>Módulo</h2>
-
-  <input type="number" id="resto1" placeholder="Informe um número">
-  <strong>%</strong>
-  <input type="number" id="resto2" placeholder="Informe um número">
-  <button id="exibir-modulo" onclick="modulo()">Resultado: </button>
-  <span id="resultado-modulo"></span>
+  <!-- Maior entre dois -->
+  <section id="maior">
+    <h2>Comparação - Maior entre dois números</h2>
+    <input type="number" id="maior-num1" placeholder="Informe um número">
+    <input type="number" id="maior-num2" placeholder="Informe um número">
+    <button id="comparar-mario" onclick="comparaMaiorDois()">Comparar</button>
+    <div id="resultadoMaiorDois"></div>
+  </section>
 </body>
 
 </html>
