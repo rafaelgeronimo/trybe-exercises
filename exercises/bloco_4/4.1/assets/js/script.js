@@ -55,3 +55,15 @@ function comparaMaiorTres() {
     document.getElementById("resultadoMaiorTres").innerHTML = 'O maior número é <strong>' + maiorNumT3 + '</strong>';
   }
 }
+
+function positivoNegativo() {
+  var numPosNeg = parseInt(document.getElementById("numPosNeg").value);
+  if (numPosNeg < 0) {
+    document.getElementById("resultadoPositivoNegativo").innerHTML = 'O número ' + numPosNeg + ' é <strong>negativo</strong>.';
+  } else if (numPosNeg > 0) {
+    document.getElementById("resultadoPositivoNegativo").innerHTML = 'O número ' + numPosNeg + ' é <strong>positivo</strong>.';
+  } else {
+    document.getElementById("resultadoPositivoNegativo").innerHTML = 'O número ' + numPosNeg + ' é <strong>zero (!!!)</strong>.';
+  }
+
+}
