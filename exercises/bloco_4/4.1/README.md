@@ -74,3 +74,80 @@ x = 10;
 y = 5;
 x *= y;
 ```
+
+#### Exercícios para praticar (parte IV):
+- Exercício de comparação 1:
+
+```javascript
+x = 10;
+y = 5;
+alert(x > y);
+```
+
+- Exercício de comparação 2:
+
+```javascript
+x = 10;
+y = 10;
+alert(x == y);
+```
+
+- Exercício de comparação 3:
+
+```javascript
+x = 10;
+y = 5;
+alert(x != y);
+```
+
+- Exercício de comparação 4:
+
+```javascript
+var age = n;
+var voteable = (age < 18) ? "Too young" : "Old enough";
+alert (voteable);
+```
+
+#### Exercícios para praticar (parte V):
+- Exercício de if/else 1:
+
+```javascript
+if (x > y) {
+  alert("Hello World!");
+}
+```
+- Exercício de if/else 2:
+
+```javascript
+if (x > y) {
+  alert("Hello World");
+} else {
+  alert("Goodbye);
+}
+```
+- Exercício de switch/case 1:
+
+```javascript
+switch(fruits) {
+  case "Banana":
+    alert("Hello")
+    break;
+  case "Apple":
+    alert("Welcome")
+    break;
+}
+```
+- Exercício de switch/case 2:
+
+```javascript
+switch(fruits) {
+  case "Bananas":
+    alert("Hello")
+    break;
+  case "Apple":
+    alert("Welcome")
+    break;
+  default:
+    alert("Neither");
+}
+```
