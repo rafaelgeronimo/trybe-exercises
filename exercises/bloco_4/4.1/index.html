@@ -160,7 +160,7 @@
       </article>
     </div>
   </section>
-  <section id="" class="exercicio">
+  <section id="xadrez" class="exercicio">
     <div class="esquerda">
       <h2>Peça de xadrez</h2>
       <input type="text" id="nomePeca" placeholder="Insira o nome de uma peça de xadrez">
@@ -177,6 +177,31 @@
             <li>Como dica, você pode pesquisar uma função que faz uma <em>string</em> ficar com todas as letras minúsculas (<em>lower case</em>).</li>
             <li>Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.</li>
             <li>Exemplo: <span class="code">bishop</span> -> <span class="code">diagonals</span>.</li>
+          </ul>
+        </p>
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Conversão de nota</h2>
+      <input type="number" id="nota" placeholder="Insira uma nota de 0 a 100">
+      <button id="converteNota" onclick="converteNota()">Converter nota</button>
+      Nota convertida: <div class="resultado" id="notaConvertida"></div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        <p>
+          Enunciado 7: <br>
+          Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+          <ul>
+            <li>Porcentagem >= 90 -> A</li>
+            <li>Porcentagem >= 80 -> B</li>
+            <li>Porcentagem >= 70 -> C</li>
+            <li>Porcentagem >= 60 -> D</li>
+            <li>Porcentagem >= 50 -> E</li>
+            <li>Porcentagem < 50 -> F</li>
+            <li>O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.</li>
           </ul>
         </p>
       </article>

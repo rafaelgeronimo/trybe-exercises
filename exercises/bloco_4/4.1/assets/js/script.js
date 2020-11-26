@@ -108,3 +108,16 @@ function revelaMovimentos() {
   }
   document.getElementById("movimentos").innerHTML = movimentos; 
 }
+
+function converteNota() {
+  var nota = parseInt(document.getElementById("nota").value);
+  var notaConvertida = "";
+  switch (nota) {
+    case nota >= 90:
+      notaConvertida = "A";
+      break;
+    case nota >= 80:
+      notaConvertida = "B"
+  }
+  document.getElementById("notaConvertida").innerHTML = notaConvertida;
+}
