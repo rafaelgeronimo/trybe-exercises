@@ -153,3 +153,15 @@ function checarImpar() {
   }
   document.getElementById("resultadoImpar").innerHTML = algumImpar;
 }
+
+function checarLucro() {
+  var custo = parseInt(document.getElementById('custo').value);
+  var venda = parseInt(document.getElementById('venda').value);
+  var custoTotal = custo + (custo * 0.20);
+  var lucro = venda - custoTotal;
+  if (custo < 0 || venda < 0) {
+    document.getElementById('lucro').innerHTML = '<br>Os valores de CUSTO e/ou VENDA não pode ser menor que ZERO.'
+  } else {
+    document.getElementById('lucro').innerHTML = 'O lucro da venda do produto é de <strong>' + lucro + '</strong>.'
+  }
+}

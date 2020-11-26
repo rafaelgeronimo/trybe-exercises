@@ -37,3 +37,7 @@ input {
   background-color:rgb(245 , 245 , 245);
   color: red;
 }
+
+.tab1 {
+  margin-left: 20px;
+}
