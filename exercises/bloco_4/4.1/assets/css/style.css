@@ -1,4 +1,4 @@
-div {
+.resultado {
   border: 1px solid black;
   display: inline;
   margin-left: 10px;
@@ -15,4 +15,26 @@ section {
 #maiorDeTres input , 
 #triangulo input {
   margin-bottom: 10px;
+}
+
+.exercicio {
+  display: flex;
+  justify-content: space-around;
+}
+
+.esquerda {
+  width: 70vw;
+}
+
+.direita {
+  width: 30vw;
+  margin: 20px 10px;
+}
+
+.code {
+  border: 1px solid rgb(240 , 240 , 240);
+  border-radius: 3px;
+  padding: 0 3px;
+  background-color:rgb(245 , 245 , 245);
+  color: red;
 }

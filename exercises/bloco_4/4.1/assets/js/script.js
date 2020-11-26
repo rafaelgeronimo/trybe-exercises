@@ -78,3 +78,33 @@ function checaTriangulo() {
     document.getElementById("resultadoTriangulo").innerHTML = "Isso não é um triângulo!";
   }
 }
+
+function revelaMovimentos() {
+  var nomePeca = document.getElementById("nomePeca").value;
+  nomePeca = nomePeca.toLowerCase();
+  var movimentos = [];
+  switch (nomePeca) {
+    case "rei":
+      movimentos = "Horizontal, vertical e diagonal. Uma casa por vez";
+      break;
+    case "rainha":
+      movimentos = "Horizontal, vertical e diagonal";
+      break;
+    case "bispo":
+      movimentos = "Diagonal";
+      break;
+    case "cavalo":
+      movimentos = "L (duas casas horizontal e uma vertical ou vice-versa)";
+      break;
+    case "torre":
+      movimentos = "Vertical ou horizontal";
+      break;
+    case "peao":
+      movimentos = "Frente. Captura na diagonal."
+      break;
+    default:
+      movimentos = "Informe o nome de uma peça válida."
+      break;
+  }
+  document.getElementById("movimentos").innerHTML = movimentos; 
+}

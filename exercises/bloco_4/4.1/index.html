@@ -13,89 +13,174 @@
   <header>
     <h1>Exercícios Bloco 4 - Aula 1 | Introdução à JavaScript e Lógica de Programação</h1>
   </header>
-  <section id="operacoes-aritmeticas">
-    <h2>Operações aritméticas</h2>
-    <!-- Adição -->
-    <h3>Adição</h3>
-  
-    <input type="number" id="soma1" placeholder="Informe um número">
-    <strong>+</strong>
-    <input type="number" id="soma2" placeholder="Informe um número">
-    <button id="exibir-soma" onclick="soma()">Resultado: </button>
-    <div id="resultado-soma"></div>
-  
-    <!-- Subtração -->
-    <h3>Subtração</h3>
-  
-    <input type="number" id="menos1" placeholder="Informe um número">
-    <strong>-</strong>
-    <input type="number" id="menos2" placeholder="Informe um número">
-    <button id="exibir-subtracao" onclick="subtracao()">Resultado: </button>
-    <div id="resultado-subtracao"></div>
-  
-    <!-- Multiplicação -->
-    <h3>Multiplicação</h3>
-  
-    <input type="number" id="vezes1" placeholder="Informe um número">
-    <strong>x</strong>
-    <input type="number" id="vezes2" placeholder="Informe um número">
-    <button id="exibir-multiplicacao" onclick="multiplicacao()">Resultado: </button>
-    <div id="resultado-multiplicacao"></div>
-  
-    <!-- Divisão -->
-    <h3>Divisão</h3>
-  
-    <input type="number" id="divide1" placeholder="Informe um número">
-    <strong>/</strong>
-    <input type="number" id="divide2" placeholder="Informe um número">
-    <button id="exibir-divisao" onclick="divisao()">Resultado: </button>
-    <div id="resultado-divisao"></div>
-  
-    <!-- Módulo -->
-    <h3>Módulo</h3>
-  
-    <input type="number" id="resto1" placeholder="Informe um número">
-    <strong>%</strong>
-    <input type="number" id="resto2" placeholder="Informe um número">
-    <button id="exibir-modulo" onclick="modulo()">Resultado: </button>
-    <div id="resultado-modulo"></div>
+  <section id="operacoes-aritmeticas" class="exercicio">
+    <div class="esquerda">
+      <h2>Operações aritméticas</h2>
+      <!-- Adição -->
+      <h3>Adição</h3>
+    
+      <input type="number" id="soma1" placeholder="Informe um número">
+      <strong>+</strong>
+      <input type="number" id="soma2" placeholder="Informe um número">
+      <button id="exibir-soma" onclick="soma()">Calcular</button>
+      Resultado: <div class="resultado" id="resultado-soma"></div>
+    
+      <!-- Subtração -->
+      <h3>Subtração</h3>
+    
+      <input type="number" id="menos1" placeholder="Informe um número">
+      <strong>-</strong>
+      <input type="number" id="menos2" placeholder="Informe um número">
+      <button id="exibir-subtracao" onclick="subtracao()">Calcular</button>
+      Resultado: <div class="resultado" id="resultado-subtracao"></div>
+    
+      <!-- Multiplicação -->
+      <h3>Multiplicação</h3>
+    
+      <input type="number" id="vezes1" placeholder="Informe um número">
+      <strong>x</strong>
+      <input type="number" id="vezes2" placeholder="Informe um número">
+      <button id="exibir-multiplicacao" onclick="multiplicacao()">Calcular</button>
+      Resultado: <div class="resultado" id="resultado-multiplicacao"></div>
+    
+      <!-- Divisão -->
+      <h3>Divisão</h3>
+    
+      <input type="number" id="divide1" placeholder="Informe um número">
+      <strong>/</strong>
+      <input type="number" id="divide2" placeholder="Informe um número">
+      <button id="exibir-divisao" onclick="divisao()">Calcular</button>
+      Resultado: <div class="resultado" id="resultado-divisao"></div>
+    
+      <!-- Módulo -->
+      <h3>Módulo</h3>
+    
+      <input type="number" id="resto1" placeholder="Informe um número">
+      <strong>%</strong>
+      <input type="number" id="resto2" placeholder="Informe um número">
+      <button id="exibir-modulo" onclick="modulo()">Calcular</button>
+      Resultado: <div class="resultado" id="resultado-modulo"></div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        <p>
+          Enunciado 1: <br>
+          Faça cinco programas, um para cada aritmética básica. Seu programa deve ter duas variáveis, <span class="code">a</span> e <span class="code">b</span>, definidas no começo com os valores que serão operados. Faça programas para:
+          <ul>
+            <li>Adição</li>
+            <li>Subtração</li>
+            <li>Multiplicação</li>
+            <li>Divisão</li>
+            <li>Módulo</li>
+          </ul>
+        </p>
+      </article>
+    </div>
   </section>
 
   <!-- Maior entre dois -->
-  <section id="maior">
-    <h2>Comparação - Maior entre dois números</h2>
-    <input type="number" id="maiorNum1d" placeholder="Informe um número">
-    <input type="number" id="maiorNum2d" placeholder="Informe um número">
-    <button id="comparar-maior-dois" onclick="comparaMaiorDois()">Comparar</button>
-    <div id="resultadoMaiorDois"></div>
+  <section id="maior" class="exercicio">
+    <div class="esquerda">
+      <h2>Comparação - Maior entre dois números</h2>
+      <input type="number" id="maiorNum1d" placeholder="Informe um número">
+      <input type="number" id="maiorNum2d" placeholder="Informe um número">
+      <button id="comparar-maior-dois" onclick="comparaMaiorDois()">Comparar</button>
+      <div class="resultado" id="resultadoMaiorDois"></div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        <p>
+          Enunciado 2: <br>
+          Faça um programa que retorne o maior de dois números. <br>
+          Defina no começo do programa duas variáveis com os valores que serão comparados.
+        </p>
+      </article>
+    </div>
   </section>
 
   <!-- Maior entre três -->
-  <section id="maiorDeTres">
-    <h2>Comparação - Maior entre três números</h2>
-    <input type="number" id="maiorNum1t" placeholder="Informe o primeiro número"><br>
-    <input type="number" id="maiorNum2t" placeholder="Informe o segundo número"><br>
-    <input type="number" id="maiorNum3t" placeholder="Informe o terceiro número"><br>
-    <button id="comparar-maior-tres" onclick="comparaMaiorTres()">Comparar</button>
-    <div id="resultadoMaiorTres"></div>
+  <section id="maiorDeTres" class="exercicio">
+    <div class="esquerda">
+      <h2>Comparação - Maior entre três números</h2>
+      <input type="number" id="maiorNum1t" placeholder="Informe o primeiro número"><br>
+      <input type="number" id="maiorNum2t" placeholder="Informe o segundo número"><br>
+      <input type="number" id="maiorNum3t" placeholder="Informe o terceiro número"><br>
+      <button id="comparar-maior-tres" onclick="comparaMaiorTres()">Comparar</button>
+      <div class="resultado" id="resultadoMaiorTres"></div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        <p>
+          Enunciado 3: <br>
+          Faça uma programa que retorne o maior de três números. <br>
+          Defina no começo do programa três variáveis com os valores que serão comparados.
+        </p>
+      </article>
+    </div>
   </section>
 
   <!-- Positivo, negativo ou zero -->
-  <section id="positivo-negativo">
-    <h2>Positivo ou Negativo?</h2>
-    <input type="number" id="numPosNeg" placeholder="Informe um número qualquer">
-    <button id="positivoNegativo" onclick="positivoNegativo()">Comparar</button>
-    <div id="resultadoPositivoNegativo"></div>
+  <section id="positivo-negativo" class="exercicio">
+    <div class="esquerda">
+      <h2>Positivo ou Negativo?</h2>
+      <input type="number" id="numPosNeg" placeholder="Informe um número qualquer">
+      <button id="positivoNegativo" onclick="positivoNegativo()">Comparar</button>
+      <div class="resultado" id="resultadoPositivoNegativo"></div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        <p>
+          Enunciado 4: <br>
+          Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, 
+          "negative" se for negativo e "zero" caso contrário.
+        </p>
+      </article>
+    </div>
   </section>
 
   <!-- Triângulo ou não? -->
-  <section id="triangulo">
-    <h2>É um triângulo?</h2>
-    <input type="number" id="triang1" placeholder="Informe o primeiro ângulo"><br>
-    <input type="number" id="triang2" placeholder="Informe o segundo ângulo"><br>
-    <input type="number" id="triang3" placeholder="Informe o terceiro ângulo"><br>
-    <button id="checaTriangulo" onclick="checaTriangulo()">Comparar</button>
-    <div id="resultadoTriangulo"></div>
+  <section id="triangulo" class="exercicio">
+    <div class="esquerda">
+      <h2>É um triângulo?</h2>
+      <input type="number" id="triang1" placeholder="Informe o primeiro ângulo"><br>
+      <input type="number" id="triang2" placeholder="Informe o segundo ângulo"><br>
+      <input type="number" id="triang3" placeholder="Informe o terceiro ângulo"><br>
+      <button id="checaTriangulo" onclick="checaTriangulo()">Comparar</button>
+      <div class="resultado" id="resultadoTriangulo"></div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        <p>
+          Enunciado 5: <br>
+          Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. <br>
+          Retorne <span class="code">true</span> se os ângulos representarem os ângulos de um triângulo e <span class="code">false</span> caso contrário. <br>
+          <a href="https://blogdoenem.com.br/triangulos-propriedades" target="_blank">Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus</a>. Caso os ângulos estejam inválidos, o programa deve
+            retornar uma mensagem de erro.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section id="" class="exercicio">
+    <div class="esquerda">
+      <h2>Peça de xadrez</h2>
+      <input type="text" id="nomePeca" placeholder="Insira o nome de uma peça de xadrez">
+      <button id="revelaMovimentos" onclick="revelaMovimentos()">Revelar Movimentos</button>
+      <div class="resultado" id="movimentos">Resposta: </div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        <p>
+          Enunciado 6: <br>
+          Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+          <ul>
+            <li>Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.</li>
+            <li>Como dica, você pode pesquisar uma função que faz uma <em>string</em> ficar com todas as letras minúsculas (<em>lower case</em>).</li>
+            <li>Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.</li>
+            <li>Exemplo: <span class="code">bishop</span> -> <span class="code">diagonals</span>.</li>
+          </ul>
+        </p>
+      </article>
+    </div>
   </section>
 </body>
 
