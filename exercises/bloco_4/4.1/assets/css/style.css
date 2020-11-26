@@ -38,6 +38,14 @@ input {
   color: red;
 }
 
+li {
+  line-height: 25px;
+}
+
 .tab1 {
   margin-left: 20px;
+}
+
+.tab2 {
+  margin-left: 40px;
 }
