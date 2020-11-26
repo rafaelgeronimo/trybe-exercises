@@ -129,3 +129,27 @@ function converteNota() {
   }
   document.getElementById("notaConvertida").innerHTML = notaConvertida;
 }
+
+function checarPar() {
+  var par1 = parseInt(document.getElementById("par1").value);
+  var par2 = parseInt(document.getElementById("par2").value);
+  var par3 = parseInt(document.getElementById("par3").value);
+  if(par1 % 2 == 0 || par2 %2 == 0 || par2 % 2 == 0) {
+    var algumPar = "<span class='code'>true</span> Pelo menos um dos números é par.";
+  } else {
+    var algumPar = "<span class='code'>false</span> Nenhum número par informado.";
+  }
+  document.getElementById("resultadoPar").innerHTML = algumPar;
+}
+
+function checarImpar() {
+  var impar1 = parseInt(document.getElementById("impar1").value);
+  var impar2 = parseInt(document.getElementById("impar2").value);
+  var impar3 = parseInt(document.getElementById("impar3").value);
+  if(impar1 % 2 >= 1 || impar2 %2 >= 1 || impar3 % 2 >= 1) {
+    var algumImpar = "<span class='code'>true</span> Pelo menos um dos números é ímpar.";
+  } else {
+    var algumImpar = "<span class='code'>false</span> Nenhum número ímpar informado.";
+  }
+  document.getElementById("resultadoImpar").innerHTML = algumImpar;
+}
