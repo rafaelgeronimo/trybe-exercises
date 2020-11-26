@@ -4,6 +4,8 @@
 
 #### Exercícios para praticar:
 
+**Arrays**
+
 Get the value "Volvo" from the cars array.
 ```javascript
 var cars = ["Saab", "Volvo", "BMW"];
@@ -22,3 +24,12 @@ var cars = ["Volvo", "Jeep", "Mercedes"];
 alert(cars.length);
 ```
 ---
+
+**For**
+Create a loop that runs from 0 to 9.
+```javascript
+var i;
+for (i = 0; i < 10; i++) {
+  console.log(i);
+}
+```

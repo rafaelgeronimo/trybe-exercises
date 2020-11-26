@@ -24,12 +24,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: [_HTML & CSS - Primeiros passos em CSS_](exercises/bloco_3/3.2)
 - [x] 3-3: [_HTML & CSS - Seletores e posicionamento_](exercises/bloco_3/3.3)
 - [x] 3-4: [_HTML Semântico_](exercises/bloco_3/3.4)
-- [x] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [x] 4-1: _JavaScript - Primeiros passos_
-- [x] 4-2: _JavaScript - Array e loop For_
+- [x] 4-1: [_JavaScript - Primeiros passos_](exercises/bloco4/4.1)
+- [x] 4-2: _JavaScript - [Array e loop For_](exercises/bloco4/4.2)
 - [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto - Playground Functions]()_
