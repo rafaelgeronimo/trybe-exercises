@@ -277,7 +277,10 @@
   </section>
   <section class="exercicio">
     <div class="esquerda">
-
+      <h2>Salário Líquido</h2>
+      <input type="number" id="salarioBruto" placeholder="Informe o seu salário bruto">
+      <button id="calcularSalario" onclick="calcularSalario()">Calcular</button> <br>
+      O seu salário líquido é: <div class="resultado" id="salarioLiquido"></div>
     </div>
     <div class="direita">
       <article class="resumo">
@@ -301,7 +304,15 @@
           <strong>Exemplo:</strong> Uma pessoa possui o salário bruto de R$ 3000,00. O cálculo será:
           <ul>
             <li>O salário bruto está entre R$ 2594,93 e R$ 5189,82, então sua alíquota para INSS é de 11%. O INSS será de 11% de R$ 3000,00, ou seja, R$ 330,00</li>
-            <li>Para descobrir o salário-base, subtraia</li>
+            <li>Para descobrir o salário-base, subtraia do salário bruto a alíquota do INSS: R$ 3000,00 - R$ 330,00 = R$ 2670,00</li>
+            <li>Para pegar o valor do IR, temos um salário (já deduzido o INSS) entre R$ 1903,99 e 2826,65, sendo a alíquota, então, de 7,5%, com parcela de R$ 142,80 a deduzir do imposto. Assim, temos:</li>
+            <li class="tab1">R$ 2670,00: salário com INSS já deduzido;</li>
+            <li class="tab1">7,5%: alíquota de imposto de renda;</li>
+            <li class="tab1">R$ 142,00 parcela a se deduzir do imposto.</li>
+            <li>Fazendo a conta, temos: (7,5% de R$ 2670,00) - R$ 142,80 = R$ 57,45</li>
+            <li>O último cálculo para conseguir o salário líquido é R$ 2670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2612,55.</li>
+            Resultado: R$ 2612,55 <br>
+            <strong>Dica:</strong><em>que tal indentificar as alíquotas com variáveis de nomes explicativos?</em>
           </ul>
         </p>
       </article>

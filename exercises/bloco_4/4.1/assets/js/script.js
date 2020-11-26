@@ -165,3 +165,48 @@ function checarLucro() {
     document.getElementById('lucro').innerHTML = 'O lucro da venda do produto é de <strong>' + lucro + '</strong>.'
   }
 }
+
+/** Calculo de salário liquido */
+function calcularSalario() {
+  var salarioBruto = parseInt(document.getElementById('salarioBruto').value);
+  var inss = 0, ir = 0, salarioBase = 0, salarioLiquido = 0, parcela = 0;
+  /** definindo o inss */
+  if (salarioBruto <= 0) {
+    
+  } else if (salarioBruto <= 1556.94) {
+    inss = 0.08;
+  } else if (salarioBruto <= 2594.92) {
+    inss = 0.09;
+  } else if (salarioBruto <= 5189.82) {
+    inss = 0.11;
+  } else {
+    inss = 570,88;
+  }
+  /** definindo o salário base */
+  salarioBase = salarioBruto - (salarioBruto * inss);
+  /** definindo o imposto de renda */
+  if (salarioBase <= 0) {
+
+  } else if (salarioBase <= 1903.98) {
+    ir = 0;
+  } else if (salarioBase <= 2826.65) {
+    ir = 0.075;
+    parcela = 142.80;
+  } else if (salarioBase <= 3751.05) {
+    ir = 0.15;
+    parcela = 354.80;
+  } else if (salarioBase <=4664.68) {
+    ir = 0.225;
+    parcela = 636.13;
+  } else {
+    ir = 0.275;
+    parcela = 869.36;
+  }
+  /** definindo o salario liquido */
+  if (salarioBase > 1903.97){
+    salarioLiquido = salarioBase - (salarioBase * ir) + parcela;
+  } else {
+    salarioLiquido = salarioBase - inss;
+  }
+  document.getElementById('salarioLiquido').innerHTML = 'R$ ' + salarioLiquido;
+}
