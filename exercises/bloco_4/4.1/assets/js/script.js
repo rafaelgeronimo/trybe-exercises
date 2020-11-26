@@ -165,29 +165,25 @@ function checarLucro() {
     document.getElementById('lucro').innerHTML = 'O lucro da venda do produto é de <strong>' + lucro + '</strong>.'
   }
 }
-
+var inss = 0;
 /** Calculo de salário liquido */
 function calcularSalario() {
+  var inss, ir , salarioBase , salarioLiquido , parcela = 0;
   var salarioBruto = parseInt(document.getElementById('salarioBruto').value);
-  var inss = 0, ir = 0, salarioBase = 0, salarioLiquido = 0, parcela = 0;
   /** definindo o inss */
-  if (salarioBruto <= 0) {
-    
-  } else if (salarioBruto <= 1556.94) {
+  if (salarioBruto <= 1556.94) {
     inss = 0.08;
   } else if (salarioBruto <= 2594.92) {
     inss = 0.09;
   } else if (salarioBruto <= 5189.82) {
     inss = 0.11;
-  } else {
-    inss = 570,88;
+  } else  {
+    inss = 570.88;
   }
   /** definindo o salário base */
   salarioBase = salarioBruto - (salarioBruto * inss);
   /** definindo o imposto de renda */
-  if (salarioBase <= 0) {
-
-  } else if (salarioBase <= 1903.98) {
+  if (salarioBase <= 1903.98) {
     ir = 0;
   } else if (salarioBase <= 2826.65) {
     ir = 0.075;
@@ -204,9 +200,14 @@ function calcularSalario() {
   }
   /** definindo o salario liquido */
   if (salarioBase > 1903.97){
-    salarioLiquido = salarioBase - (salarioBase * ir) + parcela;
+    salarioLiquido = parseFloat((salarioBase - (salarioBase * ir) + parcela).toFixed(2));
   } else {
-    salarioLiquido = salarioBase - inss;
+    salarioLiquido = parseFloat((salarioBase - inss).toFixed(2));
   }
-  document.getElementById('salarioLiquido').innerHTML = 'R$ ' + salarioLiquido;
+  if (salarioLiquido < 0){
+    document.getElementById('salarioLiquido').innerHTML = 'O seu salário bruto não pode ser negativo.';
+  } else {
+    document.getElementById('salarioLiquido').innerHTML = 'R$ ' + salarioLiquido;
+  }
+  console.log('Salario Bruto = ' + salarioBruto + '\nINSS = ' + inss + '\nSalário Base = ' + salarioBase + '\nIR = ' + ir);
 }
