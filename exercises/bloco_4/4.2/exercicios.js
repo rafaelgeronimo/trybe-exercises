@@ -12,7 +12,7 @@ let resultado = 0;
 for(let index = 0; index < numbers.length; index += 1){
  resultado += numbers[index];
 }
-console.log('A soma de todos os número é: ' + resultado);
+console.log('A soma de todos os números é: ' + resultado);
 
 /** 3. Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
  * A média aritmética é o resultado da soma de todoa os elementos dividos pelo numero total de elementos;
@@ -48,3 +48,12 @@ if (contaImpar === 0) {
 } else {
   console.log("Quantidade de número(s) ímpar(es): " + contaImpar);
 }
+
+/** 7. Utilizando for, descubra qual o meno valor contido no array e imprima-o */
+let menorValor = maiorValor;
+for (let index = 0; index < numbers.length; index += 1) {
+  if(numbers[index] < menorValor) {
+    menorValor = numbers[index];
+  }
+}
+console.log("O menor valor do arry é: ", menorValor);
