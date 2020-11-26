@@ -35,3 +35,16 @@ for (let index = 0; index < numbers.length; index += 1) {
   }
 }
 console.log("O maior valor do array é: ", maiorValor);
+
+/** 6. Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado" */
+let contaImpar = 0;
+for (let index = 0; index < numbers.length; index += 1) {
+  if(numbers[index]%2 != 0) {
+    contaImpar += 1;
+  }
+}
+if (contaImpar === 0) {
+  console.log("Nenhum valor ímpar encontrato");
+} else {
+  console.log("Quantidade de número(s) ímpar(es): " + contaImpar);
+}
