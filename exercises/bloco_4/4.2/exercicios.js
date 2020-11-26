@@ -64,3 +64,8 @@ for(let index = 1; index <= 25; index += 1) {
   conta25.push(index);
 }
 console.log('Array de 1 a 25: ', conta25);
+
+/** 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 */
+for(let index = 0; index < conta25.length; index += 1) {
+  console.log(conta25[index], ' / 2 = ' + conta25[index]/2);
+}
