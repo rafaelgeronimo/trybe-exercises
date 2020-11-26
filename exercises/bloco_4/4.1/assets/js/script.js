@@ -112,12 +112,20 @@ function revelaMovimentos() {
 function converteNota() {
   var nota = parseInt(document.getElementById("nota").value);
   var notaConvertida = "";
-  switch (nota) {
-    case nota >= 90:
-      notaConvertida = "A";
-      break;
-    case nota >= 80:
-      notaConvertida = "B"
+  if (nota >= 0 && nota < 50) {
+    notaConvertida = "F"
+  }else if (nota >= 50 && nota < 60) {
+    notaConvertida = "E"
+  } else if (nota >= 60 && nota < 70) {
+    notaConvertida = "D";
+  } else if (nota >= 70 && nota < 80) {
+    notaConvertida = "C";
+  } else if (nota >= 80 && nota <90) {
+    notaConvertida = "B";
+  } else if (nota >= 90 && nota <= 100){
+    notaConvertida = "A";
+  } else {
+    notaConvertida = "A nota informada deve estar entre 0 e 100.";
   }
   document.getElementById("notaConvertida").innerHTML = notaConvertida;
 }
