@@ -4,7 +4,7 @@
 
 Aprofundando os conhecimentos.
 
-1. Para o primeiro exercício de hoje, faça um programa que, dado um valor `n` qualquer, seja `n > 1`, imprima na tela um quadrado feito de asteriscos de lado de tamanho `n`. Por exemplo:
+1 - Para o primeiro exercício de hoje, faça um programa que, dado um valor `n` qualquer, seja `n > 1`, imprima na tela um quadrado feito de asteriscos de lado de tamanho `n`. Por exemplo:
 
 ```shell
 n = 5
@@ -34,7 +34,7 @@ formaQuadrado(4);
 
 ---
 
-2. Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+2 - Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
    
 ```shell
 n = 5
@@ -60,7 +60,7 @@ trianguloRetangulo(5);
 
 ---
 
-3. Agora inverta o lado do triângulo. Por exemplo:
+3 - Agora inverta o lado do triângulo. Por exemplo:
 ```shell
 n = 5
     *
@@ -92,7 +92,7 @@ trianguloInverso(5);
 
 ---
 
-4. Depois, faça uma pirâmide com `n` asteriscos de base:
+4 - Depois, faça uma pirâmide com `n` asteriscos de base:
 ```shell
 n = 5
 
@@ -127,3 +127,7 @@ formaPiramide(9);
 ```
 
 | Obs.: para o exerício 4 eu precisei buscar inspiração no gabarito.
+
+
+
+</> com 💚 por Rafael Gerônimo | Exercícios by [Trybe](https://betrybe.com)
