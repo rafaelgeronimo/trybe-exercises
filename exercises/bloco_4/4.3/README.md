@@ -35,10 +35,10 @@ formaQuadrado(4);
 2. Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
 ```shell
 n = 5
-    *
-   **
-  ***
- ****
+*
+**
+***
+****
 *****
 ```
 
@@ -53,6 +53,37 @@ function trianguloRetangulo(base){
 }
 
 trianguloRetangulo(5);
+```
+
+---
+3. Agora inverta o lado do triângulo. Por exemplo:
+```shell
+n = 5
+    *
+   **
+  ***
+ ****
+*****
+```
+
+[Solução](ex_3_triangulo_inverso.js)
+```javascript
+function trianguloInverso(base) {
+  let formaLinha = "";
+  for(let linha = 1; linha < base; linha += 1) {
+    for(let coluna = base; coluna > 0; coluna -= 1) {
+      if(coluna > linha) {
+        formaLinha += " ";
+      } else {
+        formaLinha += "*";
+      }
+    }
+    console.log(formaLinha);
+    formaLinha = "";
+  }
+}
+
+trianguloInverso(5);
 ```
 
 ---
