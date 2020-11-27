@@ -32,3 +32,27 @@ function formaQuadrado(tamanho) {
 formaQuadrado(4);
 ```
 ---
+2. Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+```shell
+n = 5
+    *
+   **
+  ***
+ ****
+*****
+```
+
+[Solução](ex_ex_2_triangulo_retangulo.js):
+```javascript
+function trianguloRetangulo(base){
+  let formaLinha = "";
+  for(linha = 1; linha < base; linha += 1 ) {
+    formaLinha += "*";
+    console.log(formaLinha);
+  }
+}
+
+trianguloRetangulo(5);
+```
+
+---
