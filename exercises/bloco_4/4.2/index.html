@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios 4.2</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>
+      Exercícios Bloco 4 - Aula 2 | Introdução à JavaScript e Lógica de Programação
+    </h1>
+  </header>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Listando valores</h2>
+      <div id="arrayNumbers">
+        <textarea name="" id="" cols="90" rows="6" disabled>
+          console.log('Lista de números:') <br>
+          for(let index = 0; index < numbers.length; index += 1){ <br>
+            console.log(numbers[index]); <br>
+          }
+        </textarea>
+      </div>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 1: <br>
+        Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos 
+        com a função console.log();
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Somando valores do array</h2>
+      <textarea name="" id="" cols="90" rows="8" disabled>
+        let resultado = 0;
+        for(let index = 0; index < numbers.length; index += 1){
+          resultado += numbers[index];
+        }
+        console.log('A soma de todos os números é: ' + resultado);
+      </textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 2: <br>
+        Para o segundo exercício, você deve somar todos os valores contidos no array e
+        imprimir o resultado
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Calculando a média</h2>
+      <textarea name="" id="" cols="90" rows="4" disabled>
+        let media = resultado/numbers.length;
+        console.log('A média aritmética é: ' + media);
+      </textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 3: <br>
+        Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array; <br>
+        A média aritmética é o resultado da soma de todoa os elementos dividos pelo numero total de elementos;
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Maior ou menor que 20?</h2>
+      <textarea name="" id="" cols="90" rows="7" disabled>
+        if (media > 20){
+          console.log("Valor maior que 20");
+        } else {
+          console.log("Valor menor ou igual a 20");
+        }
+      </textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 4: <br>
+        Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: 'valor maior que 20'. 
+        Caso não seja, imprima a mensagem: 'valor menor ou igual a 20'
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Quem é o maior?</h2>
+      <textarea name="" id="" cols="90" rows="8" disabled>
+        let maiorValor = 0;
+        for (let index = 0; index < numbers.length; index += 1) {
+          if (numbers[index] > maiorValor) {
+            maiorValor = numbers[index];
+          }
+        }
+      </textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 5: <br>
+        Utilizando for, descubra qual o maior valor contido no array e imprima-o
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Contando os ímpares</h2>
+      <textarea name="" id="" cols="90" rows="12" disabled>
+        let contaImpar = 0;
+        for (let index = 0; index < numbers.length; index += 1) {
+          if(numbers[index]%2 != 0) {
+            contaImpar += 1;
+          }
+        }
+        if (contaImpar === 0) {
+          console.log("Nenhum valor ímpar encontrato");
+        } else {
+          console.log("Quantidade de número(s) ímpar(es): " + contaImpar);
+        }</textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 6: <br>
+        Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista 
+        nenhum, imprima a mensagem: "nenhum valor ímpar encontrado"
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>O menor</h2>
+      <textarea name="" id="" cols="90" rows="8" disabled>
+        let menorValor = maiorValor;
+        for (let index = 0; index < numbers.length; index += 1) {
+          if(numbers[index] < menorValor) {
+            menorValor = numbers[index];
+          }
+        }
+        console.log("O menor valor do arry é: ", menorValor);
+      </textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 7: <br>
+        Utilizando for, descubra qual o menor valor contido no array e imprima-o.
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Array de 1 a 25</h2>
+      <textarea name="" id="" cols="90" rows="8" disabled>
+        let conta25 = []
+        for(let index = 1; index <= 25; index += 1) {
+          conta25.push(index);
+        }
+        console.log('Array de 1 a 25: ', conta25);
+      </textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 8: <br>
+        Utilizando for, crie uma array que vá de 1 até 25 e imprima o resultado.
+      </article>
+    </div>
+  </section>
+  <section class="exercicio">
+    <div class="esquerda">
+      <h2>Dividindo tudo por 2</h2>
+      <textarea name="" id="" cols="90" rows="5" disabled>
+        for(let index = 0; index < conta25.length; index += 1) {
+          console.log(conta25[index], ' / 2 = ' + conta25[index]/2);
+        }
+      </textarea>
+    </div>
+    <div class="direita">
+      <article class="resumo">
+        Enunciado 9: <br>
+        Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um
+        dos elementos por 2
+      </article>
+    </div>
+  </section>
+  <footer>
+    <svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 298 262C 313 262 326 271 332 285C 338 299 335 316 323 327C 323 327 150 500 150 500C 150 500 323 673 323 673C 333 683 337 697 334 710C 330 723 320 733 307 737C 294 740 280 736 270 727C 270 727 70 527 70 527C 56 512 56 488 70 473C 70 473 270 273 270 273C 277 266 286 262 296 262C 297 262 297 262 298 262C 298 262 298 262 298 262M 703 262C 713 262 722 266 730 273C 730 273 930 473 930 473C 944 488 944 512 930 527C 930 527 730 727 730 727C 720 736 706 740 693 737C 680 733 670 723 666 710C 663 697 667 683 677 673C 677 673 850 500 850 500C 850 500 677 327 677 327C 666 316 662 300 668 286C 674 271 687 262 703 262C 703 262 703 262 703 262M 600 162C 613 162 624 168 631 178C 638 188 640 200 636 212C 636 212 436 812 436 812C 431 825 421 834 408 837C 394 840 381 835 372 825C 363 815 360 801 364 788C 364 788 564 188 564 188C 569 172 584 162 600 162C 600 162 600 162 600 162"/></svg> 
+    &nbsp;com 💚 por Rafael Gerônimo | Exercícios by &nbsp;
+    <a href="https://www.betrybe.com/" target="_blank"> Trybe </a>&nbsp;
+    <img src="https://yt3.ggpht.com/ytc/AAUvwnhgfzey83KLsg4xg9BVTa_-RiB5ZIRFvEb2uy3v=s88-c-k-c0x00ffffff-no-rj" alt="">
+  </footer>
+</body>
+</html>
