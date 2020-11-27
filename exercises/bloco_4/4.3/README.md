@@ -31,8 +31,11 @@ function formaQuadrado(tamanho) {
 
 formaQuadrado(4);
 ```
+
 ---
+
 2. Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+   
 ```shell
 n = 5
 *
@@ -56,6 +59,7 @@ trianguloRetangulo(5);
 ```
 
 ---
+
 3. Agora inverta o lado do triângulo. Por exemplo:
 ```shell
 n = 5
@@ -87,6 +91,7 @@ trianguloInverso(5);
 ```
 
 ---
+
 4. Depois, faça uma pirâmide com `n` asteriscos de base:
 ```shell
 n = 5
