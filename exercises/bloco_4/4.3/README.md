@@ -129,5 +129,54 @@ formaPiramide(9);
 | Obs.: para o exerício 4 eu precisei buscar inspiração no gabarito.
 
 
+---
+
+5 - Faça uma pirâmide com `n` asteríscos de base que seja vazia no meio. Assuma que o valor de `n` sempre será ímpar:
+
+```shell
+Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
+n = 7
+  
+   *
+  * *
+ *   *
+*******
+```
+
+[Solução](ex_5_pyramid.js)
+
+```javascript
+function pyramid(base) {
+  if(base %2 > 0) {
+    let newRow = '';
+    let half = (base + 1) / 2;
+    let spaceLeft = half;
+    let spaceRight = half;
+    for(let rowPyramid = 0; rowPyramid < half -1; rowPyramid += 1) {
+      for(let columnPyramid = 0; columnPyramid <= base; columnPyramid += 1) {
+        if(columnPyramid === spaceRight || columnPyramid === spaceLeft) {
+          newRow += '*';
+        } else {
+          newRow += ' ';
+        }
+      }
+      console.log(newRow);
+      newRow = '';
+      spaceLeft += 1;
+      spaceRight -= 1;
+    }
+    newRow += ' ';
+    for(let pyramidBase = 0; pyramidBase < base; pyramidBase += 1) {
+      newRow += '*';
+    }
+    console.log(newRow);
+  } else {
+    console.log('Por favor, informe um número ímpar!');
+  }
+}
+
+pyramid(7);
+```
+
 
 </> com 💚 por Rafael Gerônimo | Exercícios by [Trybe](https://betrybe.com)
