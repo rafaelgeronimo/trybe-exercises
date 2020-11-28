@@ -178,5 +178,34 @@ function pyramid(base) {
 pyramid(7);
 ```
 
+---
+
+6 - Faça um programa que diz se um número definido numa variável é primo ou não.
+- Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão  dele com quaisquer outros números dá resto diferente de zero.
+- Dica: você vai precisar fazer um loop que vá de 0 ao número definido; Além disso, vai precisar fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
+
+[Solução e teste ao vivo](exercise_6.html)
+
+```javascript
+function check(number) {
+  const numero = parseInt(document.getElementById('number').value);
+  let primos = [];
+  for(let index = 0; index <= numero; index += 1) {
+    if((numero % index) === 0) {
+      primos.push(index);
+    }
+    if(primos.length > 2) {
+      document.getElementById('primos').innerHTML = numero + ' <strong>não</strong> é um número primo.';
+      console.log(numero + ' não é um número primo');
+      break;
+    }
+  }
+  if(primos.length === 2) {
+    document.getElementById('primos').innerHTML = numero + ' é um número primo.';
+    console.log(numero + ' é um número primo!');
+  }
+}
+```
+
 
 </> com 💚 por Rafael Gerônimo | Exercícios by [Trybe](https://betrybe.com)

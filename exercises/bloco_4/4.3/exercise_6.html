@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6</title>
+  <script src="ex_6_numerosPrimos.js"></script>
+</head>
+<body>
+  <input type="number" id="number">
+  <button onclick="check()">Checar</button><br>
+  <div id="primos"></div>
+  <br><p>
+    <strong>Código da solução:</strong><br>
+    <textarea name="" id="" cols="110" rows="20" disabled>
+      function check(number) {
+        const numero = parseInt(document.getElementById('number').value);
+        let primos = [];
+        for(let index = 0; index <= numero; index += 1) {
+          if((numero % index) === 0) {
+            primos.push(index);
+          }
+          if(primos.length > 2) {
+            document.getElementById('primos').innerHTML = numero + ' <strong>não</strong> é um número primo.';
+            console.log(numero + ' não é um número primo');
+            break;
+          }
+        }
+        if(primos.length === 2) {
+          document.getElementById('primos').innerHTML = numero + ' é um número primo.';
+          console.log(numero + ' é um número primo!');
+        }
+      }
+    </textarea><br>
+    Também é possível ver o resultado no console do browser.
+  </p>
+</body>
+</html>
