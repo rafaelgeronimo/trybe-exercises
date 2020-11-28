@@ -45,7 +45,7 @@ n = 5
 *****
 ```
 
-[Solução](ex_ex_2_triangulo_retangulo.js):
+[Solução](ex_2_triangulo_retangulo.js):
 ```javascript
 function trianguloRetangulo(base){
   let formaLinha = "";
