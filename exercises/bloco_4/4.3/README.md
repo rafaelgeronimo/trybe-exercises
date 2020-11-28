@@ -129,5 +129,83 @@ formaPiramide(9);
 | Obs.: para o exerício 4 eu precisei buscar inspiração no gabarito.
 
 
+---
+
+5 - Faça uma pirâmide com `n` asteríscos de base que seja vazia no meio. Assuma que o valor de `n` sempre será ímpar:
+
+```shell
+Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
+n = 7
+  
+   *
+  * *
+ *   *
+*******
+```
+
+[Solução](ex_5_pyramid.js)
+
+```javascript
+function pyramid(base) {
+  if(base %2 > 0) {
+    let newRow = '';
+    let half = (base + 1) / 2;
+    let spaceLeft = half;
+    let spaceRight = half;
+    for(let rowPyramid = 0; rowPyramid < half -1; rowPyramid += 1) {
+      for(let columnPyramid = 0; columnPyramid <= base; columnPyramid += 1) {
+        if(columnPyramid === spaceRight || columnPyramid === spaceLeft) {
+          newRow += '*';
+        } else {
+          newRow += ' ';
+        }
+      }
+      console.log(newRow);
+      newRow = '';
+      spaceLeft += 1;
+      spaceRight -= 1;
+    }
+    newRow += ' ';
+    for(let pyramidBase = 0; pyramidBase < base; pyramidBase += 1) {
+      newRow += '*';
+    }
+    console.log(newRow);
+  } else {
+    console.log('Por favor, informe um número ímpar!');
+  }
+}
+
+pyramid(7);
+```
+
+---
+
+6 - Faça um programa que diz se um número definido numa variável é primo ou não.
+- Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão  dele com quaisquer outros números dá resto diferente de zero.
+- Dica: você vai precisar fazer um loop que vá de 0 ao número definido; Além disso, vai precisar fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
+
+[Solução e teste ao vivo](exercise_6.html)
+
+```javascript
+function check(number) {
+  const numero = parseInt(document.getElementById('number').value);
+  let primos = [];
+  for(let index = 0; index <= numero; index += 1) {
+    if((numero % index) === 0) {
+      primos.push(index);
+    }
+    if(primos.length > 2) {
+      document.getElementById('primos').innerHTML = numero + ' <strong>não</strong> é um número primo.';
+      console.log(numero + ' não é um número primo');
+      break;
+    }
+  }
+  if(primos.length === 2) {
+    document.getElementById('primos').innerHTML = numero + ' é um número primo.';
+    console.log(numero + ' é um número primo!');
+  }
+}
+```
+
 
 </> com 💚 por Rafael Gerônimo | Exercícios by [Trybe](https://betrybe.com)
