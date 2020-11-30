@@ -101,3 +101,150 @@ Solução:
 - A página que utiliza o arquivo e coloca as funções em uso estão acessíveis em [http://rafaelgeronimo.me/trybe-exercises/exercises/bloco_4/4.1/](http://rafaelgeronimo.me/trybe-exercises/exercises/bloco_4/4.1/).
 
 ---
+## Exercícios
+### Parte I - Objetos e funções
+Usando o objeto abaixo, faça os exercícios a seguir:
+```javascript
+let info = {
+  personagem: 'Margarida',
+  origem: 'Pato Donald',
+  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+};
+```
+
+1. Imprima no console uma mensagem de boas vindas para a personagem acima, incluindo seu nome.
+  - Valor esperado no console: `Bem-vinda, Margarida`
+
+Solução:
+```javascript
+console.log('Bem-vinda ' + info.personagem);
+```
+
+2. Insira no objeto uma nova propriedade com o nome da chave "recorrente" e o valor "Sim" e, em seguida, imprima o objeto no console.
+- Valor esperado no console:
+```javascript
+  {
+    pesonagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal dos quadrinhos do Pato Donald',
+    recorrente: 'Sim'
+  };
+```
+
+Solução:
+```javascript
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  recorrente: 'Sim'
+};
+
+console.log(info);
+```
+
+3. Faça um `for/in` que mostre todas as chaves do objeto.
+- Valor esperado no console:
+```shell
+personagem
+origem
+nota
+recorrente
+```
+
+Solução:
+```javascript
+for(prop in info){
+	console.log(prop);
+}
+```
+
+4. Faça um novo `for/in`, mas agora mostre todos os valores das chaves do objeto.
+- Valor esperado no console
+```shell
+Margarida
+Pato Donald
+Namorada do personagem principal dos quadrinhos do Pato Donald
+Sim
+```
+
+Solução:
+```javascript
+for(prop in info){
+	console.log(info[prop]);
+}
+```
+
+5. Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics #178", "O último MacPatinhas", "Sim".
+- Valor esperado no console:
+```shell
+Margarida e Tio Patinhas
+Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
+Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
+Ambos recorrentes // Atenção para essa última linha!
+```
+
+Solução:
+```javascript
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  recorrente: 'Sim'
+};
+
+let info2 = {
+	personagem: "Tio Patinhas",
+  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+  nota: "O último MacPatinhas",
+  recorrente: "Sim"
+}
+
+
+for(prop in info){
+	if((info[prop] === info.recorrente) && (info[prop] === info2[prop])){
+    console.log("Ambos recorrentes");
+  } else {
+  	console.log(info[prop] + ' e ' + info2[prop]);
+  }
+}
+```
+---
+
+### Parte II - Funções
+
+1. Crie uma função que receba uma `string` e retorne `true` se for um palíndromo , ou `false` , se não for.
+- Exemplo de palíndromo: arara .
+- `verificaPalindrome("arara")`;
+- Retorno esperado: `true`
+- `verificaPalindrome("desenvolvimento")`;
+- Retorno esperado: `false`
+
+Solução (rápida - essa solução não considerar palíndromos com espaços em lugares diferentes, como em `socorram-me subi no onibus em marros`):
+
+```javascript
+function verificaPalindrome(word) {
+	let palavra = "";
+	for(let index = 0; index < word.length; index += 1) {    
+  	if(word[index] === word[word.length - index - 1]){
+    	if(word[index] === ' '){
+      	word[index]
+      }
+    	palavra = palavra.concat(word[index]);
+    } else {
+      break;
+    }
+  }
+  if(palavra.length === word.length) {
+  	let isPalindrome = true;
+    console.log(isPalindrome);
+  } else {
+  	let isPalindrome = false;
+    console.log(isPalindrome);
+  }
+}
+
+verificaPalindrome('arara');
+```
+
+---
