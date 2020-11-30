@@ -25,6 +25,7 @@ let player = {
   }
 }
 ```
+
 ---
 
 - Acesse a chave `name`, `lastName` e `age`. Concatene as informações para fazer um `console.log` no seguinte formato: "A jogadora Marta Silva tem 34 anos de idade"
@@ -33,6 +34,7 @@ Solução:
 ```javascript
 console.log("A jogadora " + player.name + " " + player.lastName + " tem " + player.age + "anos.");
 ```
+
 ---
 
 - Adicione ao objeto a chave `bestInTheWorld` e atribua a esta chave um `array` contendo as datas em que a jogadora Marta foi considerada a melhor do mundo.
@@ -60,6 +62,7 @@ let player = {
   ]
 }
 ```
+
 ---
 
 - Acesse a chave `bestInTheWorld` e faça um `console.log` no seguinte formato: "A jogadora Marta Silva foi eleita a melhor do mundo por 6 vezes".
@@ -68,6 +71,7 @@ Solução:
 ```javascript
 console.log("A jogadora " + player["name"] + " " + player["lastName"] + " foi eleita a melhor do mundo por " + player["bestInTheWorld"].length + " vezes");
 ```
+
 ---
 
 - Acesse a chave `medals` e faça um `console.log` no seguinte formato: "A jogadora possui 2 medalhas de ouro e 3 medalhas de prata".
@@ -76,6 +80,7 @@ Solução:
 ```javascript
 console.log("A jogadora possui " + player.medals.golden + " medalhas de ouro e " + player.medals.silver + " medalhas de prata.");
 ```
+
 ---
 
 #### For/in
@@ -88,6 +93,7 @@ for (x in fruits) {
   console.log(x);
 }
 ```
+
 ---
 
 #### Funções
@@ -209,6 +215,7 @@ for(prop in info){
   }
 }
 ```
+
 ---
 
 ### Parte II - Funções
@@ -269,3 +276,24 @@ highestValueIndex([2, 3, 6, 7, 10, 1]);
 ```
 
 ---
+
+3. Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+  - Array de teste: [2, 4, 6, 7, 10, 0, -3];
+  - Valor esperado no retorno da função: 6
+
+Solução:
+```javascript
+function lowestValueIndex(numbers){
+	let checkLowestValue = Infinity;
+  let lowestValue = 0;
+  for(let index = 0; index < numbers.length; index += 1) { 
+  	if(checkLowestValue > numbers[index]) { 
+    	checkLowestValue = numbers[index];
+      lowestValue = index;
+    }
+  }
+  console.log(lowestValue); 
+}
+
+lowestValueIndex([2, 4, 6, 7, 10, 0, -3]);
+```
