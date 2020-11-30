@@ -297,3 +297,26 @@ function lowestValueIndex(numbers){
 
 lowestValueIndex([2, 4, 6, 7, 10, 0, -3]);
 ```
+
+---
+
+4. Crie uma função que receba um `array` de nomes e retorne o nome com a maior quantidade de caracteres.
+  - Array de teste: `['José', 'Lucas', 'Nádia', 'Fernanda', ' Cairo', 'Joana'];`.
+  - Valor esperado no retorno da função: `Fernanda`
+
+Solução:
+```javascript
+function checkBiggestName(namesList) {
+	let biggestName = "";
+  let biggestNameSize = 0;
+	for(let index = 0; index < namesList.length; index += 1) {
+    if(namesList[index].length > biggestNameSize){
+    	biggestName = namesList[index];
+      biggestNameSize = namesList[index].length;
+    }
+  }
+  return biggestName;
+}
+
+console.log(checkBiggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+```
