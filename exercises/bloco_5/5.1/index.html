@@ -80,12 +80,16 @@
            for(let index = 0; index < paragraphsQntt; index += 1){
              let newParagraph = document.getElementsByTagName('p')[index].innerText.toLowerCase();
              document.getElementsByTagName('p')[index].innerText = newParagraph;
+             consoleLogParagraphs(index);
            }
          }
          convertTextToLowerCase();
           /*
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+       function consoleLogParagraphs(paragraphIndex) {
+        console.log(document.getElementsByTagName('p')[paragraphIndex].innerText)
+       }
     </script>
   </body>
 </html>
