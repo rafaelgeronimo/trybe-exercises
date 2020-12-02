@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+header, .challenge {
+  display: flex;
+}
+
+header {
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.challenge {
+  /* justify-content: space-between; */
+  margin: 0 10vw 10px 10vw;
+  border: 1px dashed black;
+}
+
+.left {
+  border-right: 1px dashed black;
+  max-width: 30vw;
+  padding: 0 2vw;
+}
+
+.right {
+  max-width: 70vw;
+  padding-left: 2vw;
+}
+
+.code {
+  border: 1px solid rgb(240 , 240 , 240);
+  border-radius: 2px;
+  padding: 1px 2px;
+  background-color: rgb(245 , 245 , 245);
+  color: rgb(240 , 12 , 12)
+}
+
+#checkBool {
+
+}
+
+.submit {
+  margin: 10px 0;
+}
+
+input {
+  margin: 10px 0;
+}
+
+button {
+  margin: 10px 0;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground Functions - Rafael Gerônimo</title>
+  <link rel="stylesheet" href="src/style.css">
+  <!-- <script src="src/challenges.js"></script> -->
+  <script src="src/tests.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Project: Playground Functions | Rafael Gerônimo</h1>
+  </header>
+  <main>
+    <section id="challengeOne" class="challenge">
+      <div class="left">
+        <h2>1 - Usando o operador &&</h2>
+        <p>
+          JavaScript possui um operador lógico <span class="code">&&</span>, o qual recebe dois valores e retorna <span class="code">true</span> se ambos os valores são verdadeiros, e retorna <span class="code">false</span> se algum dos valores não o for. <br>
+          Considerando isso, crie uma função chamada <span class="code">compareTrue</span> que, ao receber dois booleanos: <br>
+          <ul>
+            <li>Retorne <span class="code">true</span> se ambos os valores são verdadeiros;</li>
+            <li>Retorne <span class="code">false</span> se um ou ambos os parâmetros forem falsos.</li>
+          </ul>
+          Faça a função utilizando o operador <span class="code">&&</span>.
+        </p>
+      </div>
+      <div class="right">
+        <p>Selecione <span class="code">true</span> ou <span class="code">false</span> para cada entrada.</p>
+        <form id="checkBool">
+          <p>Entrada 1</p>
+          <input type="radio" name="bool1" value="true">
+          <label for="true"><span class="code">true</span></label>
+          <input type="radio"  name="bool1" value="false">
+          <label for="false"><span class="code">false</span></label>
+          <p>Entrada 2</p>
+          <input type="radio" name="bool2" value="true">
+          <label for="true"><span class="code">true</span></label>
+          <input type="radio" name="bool2" value="false">
+          <label for="false"><span class="code">false</span></label>
+          <div class="submit">
+            <button type="submit" onclick="compareTrue(bool1.value, bool2.value)">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="challengeTwo" class="challenge">
+      <div class="left">
+        <h2>2 - Área do triângulo</h2>
+        <p>
+          Escreva uma função com o nome <span class="code">calcArea</span> que receba um valor de base (chamado <span class="code">base</span>) e outro de altura (chamado <span class="code">height</span>) de um triângulo e retorne o cálculo da sua área.
+        </p>
+        <p>
+          Lembre-se que a área de um triângulo é calculada através da seguinte fórmula: (base * altura) / 2.
+        </p>
+      </div>
+      <div class="right">
+        <p>Informe a base e a altura do triângulo para calcular a área:</p>
+        <input type="number" id="base" placeholder="base do triângulo"><br>
+        <input type="number" id="altura" placeholder="altura do triângulo"> <br>
+        <button onclick="calcArea()">Calcular</button>
+        <div id="areaTriangulo"></div>
+      </div>
+    </section>
+    <section id="challengeThree" class="challenge">
+      <div class="left">
+        <h2>3 - Dividindo a frase</h2>
+        <p>
+          Escreva uma função com o nome <span class="code">splitSentence</span>, a qual receberá uma string e retornará uma array de strings separadas por cada espaço na string original.
+        </p>
+        <p>
+          Exemplo: se a função receber a string <span class="code">"go Trybe"</span>, o retorno deverá ser <span class="code">['go', 'Trybe']</span>.
+        </p>
+      </div>
+      <div class="right">
+        <p>Escreva uma frase curta:</p>
+        <input type="text" id="sentence"><br>
+        <button onclick="splitSentence()">Dividir</button>
+        <div id="splitedSentence"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
