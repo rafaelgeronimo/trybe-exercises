@@ -2,6 +2,8 @@
 
 ### Dia 5.1 | JavaScript - DOM e seletores
 
+[Resultado dos Exercícios](index.html)
+
 **Exercícios de fixação**:
 
 Parte II - Seletores de elementos: `document.getElementById()`
