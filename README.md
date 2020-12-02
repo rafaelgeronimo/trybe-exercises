@@ -31,12 +31,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-1: [_JavaScript - Primeiros passos_](exercises/bloco_4/4.1)
 - [x] 4-2: [_JavaScript - Array e loop For_](exercises/bloco_4/4.2)
 - [x] 4-3: [_JavaScript - Lógica de Programação e Algoritmos_](exercises/bloco_4/4.3)
-- [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-4: [_JavaScript - Objetos e funções_](exercises/bloco_4/4.4)
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
-- [ ] 5-1: _JavaScript - DOM e seletores_
+- [x] 5-1: [_JavaScript - DOM e seletores_](exercises/5.1)
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
