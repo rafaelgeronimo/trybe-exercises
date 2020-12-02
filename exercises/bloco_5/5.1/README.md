@@ -74,6 +74,3 @@ var subtitulo = document.getElementsByTagName("h4")[0].innerText;
 ```
 
 ---
-
-## Prática
-
