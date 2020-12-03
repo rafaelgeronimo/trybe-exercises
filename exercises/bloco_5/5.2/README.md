@@ -15,6 +15,8 @@ A propriedade `parentNode` acessa o elemento pai do elemento sobre o qual a prop
 
 ### Prática
 
+**Parte I - Buscando elementos**
+
 Adicione o código abaixo a uma página HTML e adicione uma tag `script`. Você deverá fazer tudo a seguir suando somente *JavaScript*.
 
 ```html
@@ -76,5 +78,46 @@ document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
 8. Agora acesse o `terceiroFilho` a partir de `pai` .
 
 ```js
-document.querySelector('#pai').childNodes[5];
+document.querySelector('#pai').children[2];
+```
+
+**Parte II - Criando elementos**
+
+1. Crie um irmão para `elementoOndeVoceEsta` .
+
+```js
+let elementoPai = document.querySelector('#elementoOndeVoceEsta').parentNode;
+let novoElemento = document.createElement('div');
+elementoPai.appendChild(novoElemento);
+
+```
+
+2. Crie um filho para `elementoOndeVoceEsta` .
+
+```js
+let elementoAtual = document.querySelector('#elementoOndeVoceEsta');
+let novoElemento = document.createElement('div');
+elementoAtual.appendChild(novoElemento);
+```
+
+3. Crie um filho para `primeiroFilhoDoFilho` .
+
+```js
+let primeiroFilhoDoFilho = document.querySelector('#elementoOndeVoceEsta').firstElementChild;
+let novoElemento = document.createElement('div');
+novoElemento.setAttribute('id', 'primeiroFilhoDoFilhoDoFilho');
+primeiroFilhoDoFilho.appendChild(novoElemento);
+```
+4. A partir desse filho criado, acesse `terceiroFilho` .
+
+```js
+document.querySelector('#primeiroFilhoDoFilhoDoFilho').parentElement.parentElement.nextElementSibling;
+```
+
+**Parte III - Removendo elementos**
+
+- Remova todos os elementos da página, menos `pai` , `elementoOndeVoceEsta` e `primeiroFilhoDoFilho` .
+
+```js
+
 ```
