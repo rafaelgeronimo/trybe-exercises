@@ -34,3 +34,13 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
   newDay.innerText = dezDaysList[index];
   days.appendChild(newDay);
 }
+
+function showHolidays(feriados) {
+  let buttonsContainer = document.querySelector('.buttons-container');
+  let createButtonHolidays = document.createElement('button');
+  createButtonHolidays.setAttribute('id', 'btn-holiday');
+  createButtonHolidays.innerText = feriados;
+  buttonsContainer.appendChild(createButtonHolidays);
+}
+
+showHolidays('Feriados');
