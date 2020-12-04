@@ -77,6 +77,11 @@
       let centerContent = document.querySelector('div.center-content');
       let createParagraph = document.createElement('p');
       centerContent.appendChild(createParagraph);
+
+      // 5. Adicionar a tag div com a classe left-content como filho da tag div criada no passo 2;
+      let createLeftContent = document.createElement('div');
+      createLeftContent.setAttribute('class', 'left-content');
+      mainContent.appendChild(createLeftContent);
     </script>
   </body>
 </html>
