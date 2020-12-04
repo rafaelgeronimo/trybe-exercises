@@ -21,3 +21,11 @@ function splitSentence() {
   let words = phrase.split(' ');
   document.getElementById('splitedSentence').innerHTML = `[${words}]`;
 }
+
+// Desafio 4
+function concatName() {
+  let firstAndLast = [];
+  let names = document.getElementById('names').value;
+  firstAndLast = firstAndLast.concat(`${names[names.length - 1]}, ${names[0]}`);
+  document.getElementById('firstAndLast').innerHTML = firstAndLast;
+}
