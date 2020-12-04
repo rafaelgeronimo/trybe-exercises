@@ -123,6 +123,12 @@
       createListItem.innerText = number;
       unorderedList.appendChild(createListItem);
      }
+
+     // 9. Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+     for (let index = 0; index < 3; index += 1) {
+      let createSubtitle = document.createElement('h3');
+      mainContent.appendChild(createSubtitle);
+     }
     </script>
   </body>
 </html>
