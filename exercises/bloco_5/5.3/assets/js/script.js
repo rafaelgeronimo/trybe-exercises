@@ -19,7 +19,18 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 for (let index = 0; index < dezDaysList.length; index += 1) {
   const newDay = document.createElement('li');
   newDay.setAttribute('class', 'day');
-  
+  let holidays = [24, 25, 31];
+  for (holiday in holidays) {
+    if (holidays[holiday] === dezDaysList[index]) {
+      newDay.classList.add('holiday');
+    }
+  }
+  let fridays = [4, 11, 18, 25];
+  for (friday in fridays) {
+    if (fridays[friday] === dezDaysList[index]) {
+      newDay.classList.add('friday');
+    }
+  }
   newDay.innerText = dezDaysList[index];
   days.appendChild(newDay);
 }
