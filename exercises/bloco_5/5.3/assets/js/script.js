@@ -35,7 +35,7 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
   days.appendChild(newDay);
 }
 
-function showHolidays(feriados) {
+function createButtonHolidays(feriados) {
   let buttonsContainer = document.querySelector('.buttons-container');
   let createButtonHolidays = document.createElement('button');
   createButtonHolidays.setAttribute('id', 'btn-holiday');
@@ -43,4 +43,8 @@ function showHolidays(feriados) {
   buttonsContainer.appendChild(createButtonHolidays);
 }
 
-showHolidays('Feriados');
+createButtonHolidays('Feriados');
+
+function showHolidays() {
+  
+}
