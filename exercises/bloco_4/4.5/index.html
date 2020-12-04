@@ -80,6 +80,19 @@
         <div id="splitedSentence"></div>
       </div>
     </section>
+    <section id="challengeFour" class="challenge">
+      <div class="left">
+        <h2>4 - Concatenação de strings</h2>
+        <p>Escreva uma função com o nome <span class="code">concatName</span> que, ao receber uma array de strings, retorne uma string com o formato <span class="code">'ÚLTIMO ITEM, PRIMEIRO ITEM'</span>, independente do tamanho da array.</p>
+        <p>Isso quer dizer que, caso o parâmetro passado para <span class="code">concatName</span> seja a Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], a função deverá retornar <span class="code">Paolillo, Lucas</span>.</p>
+      </div>
+      <div class="right">
+        <p>Insira abaixo uma array de strings no formato: <span class="code">['string1', 'string2', 'string3', etc]</span></p>
+        <input type="text" id="names" size="40" placeholder="['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']"><br>
+        <button onclick="concatName()">Concatenar</button>
+        <div id="firstAndLast"></div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
