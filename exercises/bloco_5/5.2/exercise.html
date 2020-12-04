@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 1. Adicionar a tag h1 com o texto 'exercicio 5.2 - javascript DOM' como filho da tag body
+      let createTitle = document.createElement('h1');
+      createTitle.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(createTitle);
+
+      // 2. Adicionar a tag div com a classe main-content como filho da tag body
+      let createMainContentDiv = document.createElement('div');
+      createMainContentDiv.setAttribute('class', 'main-content');
+      document.body.appendChild(createMainContentDiv);
+
+      // 3. Adicionar a tag div com a classe center-content como filho da tag div criada no passo 2
+      let mainContent = document.querySelector('.main-content');
+      let createCenterContentDiv = document.createElement('div');
+      createCenterContentDiv.setAttribute('class', 'center-content');
+      mainContent.appendChild(createCenterContentDiv);
+    </script>
+  </body>
+</html>
