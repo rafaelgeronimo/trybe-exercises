@@ -216,3 +216,5 @@ Agora que você criou muita coisa, vamos fazer algumas alterações e remoções
 4. Centralize o `div` criado no passo 6 (aquele que possui a classe `right-content` ). Dica: para centralizar, basta configurar o `margin-right: auto` do `div` ;
 5. Troque a cor de fundo do elemento pai da `div` criada no passo 3 (aquela que possui a classe `center-content` ) para a cor verde;
 6. Remova os dois últimos elementos ( `nove` e `dez` ) da lista criada no passo 8.
+
+[Respostas no arquivo exercise.html](exercise.html)
