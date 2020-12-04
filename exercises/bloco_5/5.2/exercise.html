@@ -72,6 +72,11 @@
       let createCenterContentDiv = document.createElement('div');
       createCenterContentDiv.setAttribute('class', 'center-content');
       mainContent.appendChild(createCenterContentDiv);
+
+      // 4. Adicionar a tag p como filho do div criado no passo 3 e coloque algum texto;
+      let centerContent = document.querySelector('div.center-content');
+      let createParagraph = document.createElement('p');
+      centerContent.appendChild(createParagraph);
     </script>
   </body>
 </html>
