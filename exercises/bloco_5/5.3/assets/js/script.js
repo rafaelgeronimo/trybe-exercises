@@ -1,7 +1,7 @@
 window.onload = function() {
   createDaysOfTheWeek();
   createButton('btn-holiday', 'Feriados', 'showHolidays'); // Primeiro parâmetro: ID | Segundo parâmetro: Texto do botão | Terceiro parâmetro: action
-  createButton('btn-friday', 'Sexta-feira'); // Primeiro parâmetro: ID | Segundo parâmetro: Texto do botão
+  createButton('btn-friday', 'Sexta-feira', 'showFridays'); // Primeiro parâmetro: ID | Segundo parâmetro: Texto do botão
 }
 
 function createDaysOfTheWeek() {
@@ -52,7 +52,10 @@ function createButton(buttonId, buttonName, action) {
 
 
 let checkHolidays = true;
+let checkFridays = true;
+let diaMes = [];
 function activateAction(action) {
+  
   if (action === 'showHolidays') {
     let holidays = document.querySelectorAll('.holiday');
     for (let index = 0; index < holidays.length; index += 1) {
@@ -66,6 +69,25 @@ function activateAction(action) {
       checkHolidays = false;
     } else {
       checkHolidays = true;
+    }
+  }  
+
+  if (action === 'showFridays') {
+    let fridays = document.querySelectorAll('.friday');
+    for (let index = 0; index < fridays.length; index += 1) {
+      diaMes.push(fridays[index].innerText);
+      if (checkFridays === true) {
+        fridays[index].innerHTML = 'SEXTOU';
+      } else {
+        fridays[index].innerHTML = diaMes[index];
+        diaMes.pop();
+      }
+    }
+    //console.log('Dias armazenados: ', diaMes)
+    if (checkFridays === true) {
+      checkFridays = false;
+    } else {
+      checkFridays = true;
     }
   }
 }
