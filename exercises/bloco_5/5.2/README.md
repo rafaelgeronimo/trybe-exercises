@@ -1,6 +1,6 @@
 # Bloco 5 | JavaScript: DOM, Eventos e Web Storage
 
-## Dia 5.1 | JavaScript - Trabalhando com elementos
+## Dia 5.2 | JavaScript - Trabalhando com elementos
 
 **- Parte I - Buscando elementos**
 A propriedade `parentNode` acessa o elemento pai do elemento sobre o qual a propriedade é chamada. Mas ela não é a única forma de, a partir de um elemento, navega para outros:
