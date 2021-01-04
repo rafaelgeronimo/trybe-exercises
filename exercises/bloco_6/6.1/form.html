@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Currículo</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <form action="" method="POST">
+    <fieldset>
+      <legend>Nome</legend>
+      <input type="text" maxlength="40" required>
+    </fieldset>
+    <fieldset>
+      <legend>E-mail</legend>
+      <input type="email" maxlength="50" required>
+    </fieldset>
+    <fieldset>
+      <legend>CPF</legend>
+      <input type="text" maxlength="11" required>
+    </fieldset>
+    <fieldset>
+      <legend>Endereço</legend>
+        <label for="street">Rua</label>
+        <input type="text" maxlength="200" required id="street">
+        <label for="numero">Número</label>
+        <input type="number" max="4"  required id="numero">
+        <br>
+        <label for="complemento">Complemento</label>
+        <input type="text" maxlength="30" id="complemento">
+        <label for="bairro">Bairro:</label>
+        <input type="text" maxlength="20" required id="bairro">
+        <br>
+        <label for="city">Cidade</label>
+        <input type="text" maxlength="28" required id="city">
+        <label for="uf">UF</label>
+          <select name="uf" id="uf" required>
+            <option value="" selected disabled hidden>Selecione</option>
+          </select>
+      
+    </fieldset>
+    
+  </form>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
