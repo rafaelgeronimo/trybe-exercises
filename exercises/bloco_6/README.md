@@ -29,4 +29,4 @@
 </details>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-url]:https://linkedin.com/in/rafaelgeronimo
+[linkedin-url]: https://linkedin.com/in/rafaelgeronimo
