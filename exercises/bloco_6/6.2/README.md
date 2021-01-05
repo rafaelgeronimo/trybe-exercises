@@ -12,6 +12,6 @@
 
 Meus resultados:
 
--> [Código da página de formulário](). 🔗
+-> [Código da página de formulário](../6.1/forms.html). 🔗
 
--> [Formulário funcional](). 🔗
+-> [Formulário funcional](https://rafaelgeronimo.me/trybe-exercises/exercises/bloco_6/6.1/form.html). 🔗
