@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Currículo</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <form action="" method="POST">
+  <!-- Dados pessoais -->
+    <fieldset id="personal-data">
+      <legend>Dados Pessoais</legend>
+
+      <div id="personal">
+        <div class="atributo">
+          <label for="nome">Nome</label><br/>
+          <input type="text" name="nome" id="nome" maxlength="40" required>
+        </div>
+        <div class="atributo">
+          <label for="email">E-mail</label><br/>
+          <input type="email" name="email" id="email" maxlength="50" required>
+        </div>
+        <div class="atributo">
+          <label for="cpf">CPF</label><br/>
+          <input type="text" name="CPF" id="CPF" maxlength="11" required>
+        </div>
+      </div>
+      <!-- Endereço -->
+      <fieldset id="address">
+        <legend>Endereço</legend>
+          
+        <div id="tipo-residencia">
+          Tipo de residência:
+          <input type="radio" id="casa" name="tipo">
+          <label for="casa">Casa</label>
+          <input type="radio" id="apartamento" name="tipo">
+          <label for="apartamento">Apartamento</label>
+        </div>
+          
+          
+        <div id="address-line1" class="address-line">
+          <label for="street">Rua</label>
+          <input type="text" maxlength="200" required id="street">
+          
+          <label for="numero">Número</label>
+          <input type="number" max="4"  required id="numero">
+        </div>  
+        
+        <div id="address-line2" class="address-line">
+          <label for="complemento">Complemento</label>
+          <input type="text" maxlength="30" id="complemento">
+          
+          <label for="bairro">Bairro:</label>
+          <input type="text" maxlength="20" required id="bairro">
+        </div>
+        
+        <div id="address-line3" class="address-line">
+          <label for="city">Cidade</label>
+          <input type="text" maxlength="28" required id="city">
+          
+          <label for="uf">UF</label>
+          <select name="uf" id="uf" required>
+            <option value="" selected disabled hidden>Selecione</option>
+          </select>
+        </div>
+      </fieldset>
+    </fieldset>
+    <!-- Experiencia Profissional -->
+    <fieldset>
+      <legend>Histório Profissional</legend>
+      <label for="resume">Resumo</label>
+      <textarea name="resume" id="resume" maxlength="10000" required></textarea>
+      <label for="cargo">Cargo</label>
+      <input type="text" id="cargo" maxlength="40" required>
+      <label for="description">Descrição do cargo</label>
+      <textarea name="description" id="description"></textarea>
+      <label for="inicio">Data de início</label>
+      <input type="text" id="inicio" placeholder="dd/mm/aaaa" required>
+    </fieldset>
+    <button>Cadastrar</button>
+    <button>Limpar</button>
+  </form>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
