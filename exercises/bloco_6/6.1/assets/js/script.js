@@ -118,3 +118,7 @@ for (let i in estados){
   UFListt.appendChild(newUF);
   
 }
+
+document.getElementById('inicio').DatePickerX.init(
+  {format: 'dd/mm/yyyy'}
+);
