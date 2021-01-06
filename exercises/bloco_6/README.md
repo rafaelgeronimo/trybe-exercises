@@ -38,7 +38,7 @@ Após essa aula, somos capazes de:
 - Criar formulários em <strong>HTML</strong> com as tags: `input`, `button`, `textarea`, `select`, `form`.
 
 ---
-## [Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS](6.1)
+## [Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS](6.2)
 
 Nessa aula aprendemos como adicionar bibliotecas **JavaScript** e **CSS** aos nossos sites.
 
