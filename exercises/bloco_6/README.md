@@ -51,3 +51,16 @@ Após essa aula, nos tornamos capazes de:
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rafaelgeronimo
+
+---
+## [Dia 6.3 | CSS Flexbox - Parte 1](6.3)
+
+Nessa aula aprendemos sobre CSS Flexbox Layout (Flexbile Box). Flexbox é um módulo que visa a fornecer uma maneira mais eficiente de organizar, alinhar e distribuir espaço entre os itens em um *container*, mesmo quando seu tamanho é desconhecido.
+
+Um *container* pode ser qualquer elemento HTML que contenha outros elementos, como, por exemplo, um `<div>` ou `<section>`. Esse elemento pai é chamado de *container*, e os elementos filhos serão os itens.
+
+A ideia por trás do "layout flexível" é dar ao *container* a habilidade de alterar o tamanho (*width* e *height*) e a ordem dos itens para melhor ocupar o espaço disponível. Essa habilidade nos permite acomodar uma página em todos os tipos de dispositivos e tamanhos de tela.
+
+Após essa aula, nos tornamos capazes de:
+- Utilizar CSS Flexbox para criar layouts flexíveis;
+- Utilizar CSS Flexbox para alterar o comportamento de *containers*
