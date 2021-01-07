@@ -30,7 +30,8 @@
 
 ---
 <!-- Dia 6.1 | HTML & CSS - Forms -->
-## [Dia 6.1 | HTML & CSS - Forms](6.1)
+## Dia 6.1 | HTML & CSS - Forms
+-> [Conferir](6.1)
 
 Nessa aula, aprendemos sobre formulários em <strong>HTML</strong>, que são uma forma de enviar informações para outra páigna do seu site ou para um servidor.
 
@@ -38,7 +39,8 @@ Após essa aula, somos capazes de:
 - Criar formulários em <strong>HTML</strong> com as tags: `input`, `button`, `textarea`, `select`, `form`.
 
 ---
-## [Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS](6.2)
+## Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS
+-> [Conferir](6.2)
 
 Nessa aula aprendemos como adicionar bibliotecas **JavaScript** e **CSS** aos nossos sites.
 
@@ -49,7 +51,8 @@ Após essa aula, nos tornamos capazes de:
 - Utilizar bibliotecas **JavaScript** externas a partir de uma [CDN](https://www.gocache.com.br/cdn/)
 
 ---
-## [Dia 6.3 | CSS Flexbox - Parte 1](6.3)
+## Dia 6.3 | CSS Flexbox - Parte 1
+-> [Conferir](6.3)
 
 Nessa aula aprendemos sobre CSS Flexbox Layout (Flexbile Box). Flexbox é um módulo que visa a fornecer uma maneira mais eficiente de organizar, alinhar e distribuir espaço entre os itens em um *container*, mesmo quando seu tamanho é desconhecido.
 
@@ -62,7 +65,8 @@ Após essa aula, nos tornamos capazes de:
 - Utilizar CSS Flexbox para alterar o comportamento de *containers*
 
 ---
-## [Dia 6.4 | CSS Flexbox - Parte 2](6.4)
+## Dia 6.4 | CSS Flexbox - Parte 2
+-> [Conferir](6.4)
 
 Nessa aula aprendemos mais sobre **CSS Flexbox**.
 

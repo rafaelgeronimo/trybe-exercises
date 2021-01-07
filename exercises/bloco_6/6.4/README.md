@@ -45,6 +45,10 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 ![[Main do Exercício 5][exercicio-part2-5]][exercicio-part2-5]
 
 ---
+### Parte 3 (opcional)
+- Para finalizar, escolha alguns exercícios antigos como, por exemplo, o portfólio ou até mesmo os projetos **HTML, CSS** e **JavaScript** e estruture as páginas utilizando **Flexbox**.
+
+---
 <!-- MARKDOWN LINKS & IMAGES -->
 [exercicio-1]: images/exercicio-1.jpeg
 [exercicio-2]: images/exercicio-2.jpeg
