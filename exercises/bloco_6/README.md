@@ -30,7 +30,8 @@
 
 ---
 <!-- Dia 6.1 | HTML & CSS - Forms -->
-## [Dia 6.1 | HTML & CSS - Forms](6.1)
+## Dia 6.1 | HTML & CSS - Forms
+-> [Conferir](6.1)
 
 Nessa aula, aprendemos sobre formulários em <strong>HTML</strong>, que são uma forma de enviar informações para outra páigna do seu site ou para um servidor.
 
@@ -38,7 +39,8 @@ Após essa aula, somos capazes de:
 - Criar formulários em <strong>HTML</strong> com as tags: `input`, `button`, `textarea`, `select`, `form`.
 
 ---
-## [Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS](6.2)
+## Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS
+-> [Conferir](6.2)
 
 Nessa aula aprendemos como adicionar bibliotecas **JavaScript** e **CSS** aos nossos sites.
 
@@ -48,12 +50,9 @@ Após essa aula, nos tornamos capazes de:
 - Adicionar e utilizar bibliotecas **JavaScript** e **CSS** em nossos sites;
 - Utilizar bibliotecas **JavaScript** externas a partir de uma [CDN](https://www.gocache.com.br/cdn/)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/rafaelgeronimo
-
 ---
-## [Dia 6.3 | CSS Flexbox - Parte 1](6.3)
+## Dia 6.3 | CSS Flexbox - Parte 1
+-> [Conferir](6.3)
 
 Nessa aula aprendemos sobre CSS Flexbox Layout (Flexbile Box). Flexbox é um módulo que visa a fornecer uma maneira mais eficiente de organizar, alinhar e distribuir espaço entre os itens em um *container*, mesmo quando seu tamanho é desconhecido.
 
@@ -64,3 +63,24 @@ A ideia por trás do "layout flexível" é dar ao *container* a habilidade de al
 Após essa aula, nos tornamos capazes de:
 - Utilizar CSS Flexbox para criar layouts flexíveis;
 - Utilizar CSS Flexbox para alterar o comportamento de *containers*
+
+---
+## Dia 6.4 | CSS Flexbox - Parte 2
+-> [Conferir](6.4)
+
+Nessa aula aprendemos mais sobre **CSS Flexbox**.
+
+Na aula anterior aprendemos sobre as propriedades **Flebox** que atuam no *container*. Agora aprendemos sobre as propriedades que atuam nos items.
+
+Após essa aula, nos tornamos capazes de:
+- Utilizar CSS Flexbox para criar layouts flexíveis;
+- Utilizar CSS Flexbox para alterar o comportamento de items.
+
+
+
+
+---
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/rafaelgeronimo
