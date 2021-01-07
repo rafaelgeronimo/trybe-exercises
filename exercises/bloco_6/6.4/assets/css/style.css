@@ -16,6 +16,7 @@
     flex-basis: 500px;
     color: white;
     order: 1;
+    align-self: center;
 }
 
 .menu-container ul {
