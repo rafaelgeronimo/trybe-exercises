@@ -40,6 +40,10 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 
 ![[Main do Exercício 4][exercicio-part2-4]][exercicio-part2-4]
 
+5. Adicione uma propriedade com o valor 1 que faça com que suas `div` do container de filmes ocupe todo o espaço em branco. Deve ficar similar a imagem abaixo:
+
+![[Main do Exercício 5][exercicio-part2-5]][exercicio-part2-5]
+
 ---
 <!-- MARKDOWN LINKS & IMAGES -->
 [exercicio-1]: images/exercicio-1.jpeg
