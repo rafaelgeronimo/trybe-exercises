@@ -4,83 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de Currículo</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/datepicker/css/DatePickerX.min.css">
 </head>
 <body>
-  <form action="" method="POST">
-  <!-- Dados pessoais -->
-    <fieldset id="personal-data">
-      <legend>Dados Pessoais</legend>
+  <header class="section">
+    <h1 class="title has-text-centered">Formulário de cadastro de currículo</h1>
+  </header>
+  <div class="section">
 
-      <div id="personal">
-        <div class="atributo">
-          <label for="nome">Nome</label><br/>
-          <input type="text" name="nome" id="nome" maxlength="40" required>
+    <form action="" method="POST">
+    <!-- Dados pessoais -->
+      <fieldset>
+        <legend class="subtitle">Dados Pessoais</legend>
+        <div class="control">
+          <div class="field">
+            <label class="label" for="nome">Nome  
+              <input class="input" type="text" name="nome" id="nome" maxlength="40" required>
+            </label>
+          </div>
+          <div class="field">
+            <label class="label" for="email">E-mail
+              <input class="input" type="email" name="email" id="email" maxlength="50" required>
+            </label>
+          </div>
+          <div class="field">
+            <label class="label" for="cpf">CPF
+              <input class="input" type="text" name="CPF" id="CPF" maxlength="11" required>
+            </label>
+          </div>
         </div>
-        <div class="atributo">
-          <label for="email">E-mail</label><br/>
-          <input type="email" name="email" id="email" maxlength="50" required>
+        <hr>
+        <!-- Endereço -->
+        <fieldset>
+          <legend class="subtitle">Endereço</legend>
+            
+          <div class="field">
+            <p class="label">Tipo de residência:</p>
+            <label class="radio" for="casa">
+              <input type="radio" 
+                id="casa"
+                name="tipo"
+                value="casa">
+              Casa
+            </label>
+            
+            <label class="radio" for="apartamento">
+              <input type="radio" 
+                id="apartamento" 
+                name="tipo"
+                value="apartamento">
+              Apartamento
+            </label>
+          </div>
+            
+            
+          <div class="field">
+            <label class="label" for="street">Rua
+              <input class="input" type="text" maxlength="200" required id="street">
+            </label>
+          </div>  
+          <div class="field">
+            <label class="label" for="numero">Número
+              <input class="input" type="number" max="4"  required id="numero">
+            </label>
+          </div>
+          
+          <div class="field">
+            <label class="label" for="complemento">Complemento
+              <input class="input" type="text" maxlength="30" id="complemento">
+            </label>
+          </div>
+          <div class="field">
+            <label class="label" for="bairro">Bairro:
+              <input class="input" type="text" maxlength="20" required id="bairro">
+            </label>
+          </div>
+          
+          <div class="field">
+            <label class="label" for="city">Cidade
+              <input class="input" type="text" maxlength="28" required id="city">
+            </label>
+          </div>
+          <div class="field">
+            <label class="label" for="uf">UF
+              <div class="select">
+                <select class="label" name="uf" id="uf" required>
+                  <option value="" selected disabled hidden>Selecione</option>
+                </select>
+            </label>
+          </div>
+        </fieldset>
+      </fieldset>
+      <hr>
+      <!-- Experiencia Profissional -->
+      <fieldset>
+        <legend class="subtitle">Histório Profissional</legend>
+        <div class="field">
+          <label class="label" for="resume">Resumo
+            <textarea class="textarea" placeholder="" name="resume" id="resume" maxlength="10000" required></textarea>
+          </label>
         </div>
-        <div class="atributo">
-          <label for="cpf">CPF</label><br/>
-          <input type="text" name="CPF" id="CPF" maxlength="11" required>
+        <div class="field">
+          <label class="label" for="cargo">Cargo
+            <input class="input" type="text" id="cargo" maxlength="40" required>
+          </label>
         </div>
-      </div>
-      <!-- Endereço -->
-      <fieldset id="address">
-        <legend>Endereço</legend>
-          
-        <div id="tipo-residencia">
-          Tipo de residência:
-          <input type="radio" id="casa" name="tipo">
-          <label for="casa">Casa</label>
-          <input type="radio" id="apartamento" name="tipo">
-          <label for="apartamento">Apartamento</label>
+        <div class="field">
+          <label class="label" for="description">Descrição do cargo
+            <textarea class="textarea" name="description" id="description"></textarea>
+          </label>
         </div>
-          
-          
-        <div id="address-line1" class="address-line">
-          <label for="street">Rua</label>
-          <input type="text" maxlength="200" required id="street">
-          
-          <label for="numero">Número</label>
-          <input type="number" max="4"  required id="numero">
-        </div>  
-        
-        <div id="address-line2" class="address-line">
-          <label for="complemento">Complemento</label>
-          <input type="text" maxlength="30" id="complemento">
-          
-          <label for="bairro">Bairro:</label>
-          <input type="text" maxlength="20" required id="bairro">
-        </div>
-        
-        <div id="address-line3" class="address-line">
-          <label for="city">Cidade</label>
-          <input type="text" maxlength="28" required id="city">
-          
-          <label for="uf">UF</label>
-          <select name="uf" id="uf" required>
-            <option value="" selected disabled hidden>Selecione</option>
-          </select>
+        <div class="field">
+          <label class="label" for="inicio">Data de início
+            <input class="input" type="text" id="inicio" placeholder="dd/mm/aaaa" required>
+          </label>
         </div>
       </fieldset>
-    </fieldset>
-    <!-- Experiencia Profissional -->
-    <fieldset>
-      <legend>Histório Profissional</legend>
-      <label for="resume">Resumo</label>
-      <textarea name="resume" id="resume" maxlength="10000" required></textarea>
-      <label for="cargo">Cargo</label>
-      <input type="text" id="cargo" maxlength="40" required>
-      <label for="description">Descrição do cargo</label>
-      <textarea name="description" id="description"></textarea>
-      <label for="inicio">Data de início</label>
-      <input type="text" id="inicio" placeholder="dd/mm/aaaa" required>
-    </fieldset>
-    <button>Cadastrar</button>
-    <button>Limpar</button>
-  </form>
+      <div class="section">
+          <button class="button is-link" type="submit">Cadastrar</button>
+          <button class="button is-link is-light" type="reset">Limpar</button>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/DatePickerX-1.0.7/src/js/DatePickerX.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
