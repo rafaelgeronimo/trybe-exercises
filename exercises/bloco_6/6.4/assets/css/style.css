@@ -48,11 +48,16 @@ ul {
   .movie-container {
     display: flex;
     flex-direction: column;
+    flex-basis: 700px;
   }
   
   .movie-container h2 {
     margin: 40px 0;
     text-align: center;
+  }
+
+  .movie-container div {
+      flex-basis: 16%;
   }
   
   .card-container {

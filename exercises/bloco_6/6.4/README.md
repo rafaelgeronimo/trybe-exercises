@@ -32,6 +32,10 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 
 ![[Main do Exercício 2][exercicio-part2-2]][exercicio-part2-2]
 
+3. Adicione uma propriedade que faça com que seu container de filmes tenha uma base de `700px` e outra base de `16%` para as `div` do container de seu card. Deve ficar similar a imagem abaixo:
+
+![[Main do Exercício 3][exercicio-part2-3]][exercicio-part2-3]
+
 ---
 <!-- MARKDOWN LINKS & IMAGES -->
 [exercicio-1]: images/exercicio-1.jpeg
