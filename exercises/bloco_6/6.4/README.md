@@ -36,6 +36,10 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 
 ![[Main do Exercício 3][exercicio-part2-3]][exercicio-part2-3]
 
+4. Aplique uma propriedade com o valor 10 que expanda o container de filmes. Deve ficar similar a imagem abaixo:
+
+![[Main do Exercício 4][exercicio-part2-4]][exercicio-part2-4]
+
 ---
 <!-- MARKDOWN LINKS & IMAGES -->
 [exercicio-1]: images/exercicio-1.jpeg
