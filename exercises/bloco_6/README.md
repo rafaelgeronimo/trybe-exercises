@@ -48,10 +48,6 @@ Após essa aula, nos tornamos capazes de:
 - Adicionar e utilizar bibliotecas **JavaScript** e **CSS** em nossos sites;
 - Utilizar bibliotecas **JavaScript** externas a partir de uma [CDN](https://www.gocache.com.br/cdn/)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/rafaelgeronimo
-
 ---
 ## [Dia 6.3 | CSS Flexbox - Parte 1](6.3)
 
@@ -64,3 +60,23 @@ A ideia por trás do "layout flexível" é dar ao *container* a habilidade de al
 Após essa aula, nos tornamos capazes de:
 - Utilizar CSS Flexbox para criar layouts flexíveis;
 - Utilizar CSS Flexbox para alterar o comportamento de *containers*
+
+---
+## [Dia 6.4 | CSS Flexbox - Parte 2](6.4)
+
+Nessa aula aprendemos mais sobre **CSS Flexbox**.
+
+Na aula anterior aprendemos sobre as propriedades **Flebox** que atuam no *container*. Agora aprendemos sobre as propriedades que atuam nos items.
+
+Após essa aula, nos tornamos capazes de:
+- Utilizar CSS Flexbox para criar layouts flexíveis;
+- Utilizar CSS Flexbox para alterar o comportamento de items.
+
+
+
+
+---
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/rafaelgeronimo
