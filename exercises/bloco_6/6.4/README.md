@@ -23,8 +23,15 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 ![[Header exercício 4][exercicio-4]][exercicio-4]
 
 ---
+### Parte 2
+1. Aplique uma base de `350px` para o seu container `aside`. Deverá ficar similar a imagem abaixo:
+
+![[Main do Exercício 1][exercicio-part2-1]][exercicio-part2-1]
+
+---
 <!-- MARKDOWN LINKS & IMAGES -->
 [exercicio-1]: images/exercicio-1.jpeg
 [exercicio-2]: images/exercicio-2.jpeg
 [exercicio-3]: images/exercicio-3.jpeg
 [exercicio-4]: images/exercicio-4.jpeg
+[exercicio-part2-1]: images/exercicio-part2-1.png
