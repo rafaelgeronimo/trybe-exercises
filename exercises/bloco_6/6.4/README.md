@@ -28,6 +28,10 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 
 ![[Main do Exercício 1][exercicio-part2-1]][exercicio-part2-1]
 
+2. Aplique um alinhamento para centralizar e outro para expandir. Seu `aside` deverá apresentar o seguinte comportamento:
+
+![[Main do Exercício 2][exercicio-part2-2]][exercicio-part2-2]
+
 ---
 <!-- MARKDOWN LINKS & IMAGES -->
 [exercicio-1]: images/exercicio-1.jpeg
@@ -35,3 +39,7 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 [exercicio-3]: images/exercicio-3.jpeg
 [exercicio-4]: images/exercicio-4.jpeg
 [exercicio-part2-1]: images/exercicio-part2-1.png
+[exercicio-part2-2]: images/exercicio-part2-2.png
+[exercicio-part2-3]: images/exercicio-part2-3.png
+[exercicio-part2-4]: images/exercicio-part2-4.png
+[exercicio-part2-5]: images/exercicio-part2-5.png
