@@ -14,7 +14,17 @@ Dado um código inicial, devemos alterar/adicionar propriedades flexbox para alt
 
 ![[Header exercício 2][exercicio-2]][exercicio-2]
 
+3. Adicione uma propriedade `Flexbox` que modifique o tamanho padrão do container do menu quando a largura da página for maior que `768px`. Após aplicar a propriedade o `header` deverá estar similar a imagem abaixo:
+
+![[Header exercício 3][exercicio-3]][exercicio-3]
+
+4. Utilize a propriedade `align-self` no elemento correto para que o `header` da página tenha o seguinte comportamento:
+
+![[Header exercício 4][exercicio-4]][exercicio-4]
+
 ---
 <!-- MARKDOWN LINKS & IMAGES -->
 [exercicio-1]: images/exercicio-1.jpeg
 [exercicio-2]: images/exercicio-2.jpeg
+[exercicio-3]: images/exercicio-3.jpeg
+[exercicio-4]: images/exercicio-4.jpeg

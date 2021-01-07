@@ -31,3 +31,10 @@
 ul {
     list-style: none;
 }
+
+@media screen and (min-width: 768px) {
+    .menu-container {
+        flex-basis: 100vw;
+        justify-content: space-between;
+    }
+}
