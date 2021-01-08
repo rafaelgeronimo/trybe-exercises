@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de Currículo</title>
-  <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
   <link rel="stylesheet" href="assets/css/datepicker/css/DatePickerX.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="section">
@@ -59,41 +59,45 @@
             </label>
           </div>
             
-            
-          <div class="field">
-            <label class="label" for="street">Rua
-              <input class="input" type="text" maxlength="200" required id="street">
-            </label>
-          </div>  
-          <div class="field">
-            <label class="label" for="numero">Número
-              <input class="input" type="number" max="4"  required id="numero">
-            </label>
+          <div class="street-number">
+            <div class="field street">
+              <label class="label" for="street">Rua
+                <input class="input" type="text" maxlength="200" required id="street">
+              </label>
+            </div>  
+            <div class="field house-number">
+              <label class="label" for="numero">Número
+                <input class="input" type="number" max="4"  required id="numero">
+              </label>
+            </div>
           </div>
-          
-          <div class="field">
-            <label class="label" for="complemento">Complemento
-              <input class="input" type="text" maxlength="30" id="complemento">
-            </label>
+
+          <div class="address-complements">
+            <div class="field complements">
+              <label class="label" for="complemento">Complemento
+                <input class="input" type="text" maxlength="30" id="complemento">
+              </label>
+            </div>
+            <div class="field district">
+              <label class="label" for="bairro">Bairro:
+                <input class="input" type="text" maxlength="20" required id="bairro">
+              </label>
+            </div>
           </div>
-          <div class="field">
-            <label class="label" for="bairro">Bairro:
-              <input class="input" type="text" maxlength="20" required id="bairro">
-            </label>
-          </div>
-          
-          <div class="field">
-            <label class="label" for="city">Cidade
-              <input class="input" type="text" maxlength="28" required id="city">
-            </label>
-          </div>
-          <div class="field">
-            <label class="label" for="uf">UF
-              <div class="select">
-                <select class="label" name="uf" id="uf" required>
-                  <option value="" selected disabled hidden>Selecione</option>
-                </select>
-            </label>
+          <div class="city-state">
+            <div class="field city">
+              <label class="label" for="city">Cidade
+                <input class="input" type="text" maxlength="28" required id="city">
+              </label>
+            </div>
+            <div class="field state label">UF
+              <label class="label" for="uf">
+                <div class="select">
+                  <select class="label" name="uf" id="uf" required>
+                    <option value="" selected disabled hidden>Selecione</option>
+                  </select>
+              </label>
+            </div>
           </div>
         </fieldset>
       </fieldset>
