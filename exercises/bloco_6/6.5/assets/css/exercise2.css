@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  header p {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
