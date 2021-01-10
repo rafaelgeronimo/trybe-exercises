@@ -14,7 +14,7 @@
       <a href="#dia-6.2-|-bibliotecas-javascript-e-frameworks-css">Dia 6.2 | Bibliotecas JavaScript e Frameworks</a>
     </li>
     <li>
-      <a href="#">Dia 6.3 | CSS Flexbox - Parte 1</a>
+      <a href="#Dia-6.3-|-CSS-Flexbox---Parte-1">Dia 6.3 | CSS Flexbox - Parte 1</a>
     </li>
     <li>
       <a href="#">Dia 6.4 | CSS Flexbox - Parte 2</a>
@@ -76,7 +76,9 @@ Após essa aula, nos tornamos capazes de:
 - Utilizar CSS Flexbox para criar layouts flexíveis;
 - Utilizar CSS Flexbox para alterar o comportamento de items.
 
-
+---
+## Dia 6.5 | Mobile First
+-> [Conferir](6.5)
 
 
 ---
