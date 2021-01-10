@@ -63,3 +63,12 @@ html {
   .container {
     padding-bottom: 15px;
   }
+
+  @media screen and (min-width: 660px) {
+    body {
+      font-size: 1.3rem;
+    }
+    header p {
+      font-size: 3rem;
+    }
+  }
