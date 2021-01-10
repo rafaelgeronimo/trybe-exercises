@@ -8,7 +8,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      [Dia 6.1 | HTML & CSS - Forms](#teste)
+      <a href="#teste">Dia 6.1 | HTML & CSS - Forms</a>
     </li>
     <li>
       <a href="#dia-6.2-|-bibliotecas-javascript-e-frameworks-css">Dia 6.2 | Bibliotecas JavaScript e Frameworks</a>
@@ -29,8 +29,8 @@
 </details>
 
 ---
-<!-- dia-um -->
-<a name="teste">## Dia 6.1 | HTML & CSS - Forms</a>
+<!-- teste -->
+## Dia 6.1 | HTML & CSS - Forms
 -> [Conferir](6.1)
 
 Nessa aula, aprendemos sobre formulários em <strong>HTML</strong>, que são uma forma de enviar informações para outra páigna do seu site ou para um servidor.
