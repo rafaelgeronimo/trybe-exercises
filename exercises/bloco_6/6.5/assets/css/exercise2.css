@@ -72,3 +72,29 @@ html {
       font-size: 3rem;
     }
   }
+
+  @media screen and (min-width: 1080px) {
+    .about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .aside-one, .aside-two {
+      align-items: flex-start;
+      width: 30vw;
+      padding: 10px;
+    }
+
+    .aside-one h2, .aside-two h2 {
+      align-self: center;
+    }
+
+    .main-content, .about, footer {
+      margin: 0 auto;
+      max-width: 1300px;
+      padding: 40px;
+    }
+    .main-content {
+      margin-bottom: 30px;
+    }
+  }
