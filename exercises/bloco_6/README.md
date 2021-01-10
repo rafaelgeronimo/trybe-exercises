@@ -8,7 +8,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#dia-6.1-html-&-css-forms">Dia 6.1 | HTML & CSS - Forms</a>
+      <a href="#dia-61-html-&-css-forms">Dia 6.1 | HTML & CSS - Forms</a>
     </li>
     <li>
       <a href="#dia-6.2-|-bibliotecas-javascript-e-frameworks-css">Dia 6.2 | Bibliotecas JavaScript e Frameworks</a>
