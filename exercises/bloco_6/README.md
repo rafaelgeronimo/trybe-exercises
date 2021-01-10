@@ -11,16 +11,16 @@
       <a href="#dia-6.1">Dia 6.1 | HTML & CSS - Forms</a>
     </li>
     <li>
-      <a href="#dia-6.2-|-bibliotecas-javascript-e-frameworks-css">Dia 6.2 | Bibliotecas JavaScript e Frameworks</a>
+      <a href="#dia-6.2">Dia 6.2 | Bibliotecas JavaScript e Frameworks</a>
     </li>
     <li>
-      <a href="#Dia-6.3-|-CSS-Flexbox---Parte-1">Dia 6.3 | CSS Flexbox - Parte 1</a>
+      <a href="#dia-6.3">Dia 6.3 | CSS Flexbox - Parte 1</a>
     </li>
     <li>
-      <a href="#">Dia 6.4 | CSS Flexbox - Parte 2</a>
+      <a href="#dia-6.4">Dia 6.4 | CSS Flexbox - Parte 2</a>
     </li>
     <li>
-      <a href="#">Dia 6.5 | CSS Responsivo - Mobile First</a>
+      <a href="#dia-6.5">Dia 6.5 | CSS Responsivo - Mobile First</a>
     </li>
     <li>
       <a href="#">Dia 6.6 | Projeto - Página inicial do Facebook</a>
@@ -39,7 +39,7 @@ Após essa aula, somos capazes de:
 - Criar formulários em <strong>HTML</strong> com as tags: `input`, `button`, `textarea`, `select`, `form`.
 
 ---
-## Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS
+## <a id="dia-6.2">Dia 6.2 | Bibliotecas JavaScript e Frameworks CSS</a>
 -> [Conferir](6.2)
 
 Nessa aula aprendemos como adicionar bibliotecas **JavaScript** e **CSS** aos nossos sites.
@@ -51,7 +51,7 @@ Após essa aula, nos tornamos capazes de:
 - Utilizar bibliotecas **JavaScript** externas a partir de uma [CDN](https://www.gocache.com.br/cdn/)
 
 ---
-## Dia 6.3 | CSS Flexbox - Parte 1
+## <a id="dia-6.3">Dia 6.3 | CSS Flexbox - Parte 1</a>
 -> [Conferir](6.3)
 
 Nessa aula aprendemos sobre CSS Flexbox Layout (Flexbile Box). Flexbox é um módulo que visa a fornecer uma maneira mais eficiente de organizar, alinhar e distribuir espaço entre os itens em um *container*, mesmo quando seu tamanho é desconhecido.
@@ -65,7 +65,7 @@ Após essa aula, nos tornamos capazes de:
 - Utilizar CSS Flexbox para alterar o comportamento de *containers*
 
 ---
-## Dia 6.4 | CSS Flexbox - Parte 2
+## <a id="dia-6.4">Dia 6.4 | CSS Flexbox - Parte 2</a>
 -> [Conferir](6.4)
 
 Nessa aula aprendemos mais sobre **CSS Flexbox**.
@@ -77,7 +77,7 @@ Após essa aula, nos tornamos capazes de:
 - Utilizar CSS Flexbox para alterar o comportamento de items.
 
 ---
-## Dia 6.5 | Mobile First
+## <a id="dia-6.3">Dia 6.5 | Mobile First</a>
 -> [Conferir](6.5)
 
 
