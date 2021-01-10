@@ -30,7 +30,7 @@
 
 ---
 <!-- Dia 6.1 | HTML & CSS - Forms -->
-## [Dia 6.1 | HTML & CSS - Forms](#dia-6.1)
+## <a id="#dia-6.1">Dia 6.1 | HTML & CSS - Forms</a>
 -> [Conferir](6.1)
 
 Nessa aula, aprendemos sobre formulários em <strong>HTML</strong>, que são uma forma de enviar informações para outra páigna do seu site ou para um servidor.
