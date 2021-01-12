@@ -80,6 +80,11 @@ Após essa aula, nos tornamos capazes de:
 ## <a id="dia-6.3">Dia 6.5 | Mobile First</a>
 -> [Conferir](6.5)
 
+Media queries são bastante utilizadas no design responsivo para mostrar diferentes layouts para diferentes telas, dependendo do seu tamanho e/ou orientação. A principal razão para isso é que alguns layouts podem parecer "estranhos" (ou até completamente quebrados) em telas muito estreitas, ou muito largas.
+
+Após essa aula, somos capazes de:
+- Criar regras CSS específicas para serem aplicadas a dispositivos móveis;
+- Construir páginas que alteram o seu layout de acordo com a orientação da tela;
 
 ---
 
