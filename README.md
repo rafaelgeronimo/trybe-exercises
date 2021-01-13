@@ -52,7 +52,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-2: [_Bibliotecas JavaScript e Frameworks CSS_](exercises/bloco_6/6.2)
 - [x] 6-3: [_CSS Flexbox - Part 1_](exercises/bloco_6/6.3)
 - [x] 6-4: [_CSS Flexbox - Part 2_](exercises/bloco_6/6.4)
-- [ ] 6-5: _CSS Responsivo - Mobile First_
+- [x] 6-5: [_CSS Responsivo - Mobile First_](exercise/bloco_6/6.5)
 - [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários

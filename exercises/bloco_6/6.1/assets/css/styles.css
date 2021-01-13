@@ -42,6 +42,34 @@ input, textarea {
   display: flex;
 } */
 
-.fieldset {
-  
+.street-number, .address-complements, .city-state {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: nowrap;
+  width: 100%;
+}
+
+.street {
+  flex-grow: 1;
+  flex-basis: 90vw;
+  flex-shrink: 1;
+}
+.house-number {
+  flex-shrink: 3;
+  margin-left: 5px;
+}
+
+.complements {
+  flex-basis: 60vw;
+}
+
+.city {
+  flex-basis: 90vw;
+  margin-right: 5px;
+}
+
+.district {
+  flex-basis: 40vw;
+  margin-left: 5px;
+  flex-basis: 40vw;
 }

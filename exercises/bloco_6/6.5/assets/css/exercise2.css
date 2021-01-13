@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+
+  header p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Alice', serif;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .aside-one, .aside-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    border: 1px solid gray;
+    padding: 10px 0;
+    background-color: lightblue;
+  }
+
+  .aside-one li, .aside-two li {
+    list-style: none;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+
+  .main-content h1, .main-content h2 {
+    align-self: center;
+    margin: 10px 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px;
+    border: 1px solid gray;
+    padding: 15px;
+  }
+
+  .container {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: 660px) {
+    body {
+      font-size: 1.3rem;
+    }
+    header p {
+      font-size: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .aside-one, .aside-two {
+      align-items: flex-start;
+      width: 30vw;
+      padding: 10px;
+    }
+
+    .aside-one h2, .aside-two h2 {
+      align-self: center;
+    }
+
+    .main-content, .about, footer {
+      margin: 0 auto;
+      max-width: 1300px;
+      padding: 40px;
+    }
+    .main-content {
+      margin-bottom: 30px;
+    }
+  }
