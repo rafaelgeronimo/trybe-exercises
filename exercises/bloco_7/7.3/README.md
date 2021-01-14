@@ -51,10 +51,44 @@ function myRemove(arr, item) { // 1. A função myRemove(arr, item) recebe um ar
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3),[1, 2, 4]); // 2. Verifique se a chamada `myRemove([1, 2, 3, 4], 3)` retorna o array esperado
 assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3),[1, 2, 3, 4]); // 3. Verifique se a chamada `myRemove([1, 2, 3, 4], 3)` **não** retorna o array `[1, 2, 3, 4]`
 
-const arrayTest = [1, 2, 3, 4];
-myRemove(arrayTest, 2);
-assert.deepStrictEqual(arrayTest, [1, 2, 3, 4]); // 4. Verifique se o array passado por parâmetro **não** sofreu alterações
+const array = [1, 2, 3, 4];
+myRemove(array, 2);
+assert.deepStrictEqual(array, [1, 2, 3, 4]); // 4. Verifique se o array passado por parâmetro **não** sofreu alterações
 
 
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]); // 5. Verifique se a chamada `myRemove([1, 2, 3, 4], 5)` retorna o array esperado.
 ```
+
+---
+1. A função `myRemoveWithoutCopy(arr, item)` recebe um array `arr` e retorna o próprio array sem o elemento `item` caso ele exista no array.
+2. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` retorna o array esperado.
+3. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` **não** retorna o array `[1, 2, 3, 4]`
+4. Faça uma chamada para a função `myRemoveWithoutCopy` e verifique se o array passado por parâmetro sobre alterações
+5. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 5)` retorna o array esperado
+
+```javascript
+const assert = require('assert');
+
+function myRemoveWithoutCopy(arr, item) { // 1. A função `myRemoveWithoutCopy(arr, item)` recebe um array `arr` e retorna o próprio array sem o elemento `item` caso ele exista no array.
+  for (let i = 0, len = arr.length; i < len; i += 1) {
+    if (arr[i] === item) {
+      arr.splice(i, 1);
+      i -= 1;
+      len -= 1;
+    }
+  }
+
+  return arr;
+}
+
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]); // 2. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` retorna o array esperado.
+assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]); // 3. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` **não** retorna o array `[1, 2, 3, 4]`
+
+const array = [1, 2, 3, 4];
+myRemoveWithoutCopy(array, 1);
+assert.deepStrictEqual(array, [2, 3, 4]); // 4. Faça uma chamada para a função `myRemoveWithoutCopy` e verifique se o array passado por parâmetro sobre alterações
+
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]); // 5. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 5)` retorna o array esperado
+```
+
+---
