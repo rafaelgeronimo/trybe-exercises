@@ -122,3 +122,11 @@ for (let i in estados){
 document.getElementById('inicio').DatePickerX.init(
   {format: 'dd/mm/yyyy'}
 );
+
+
+  document.querySelector(".submitButton").addEventListener('click', function (event) {
+    event.preventDefault();
+    const inputName = document.querySelector(".inputName").value;
+    alert(inputName);
+  });
+

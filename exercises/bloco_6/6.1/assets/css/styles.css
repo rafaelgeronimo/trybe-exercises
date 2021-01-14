@@ -54,9 +54,20 @@ input, textarea {
   flex-basis: 90vw;
   flex-shrink: 1;
 }
+
 .house-number {
   flex-shrink: 3;
   margin-left: 5px;
+}
+
+.inputNumber::-webkit-outer-spin-button,
+.inputNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputNumber[type=number] {
+  -moz-appearance: textfield;
 }
 
 .complements {
