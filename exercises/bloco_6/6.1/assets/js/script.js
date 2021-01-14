@@ -127,6 +127,7 @@ document.getElementById('inicio').DatePickerX.init(
   document.querySelector(".submitButton").addEventListener('click', function (event) {
     event.preventDefault();
     const inputName = document.querySelector(".inputName").value;
-    alert(inputName);
+    const inputEmail = document.querySelector(".inputEmail").value;
+    const inputCPF = document.querySelector(".inputCPF").value;
   });
 
