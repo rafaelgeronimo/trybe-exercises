@@ -123,3 +123,29 @@ assert.deepStrictEqual(myFizzBuzz(5), 'buzz'); // 3. Faça uma chamada com um n�
 assert.deepStrictEqual(myFizzBuzz(7), 7); // 4. Faça uma chamada com um número que não é divisível por `3` ou `5` e verifique se o retorno é o esperado
 assert.deepStrictEqual(myFizzBuzz('String'), false); // 5. Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
 ```
+
+---
+1. Compare dois objectos `JSON` para verificar se são idênticos ou não
+
+```javascript
+const assert = require('assert');
+
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+assert.deepStrictEqual(obj1, obj2); //1. Compare dois objectos `JSON` para verificar se são idênticos ou não
+assert.notDeepStrictEqual(obj1, obj3); // 1. Compare dois objectos `JSON` para verificar se são idênticos ou não
+assert.notDeepStrictEqual(obj2, obj3); // 1. Compare dois objectos `JSON` para verificar se são idênticos ou não
+```
