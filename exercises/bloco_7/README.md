@@ -46,6 +46,20 @@ Após essa aula, nos tornarmos capazes de:
 ---
 ## <a id="dia-7.2" href="7.2">Dia 7.2 | JavaScript ES6 - Objects</a>
 
+Nessa aula aprendemos alguns métodos para interagir com **objetos**. Esses métodos nos ajudão bastante quando for necessária alguma leitura de seus valores ou chaves, ou quando for preciso copiá-los. Esse é um passo muito importante para o uso bom e mais avançado do **JavaScript**. Objetos são muito presentes em todas as lógicas do **ES6**.
+Os métodos estudados:
+- `Object.keys`;
+- `Object.entries`;
+- `Object.assign`;
+- `Object.values`.
+
+Após essa aula, nos tornamos capazes de:
+- Acessar todas as chaves de um objeto com o método `Object.keys`;
+- Acessar os pares chave-valor de um objeto com o método `Object.entries`;
+- Acessar todos os valores de um objeto com o método `Object.values`;
+- Copiar um objeto com o método `Object.assign`;
+- Adicionar propriedades a um objeto.
+
 ---
 ## <a id="dia-7.3" href="7.3">Dia 7.3 | Testes unitários em JavaScript</a>
 
