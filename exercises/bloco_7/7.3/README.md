@@ -1,4 +1,4 @@
-## Dia 7.2 | Testes unitários em JavaScript
+## Dia 7.3 | Testes unitários em JavaScript
 
 ### Exercícios de fixação
 
