@@ -1,4 +1,4 @@
-## Dia 7.2 | Testes unitários em JavaScript
+## Dia 7.3 | Testes unitários em JavaScript
 
 ### Exercícios de fixação
 
@@ -51,55 +51,101 @@ function myRemove(arr, item) { // 1. A função myRemove(arr, item) recebe um ar
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3),[1, 2, 4]); // 2. Verifique se a chamada `myRemove([1, 2, 3, 4], 3)` retorna o array esperado
 assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3),[1, 2, 3, 4]); // 3. Verifique se a chamada `myRemove([1, 2, 3, 4], 3)` **não** retorna o array `[1, 2, 3, 4]`
 
-const arrayTest = [1, 2, 3, 4];
-myRemove(arrayTest, 2);
-assert.deepStrictEqual(arrayTest, [1, 2, 3, 4]); // 4. Verifique se o array passado por parâmetro **não** sofreu alterações
+const array = [1, 2, 3, 4];
+myRemove(array, 2);
+assert.deepStrictEqual(array, [1, 2, 3, 4]); // 4. Verifique se o array passado por parâmetro **não** sofreu alterações
 
 
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]); // 5. Verifique se a chamada `myRemove([1, 2, 3, 4], 5)` retorna o array esperado.
 ```
 
-## Praticando TDD
-Nessa parte os exercícios estão divididos em dois grupos: primeiro, você vai escrever código baseado nos testes. Depois você lerá um código e o que ele tem que trazer de resposta. A partir disso, vocês escreverá testes e os usará de base para alterar o código. Como assim? Bem, vamos passo a passo!
-
-### Escrevendo código para testes
-Dados os casos de testes abaixo, escreva as funções de forma a passar nos testes. **É importante nunca alterar os testes ou as variáveis já escritas no código:**
-
-Copie os testes já implementados e desenvolva as funções.
-
-1. Escreva a função `addOne` para passar nos testes já implementados.
+---
+1. A função `myRemoveWithoutCopy(arr, item)` recebe um array `arr` e retorna o próprio array sem o elemento `item` caso ele exista no array.
+2. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` retorna o array esperado.
+3. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` **não** retorna o array `[1, 2, 3, 4]`
+4. Faça uma chamada para a função `myRemoveWithoutCopy` e verifique se o array passado por parâmetro sobre alterações
+5. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 5)` retorna o array esperado
 
 ```javascript
 const assert = require('assert');
-// escreva a função addONe aqui
 
-const myArray = [31, 57, 12, 5];
-const unchanged = [31, 57, 12, 5];
-const expected = [32, 58, 13, 6];
-const output = addOne(myArray);
-
-assert.strictEqual(typeof addOne, 'function');
-assert.deepStrictEqual(output, expected);
-assert.deepStrictEqual(myArray, unchanged);
-```
-### | Resposta:
-```javascript
-const assert = require('assert');
-
-const addOne = (array) => {
-    const newArray = []
-    for(let index = 0; index < array.length; index += 1){
-        newArray.push(array[index] + 1);
+function myRemoveWithoutCopy(arr, item) { // 1. A função `myRemoveWithoutCopy(arr, item)` recebe um array `arr` e retorna o próprio array sem o elemento `item` caso ele exista no array.
+  for (let i = 0, len = arr.length; i < len; i += 1) {
+    if (arr[i] === item) {
+      arr.splice(i, 1);
+      i -= 1;
+      len -= 1;
     }
-    return newArray;
+  }
+
+  return arr;
 }
 
-const myArray = [31, 57, 12, 5];
-const unchanged = [31, 57, 12, 5];
-const expected = [32, 58, 13, 6];
-const output = addOne(myArray);
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]); // 2. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` retorna o array esperado.
+assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]); // 3. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 3)` **não** retorna o array `[1, 2, 3, 4]`
 
-assert.strictEqual(typeof addOne, 'function');
-assert.deepStrictEqual(output, expected);
-assert.deepStrictEqual(myArray, unchanged);
+const array = [1, 2, 3, 4];
+myRemoveWithoutCopy(array, 1);
+assert.deepStrictEqual(array, [2, 3, 4]); // 4. Faça uma chamada para a função `myRemoveWithoutCopy` e verifique se o array passado por parâmetro sobre alterações
+
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]); // 5. Verifique se a chamada `myRemoveWithoutCopy([1, 2, 3, 4], 5)` retorna o array esperado
+```
+
+---
+0. A função `myFizzBuzz(num)` recebe um número `num` e retorna `"fizzbuzz"` se o número for divisível por `3` e `5` , retorna `"fizz"` se for divisível apenas por `3` , retorna `"buzz"` se divisível apenas por `5` , retorna o próprio número caso não seja divisível por `3` ou `5` e retorna `false` caso `num` não seja um número
+
+1. Faça uma chamada com um número divisível por `3` e `5` e verifique se o retorno é o esperado
+
+2. Faça uma chamada com um número divisível por `3` e verifique se o retorno é o esperado
+
+3. Faça uma chamada com um número divisível por `5` e verifique se o retorno é o esperado
+
+4. Faça uma chamada com um número que não é divisível por `3` ou `5` e verifique se o retorno é o esperado
+
+5. Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+
+```javascript
+const assert = require('assert');
+
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
+
+// implemente seus testes aqui
+
+assert.deepStrictEqual(myFizzBuzz(15), 'fizzbuzz'); // 1. Faça uma chamada com um número divisível por `3` e `5` e verifique se o retorno é o esperado
+assert.deepStrictEqual(myFizzBuzz(3), 'fizz'); // 2. Faça uma chamada com um número divisível por `3` e verifique se o retorno é o esperado
+assert.deepStrictEqual(myFizzBuzz(5), 'buzz'); // 3. Faça uma chamada com um número divisível por `5` e verifique se o retorno é o esperado
+assert.deepStrictEqual(myFizzBuzz(7), 7); // 4. Faça uma chamada com um número que não é divisível por `3` ou `5` e verifique se o retorno é o esperado
+assert.deepStrictEqual(myFizzBuzz('String'), false); // 5. Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+```
+
+---
+1. Compare dois objectos `JSON` para verificar se são idênticos ou não
+
+```javascript
+const assert = require('assert');
+
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+assert.deepStrictEqual(obj1, obj2); //1. Compare dois objectos `JSON` para verificar se são idênticos ou não
+assert.notDeepStrictEqual(obj1, obj3); // 1. Compare dois objectos `JSON` para verificar se são idênticos ou não
+assert.notDeepStrictEqual(obj2, obj3); // 1. Compare dois objectos `JSON` para verificar se são idênticos ou não
 ```
