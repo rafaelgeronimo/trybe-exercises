@@ -15,3 +15,6 @@
 4. [Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.](exercise4.js)
 
 5. [Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.](exercise5.js)
+
+6. [Crie um array com o nome de todos os livros com mais de 60 anos de publicação.](exercise6.js)
+
