@@ -1,4 +1,3 @@
-
 const assert = require('assert');
 
 const books = [
@@ -35,7 +34,6 @@ const books = [
   {
     id: 4,
     name: 'Duna',
-    genre: 'Ficção Científica',
     author: {
       name: 'Frank Herbert',
       birthYear: 1920,
@@ -64,10 +62,19 @@ const books = [
   },
 ];
 
+const expectedResult = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin'
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991
+};
 
-function allNames() {
-  // escreva seu código aqui
-  return books.reduce((previousValue, book, index, array) => index === array.length-1 ? `${previousValue} ${book.author.name}.` : `${previousValue} ${book.author.name},`, 'Nomes:');
+function longestNamedBook() {
+  return books.reduce((accumulate, currentValue) => currentValue.name.length > accumulate.name.length ? currentValue : accumulate)
 }
 
-assert.deepStrictEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");
+assert.deepStrictEqual(longestNamedBook(), expectedResult);
