@@ -11,3 +11,5 @@
 3. [Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.](exercise3.js)
 
 4. [Encontre o livro com o maior nome.](exercise4.js)
+
+5. [Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.](exercise5.js)
