@@ -58,21 +58,21 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](exercises/bloco_7/7.1)
-- [x] 7-2: [_JavaScript ES6 - Objects_](exercises/7.2)
-- [x] 7-3: [_Testes unitários em JavaScript_](exercises/7.3)
+- [x] 7-2: [_JavaScript ES6 - Objects_](exercises/bloco_7/7.2)
+- [x] 7-3: [_Testes unitários em JavaScript_](exercises/bloco_7/7.3)
 - [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
 
-- [x] 8-1: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](exercises/8.1)
-- [x] 8-2: [_JavaScript ES6 - Higher Order Functions - map e filter_](exercises/8.2)
-- [x] 8-3: [_JavaScript ES6 - Higher Order Functions - reduce_](exercises/8.3)
-- [x] 8-4: [_JavaScript ES6 - spread operator, rest parameter, destructuring e mais_](exercises/8.4)
+- [x] 8-1: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](exercises/bloco_8/8.1)
+- [x] 8-2: [_JavaScript ES6 - Higher Order Functions - map e filter_](exercises/bloco_8/8.2)
+- [x] 8-3: [_JavaScript ES6 - Higher Order Functions - reduce_](exercises/bloco_8/8.3)
+- [x] 8-4: [_JavaScript ES6 - spread operator, rest parameter, destructuring e mais_](exercises/bloco_8/8.4)
 - [ ] 8-5: _[Projeto - Zoo functions]()_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [x] 9-1: [_JavaScript Assí­ncrono e Callbacks_](exercises/9.1)
+- [x] 9-1: [_JavaScript Assí­ncrono e Callbacks_](exercises/bloco_9/9.1)
 - [ ] 9-2: _JavaScript Promises_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
