@@ -26,7 +26,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: [_HTML Semântico_](exercises/bloco_3/3.4)
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
-##### Bloco 4: Introdução - JavaScript
+##### <a href="bloco_4">Bloco 4: Introdução - JavaScript</a>
 
 - [x] 4-1: [_JavaScript - Primeiros passos_](exercises/bloco_4/4.1)
 - [x] 4-2: [_JavaScript - Array e loop For_](exercises/bloco_4/4.2)
@@ -34,7 +34,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: [_JavaScript - Objetos e funções_](exercises/bloco_4/4.4)
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### <a href="bloco_5">Bloco 5: Introdução - JavaScript - Projetos</a>
 
 - [x] 5-1: [_JavaScript - DOM e seletores_](exercises/bloco_5/5.1)
 - [x] 5-2: [_JavaScript - Trabalhando com elementos_](exercises/bloco_5/5.2)
@@ -46,7 +46,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avançado
+##### <a href="bloco_6">Bloco 6: HTML & CSS avançado</a>
 
 - [x] 6-1: [_HTML & CSS - Forms_](exercises/bloco_6/6.1)
 - [x] 6-2: [_Bibliotecas JavaScript e Frameworks CSS_](exercises/bloco_6/6.2)
@@ -55,7 +55,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-5: [_CSS Responsivo - Mobile First_](exercise/bloco_6/6.5)
 - [x] 6-6: _[Projeto - Página inicial do Facebook]()_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### <a href="bloco_7">Bloco 7: JavaScript ES6 & Testes Unitários</a>
 
 - [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](exercises/bloco_7/7.1)
 - [x] 7-2: [_JavaScript ES6 - Objects_](exercises/bloco_7/7.2)
