@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercises",
+  "version": "1.0.0",
+  "description": "Este repositório contém os exercícios desenvolvidos ao longo do meu (per)curso na [Trybe](https://betrybe.com) :rocket:",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelgeronimo/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelgeronimo/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/rafaelgeronimo/trybe-exercises#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
