@@ -29,7 +29,14 @@ Nessa aula aprendemos o que são e para que servem os testes unitários. Vimos s
 Após essa aula, nos tornamos capazes de:
 - Utilizar o **Jest** para escrever testes unitários
 
+<!-- Dia 10.2 | Jest - Testes Assíncronos -->
+## <a id="dia-10.2" href="10.2">Dia 10.2 | Jest - Testes Assincronos</a>
 
+Nessa aula aprendemos a testar códigos assíncronos, como reaproveitar configurações entre testes e como separá-las por escopo.
+Após essa aula nos tornamos capazes de:
+- Escrever testes para códigos assíncronos com diferentes padrões;
+- Reaproveitar configurações para diversos testes através do uso de `beforeEach` e `afterEach`;
+- Dividir os testes e suas respectivas configurações em grupos separados por escopos através do uso de `describe`
 
 
 ---
