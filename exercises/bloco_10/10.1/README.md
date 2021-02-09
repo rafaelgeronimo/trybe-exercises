@@ -5,12 +5,12 @@
 ### Exercícios
 
 #### Parte I
-1. Refaça os [exercícios 1 a 5 do conteúdo de Testes unitários em JavaScript](../../bloco_7/7.3), dessa vez utilizando **Jest**.
+1. Refaça os [exercícios 1 a 5 do conteúdo de Testes unitários em JavaScript](../../bloco_07/7.3), dessa vez utilizando **Jest**.
 
 | Resposta: consulte os arquivos [exercise1-1.test.js](exercise1-1.test.js)
 
 #### Parte II
-No Bloco 4 voc6e desenvolveu um projeto para testar os seus conhecimentos em JavaScript e lógica de programação: o [Playground functions](../../bloco_4/4.5). Nos exercícios a seguir, você irá trabalhar com os testes para algumas funções que você criou! Aproveite para refatorá-las e usar os recursos que já aprendemos até aqui, como as Higher Order Functions e as `features` do JavaScript ES6.
+No Bloco 4 voc6e desenvolveu um projeto para testar os seus conhecimentos em JavaScript e lógica de programação: o [Playground functions](../../bloco_04/4.5). Nos exercícios a seguir, você irá trabalhar com os testes para algumas funções que você criou! Aproveite para refatorá-las e usar os recursos que já aprendemos até aqui, como as Higher Order Functions e as `features` do JavaScript ES6.
 1. Para as funções `encode` e `decode` crie os seguintes testes:
 - Teste se `encode` e `decode` são funções;
 - Para a função `encode` teste se as vogais **a, e, i, o, u** são convertidas em `1, 2, 3, 4, 5` respectivamente;

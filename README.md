@@ -9,79 +9,79 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
 ##### Bloco 1: Introdução - Unix & Shell
-- [x] 1-3: _Unix & Bash - Part 1_
-- [x] 1-4: _Unix & Bash - Part 2_
-- [ ] 1-5: _Shell Script_
+- [x] 1-3: [_Unix & Bash - Part 1_](exercises/bloco_01)
+- [x] 1-4: [_Unix & Bash - Part 2_](exercises/bloco_01)
+<!-- - [ ] 1-5: _Shell Script_ -->
 
-##### [Bloco 2: Git & GitHub](bloco_2)
-- [x] 2-1: [_O que é e para que serve?_](exercises/bloco_2/2.1)
-- [x] 2-2: [_Entendendo os comandos_](exercises/bloco_2/2.2)
+##### [Bloco 2: Git & GitHub](bloco_02)
+- [x] 2-1: [_O que é e para que serve?_](exercises/bloco_02/2.1)
+- [x] 2-2: [_Entendendo os comandos_](exercises/bloco_02/2.2)
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### [Bloco 3: Introdução - HTML & CSS](bloco_3)
+##### [Bloco 3: Introdução - HTML & CSS](bloco_03)
 
-- [x] 3-1: [_HTML & CSS - Estruturas de página_](exercises/bloco_3/3.1)
-- [x] 3-2: [_HTML & CSS - Primeiros passos em CSS_](exercises/bloco_3/3.2)
-- [x] 3-3: [_HTML & CSS - Seletores e posicionamento_](exercises/bloco_3/3.3)
-- [x] 3-4: [_HTML Semântico_](exercises/bloco_3/3.4)
+- [x] 3-1: [_HTML & CSS - Estruturas de página_](exercises/bloco_03/3.1)
+- [x] 3-2: [_HTML & CSS - Primeiros passos em CSS_](exercises/bloco_03/3.2)
+- [x] 3-3: [_HTML & CSS - Seletores e posicionamento_](exercises/bloco_03/3.3)
+- [x] 3-4: [_HTML Semântico_](exercises/bloco_03/3.4)
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
-##### <a href="bloco_4">Bloco 4: Introdução - JavaScript</a>
+##### <a href="bloco_04">Bloco 4: Introdução - JavaScript</a>
 
-- [x] 4-1: [_JavaScript - Primeiros passos_](exercises/bloco_4/4.1)
-- [x] 4-2: [_JavaScript - Array e loop For_](exercises/bloco_4/4.2)
-- [x] 4-3: [_JavaScript - Lógica de Programação e Algoritmos_](exercises/bloco_4/4.3)
-- [x] 4-4: [_JavaScript - Objetos e funções_](exercises/bloco_4/4.4)
+- [x] 4-1: [_JavaScript - Primeiros passos_](exercises/bloco_04/4.1)
+- [x] 4-2: [_JavaScript - Array e loop For_](exercises/bloco_04/4.2)
+- [x] 4-3: [_JavaScript - Lógica de Programação e Algoritmos_](exercises/bloco_04/4.3)
+- [x] 4-4: [_JavaScript - Objetos e funções_](exercises/bloco_04/4.4)
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
-##### <a href="bloco_5">Bloco 5: Introdução - JavaScript - Projetos</a>
+##### <a href="bloco_05">Bloco 5: Introdução - JavaScript - Projetos</a>
 
-- [x] 5-1: [_JavaScript - DOM e seletores_](exercises/bloco_5/5.1)
-- [x] 5-2: [_JavaScript - Trabalhando com elementos_](exercises/bloco_5/5.2)
-- [x] 5-3: [_JavaScript - Eventos_](exercises/bloco_5/5.3)
+- [x] 5-1: [_JavaScript - DOM e seletores_](exercises/bloco_05/5.1)
+- [x] 5-2: [_JavaScript - Trabalhando com elementos_](exercises/bloco_05/5.2)
+- [x] 5-3: [_JavaScript - Eventos_](exercises/bloco_05/5.3)
 - [x] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Meme Generator]()_
 - [x] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-09-project-pixels-art/pull/4)_
-- [x] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-09-project-todo-list)_
+- [x] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-09-project-todo-list/pull/50)_
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### <a href="bloco_6">Bloco 6: HTML & CSS avançado</a>
+##### <a href="bloco_06">Bloco 6: HTML & CSS avançado</a>
 
-- [x] 6-1: [_HTML & CSS - Forms_](exercises/bloco_6/6.1)
-- [x] 6-2: [_Bibliotecas JavaScript e Frameworks CSS_](exercises/bloco_6/6.2)
-- [x] 6-3: [_CSS Flexbox - Part 1_](exercises/bloco_6/6.3)
-- [x] 6-4: [_CSS Flexbox - Part 2_](exercises/bloco_6/6.4)
-- [x] 6-5: [_CSS Responsivo - Mobile First_](exercise/bloco_6/6.5)
-- [x] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [x] 6-1: [_HTML & CSS - Forms_](exercises/bloco_06/6.1)
+- [x] 6-2: [_Bibliotecas JavaScript e Frameworks CSS_](exercises/bloco_06/6.2)
+- [x] 6-3: [_CSS Flexbox - Part 1_](exercises/bloco_06/6.3)
+- [x] 6-4: [_CSS Flexbox - Part 2_](exercises/bloco_06/6.4)
+- [x] 6-5: [_CSS Responsivo - Mobile First_](exercise/bloco_06/6.5)
+- [x] 6-6: _[Projeto - Página inicial do Facebook](https://github.com/tryber/sd-09-project-facebook-signup/pull/31)_
 
-##### <a href="bloco_7">Bloco 7: JavaScript ES6 & Testes Unitários</a>
+##### <a href="bloco_07">Bloco 7: JavaScript ES6 & Testes Unitários</a>
 
-- [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](exercises/bloco_7/7.1)
-- [x] 7-2: [_JavaScript ES6 - Objects_](exercises/bloco_7/7.2)
-- [x] 7-3: [_Testes unitários em JavaScript_](exercises/bloco_7/7.3)
-- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](exercises/bloco_07/7.1)
+- [x] 7-2: [_JavaScript ES6 - Objects_](exercises/bloco_07/7.2)
+- [x] 7-3: [_Testes unitários em JavaScript_](exercises/bloco_07/7.3)
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/tryber/sd-09-project-js-unit-tests/pull/76)_
 
-##### <a href="bloco_8">Bloco 8: JavaScript ES6</a>
+##### <a href="bloco_08">Bloco 8: JavaScript ES6</a>
 
-- [x] 8-1: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](exercises/bloco_8/8.1)
-- [x] 8-2: [_JavaScript ES6 - Higher Order Functions - map e filter_](exercises/bloco_8/8.2)
-- [x] 8-3: [_JavaScript ES6 - Higher Order Functions - reduce_](exercises/bloco_8/8.3)
-- [x] 8-4: [_JavaScript ES6 - spread operator, rest parameter, destructuring e mais_](exercises/bloco_8/8.4)
-- [ ] 8-5: _[Projeto - Zoo functions]()_
+- [x] 8-1: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](exercises/bloco_08/8.1)
+- [x] 8-2: [_JavaScript ES6 - Higher Order Functions - map e filter_](exercises/bloco_08/8.2)
+- [x] 8-3: [_JavaScript ES6 - Higher Order Functions - reduce_](exercises/bloco_08/8.3)
+- [x] 8-4: [_JavaScript ES6 - spread operator, rest parameter, destructuring e mais_](exercises/bloco_08/8.4)
+- [x] 8-5: _[Projeto - Zoo functions](https://github.com/tryber/sd-09-project-zoo-functions/pull/38)_
 
-##### <a href="exercises/bloco_9">Bloco 9: Assincronicidade & Callbacks</a>
+##### <a href="exercises/bloco_09">Bloco 9: Assincronicidade & Callbacks</a>
 
-- [x] 9-1: [_JavaScript Assí­ncrono e Callbacks_](exercises/bloco_9/9.1)
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-1: [_JavaScript Assí­ncrono e Callbacks_](exercises/bloco_09/9.1)
+- [x] 9-2: [_JavaScript Promises_](exercises/bloco_09/9.2)
+- [x] 9-3: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-09-project-shopping-cart/pull/6)_
 
 ##### Bloco 10: Jest
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assí­ncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assí­ncrono e Mocking]()_
+- [x] 10-1: _[Primeiros passos no Jest](exercises/bloco_10/10.1)_
+- [x] 10-2: _[Jest - Testes Assí­ncronos](exercises/bloco_10/10.2)_
+- [x] 10-3: _[Jest - Simulando comportamentos](exercises/bloco_10/10.3)_
+- [ ] 10-4: _[Projeto - Jest Assí­ncrono e Mocking](https://github.com/tryber/sd-09-project-jest/pull/56)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
