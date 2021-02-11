@@ -76,19 +76,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 9-2: [_JavaScript Promises_](exercises/bloco_09/9.2)
 - [x] 9-3: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-09-project-shopping-cart/pull/6)_
 
-##### Bloco 10: Jest
+##### <a href="exercises/bloco_10">Bloco 10: Jest</a>
 
 - [x] 10-1: _[Primeiros passos no Jest](exercises/bloco_10/10.1)_
 - [x] 10-2: _[Jest - Testes Assí­ncronos](exercises/bloco_10/10.2)_
 - [x] 10-3: _[Jest - Simulando comportamentos](exercises/bloco_10/10.3)_
-- [ ] 10-4: _[Projeto - Jest Assí­ncrono e Mocking](https://github.com/tryber/sd-09-project-jest/pull/56)_
+- [x] 10-4: _[Projeto - Jest Assí­ncrono e Mocking](https://github.com/tryber/sd-09-project-jest/pull/56)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 11: Introdução - React
+##### <a href="exercises/bloco_11>Bloco 11: Introdução - React</a>
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
+- [x] 11-1: [_'Hello, world!' no React!_](exercises/bloco_11/11.1)
+- [x] 11-2: [_Componentes React_](exercises/bloco_11/11.2)
 - [ ] 11-3: _[Projeto - Movie Cards Library]()_
 
 ##### Bloco 12: React
