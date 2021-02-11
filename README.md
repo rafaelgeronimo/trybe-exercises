@@ -85,7 +85,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### <a href="exercises/bloco_11>Bloco 11: Introdução - React</a>
+##### <a href="exercises/bloco_11">Bloco 11: Introdução - React</a>
 
 - [x] 11-1: [_'Hello, world!' no React!_](exercises/bloco_11/11.1)
 - [x] 11-2: [_Componentes React_](exercises/bloco_11/11.2)
