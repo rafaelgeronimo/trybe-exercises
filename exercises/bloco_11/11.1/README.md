@@ -1,6 +1,6 @@
 # Bloco 11 | Introdução à React
 
-## Dia 11.2 | 'Hello, world!' no React!
+## Dia 11.1 | 'Hello, world!' no React!
 
 ### Exercícios
 
