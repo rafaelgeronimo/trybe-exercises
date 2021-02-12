@@ -1,0 +1,43 @@
+#root {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* paleta de cores: https://pokepalettes.com/ */
+:root {
+  --card-bg-color-Electric: #f6bd20;
+  --card-bg-color-Fire: #de5239;
+  --card-bg-color-Bug: #6ad531;
+  --card-bg-color-Poison: #a44a8b;
+  --card-bg-color-Psychic: #cdb410;
+  --card-bg-color-Normal: #e6c5ac;
+  --card-bg-color-Dragon: #ded5de;
+}
+
+.pokedex {
+  text-align: center;
+}
+
+.pokemon-list {
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 0 10px 15px 10px;
+  padding-left: 10px;
+  text-align: left;
+  width: 290px;
+}
+
+.pokemon-image img{
+  width: 150px;
+}
