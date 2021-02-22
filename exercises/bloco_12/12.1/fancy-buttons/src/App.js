@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Button from './components/Button';
 
 function handleClick1() {
   console.log('Botão 1 clicado')
@@ -18,6 +19,7 @@ class App extends React.Component {
         <button onClick={handleClick1}>Botão 1</button>
         <button onClick={handleClick2}>Botão 2</button>
         <button onClick={handleClick3}>Botão 3</button>
+        <Button/>
       </div>
     );
   }
