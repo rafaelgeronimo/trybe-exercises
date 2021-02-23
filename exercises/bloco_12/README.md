@@ -34,6 +34,11 @@ Após essa aula, nos tornamos capazes de:
 
 <!-- Dia 12.2 | Formulários no React -->
 ## <a id="dia-12.2" href="12.2">Dia 12.2 | Formulários no React</a>
+Na aula de hoje, estudamos sobre formulários. Como vimos anteriormente, saber capturar eventos e criar formulários que os usem é fundamental para que estejamos preparados para as diferentes demandas do mercado.
+
+Após essa aula, nos tornamos capazes de:
+- Criar formulários utilizando sintáxe **JSX** com as tags `input`, `textarea`, `select` e  `form`
+- Transmitir informações de componentes filhos para componentes pais via *callbacks*
 
 <!-- Dia 12.3 | Projeto - Movie Cards Library Stateful -->
 ## <a id="dia-12.3" href="12.3">Dia 12.3 | Projeto - Movie Cards Library Stateful</a>
