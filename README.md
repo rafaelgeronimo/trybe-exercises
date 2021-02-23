@@ -89,12 +89,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 11-1: [_'Hello, world!' no React!_](exercises/bloco_11/11.1)
 - [x] 11-2: [_Componentes React_](exercises/bloco_11/11.2)
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-3: _[Projeto - Movie Cards Library]()_
 
-##### Bloco 12: React
+##### <a href="exercises/bloco_12">Bloco 12: React</a>
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
+- [x] 12-1: [_Components com estado_](exercises/bloco_12/12.1)
+- [ ] 12-2: [_Eventos e formulários no React_](exercises/bloco_12/12.2)
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 13: React
