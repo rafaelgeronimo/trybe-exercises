@@ -42,6 +42,7 @@ Após essa aula, nos tornamos capazes de:
 
 <!-- Dia 12.3 | Projeto - Movie Cards Library Stateful -->
 ## <a id="dia-12.3" href="12.3">Dia 12.3 | Projeto - Movie Cards Library Stateful</a>
+Baseado no projeto no bloco anterior, dessa vez devemos tornar a nossa biblioteca de filmes dinâmica através da interação de quem usar o site!
 
 ---
 

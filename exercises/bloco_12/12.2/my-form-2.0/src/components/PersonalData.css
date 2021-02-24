@@ -1,0 +1,40 @@
+.personal-data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-data input {
+  margin-left: 20px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus {
+  outline: none;
+  background-color: #eee;
+}
+
+.input-name, 
+.input-email, 
+.input-cpf, 
+.input-address,
+.input-city,
+.input-uf {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 10px;
+}
