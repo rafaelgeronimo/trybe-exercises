@@ -89,30 +89,31 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 11-1: [_'Hello, world!' no React!_](exercises/bloco_11/11.1)
 - [x] 11-2: [_Componentes React_](exercises/bloco_11/11.2)
-- [x] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-09-project-movie-cards-library/pull/8)_
 
 ##### <a href="exercises/bloco_12">Bloco 12: React</a>
 
 - [x] 12-1: [_Components com estado_](exercises/bloco_12/12.1)
-- [ ] 12-2: [_Eventos e formulários no React_](exercises/bloco_12/12.2)
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 12-2: [_Eventos e formulários no React_](exercises/bloco_12/12.2)
+- [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tryber/sd-09-project-movie-cards-library-stateful/pull/26)_
 
 ##### Bloco 13: React
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 13-1: [_Melhorando o reuso de componentes: props.children e PropTypes_](exercises/bloco_13/13.1)
+- [x] 13-2: [_Ciclo de vida de componentes em React_](exercises/bloco_13/13.2)
+- [x] 13-3: [_React Router_](exercises/bloco_13/13.3)
+- [x] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-09-project-movie-card-library-crud/pull/2)_
 
 ##### Bloco 14: Metodologias Ãgeis
 
-- [ ] 14-1: _Metodologias Ãgeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 14-1: _Metodologias Ãgeis_
+- [x] 14-2: _[Projeto - Frontend Online Store](https://github.com/tryber/sd-09-project-frontend-online-store/tree/main-group-21)_
 
 ##### Bloco 15: Testes em React
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
+- [x] 15-1: [_RTL - Primeiros passos_](exercises/bloco_15/15.1)
+- [x] 15-2: [_RTL - Mocks e Inputs_](exercises/bloco_15/15.2)
+- [ ] 15-3: [_RTL - Testando React Router_]()
 - [ ] 15-3: _[Projeto - Testes em React]()_
 
 ##### Bloco 16: Introdução ao Redux
