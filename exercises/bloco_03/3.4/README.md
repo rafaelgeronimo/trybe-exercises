@@ -31,3 +31,5 @@ Entre [nesse site](https://achecker.ca/checker/index.php), que valida se sua pá
 
 ### Screenshot do resultado:
 ![](assets/img/screenshot.png)
+
+| [Visitar página](index.html)
