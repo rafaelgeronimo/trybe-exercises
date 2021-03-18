@@ -61,6 +61,10 @@ Após a aula de hoje, nos tornamos capazes de:
 - Criar páginas semanticamente válidas e acessíveis de acordo com o [W3CAG](https://achecker.ca/guideline/view_guideline.php?id=8);
 - Entender a diferença entre elementos de *bloco* e elementos *inline*.
 
+<!-- Dia 3.5 | Projeto - Lessons Learned -->
+## <a id="dia-3.5" href="https://github.com/tryber/sd-09-project-lessons-learned">Dia 3.5 | Projeto - Lessons Learned</a>
+
+| [Minha solução](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)
 
 ---
 
