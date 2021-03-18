@@ -8,17 +8,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### <a href="exercises/bloco_01">Bloco 1: Introdução - Unix & Shell</a>
 - [x] 1-3: [_Unix & Bash - Part 1_](exercises/bloco_01)
 - [x] 1-4: [_Unix & Bash - Part 2_](exercises/bloco_01)
 <!-- - [ ] 1-5: _Shell Script_ -->
 
-##### [Bloco 2: Git & GitHub](bloco_02)
+##### <a href="exercises/bloco_02">Bloco 2: Git & GitHub]</a>
 - [x] 2-1: [_O que é e para que serve?_](exercises/bloco_02/2.1)
 - [x] 2-2: [_Entendendo os comandos_](exercises/bloco_02/2.2)
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### [Bloco 3: Introdução - HTML & CSS](bloco_03)
+##### <a href="exercises/bloco_03">Bloco 3: Introdução - HTML & CSS</a>
 
 - [x] 3-1: [_HTML & CSS - Estruturas de página_](exercises/bloco_03/3.1)
 - [x] 3-2: [_HTML & CSS - Primeiros passos em CSS_](exercises/bloco_03/3.2)
@@ -26,7 +26,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: [_HTML Semântico_](exercises/bloco_03/3.4)
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
-##### <a href="bloco_04">Bloco 4: Introdução - JavaScript</a>
+##### <a href="exercises/bloco_04">Bloco 4: Introdução - JavaScript</a>
 
 - [x] 4-1: [_JavaScript - Primeiros passos_](exercises/bloco_04/4.1)
 - [x] 4-2: [_JavaScript - Array e loop For_](exercises/bloco_04/4.2)
@@ -34,7 +34,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: [_JavaScript - Objetos e funções_](exercises/bloco_04/4.4)
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-09-project-lessons-learned/pull/18)_
 
-##### <a href="bloco_05">Bloco 5: Introdução - JavaScript - Projetos</a>
+##### <a href="exercises/bloco_05">Bloco 5: Introdução - JavaScript - Projetos</a>
 
 - [x] 5-1: [_JavaScript - DOM e seletores_](exercises/bloco_05/5.1)
 - [x] 5-2: [_JavaScript - Trabalhando com elementos_](exercises/bloco_05/5.2)
@@ -46,7 +46,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### <a href="bloco_06">Bloco 6: HTML & CSS avançado</a>
+##### <a href="exercises/bloco_06">Bloco 6: HTML & CSS avançado</a>
 
 - [x] 6-1: [_HTML & CSS - Forms_](exercises/bloco_06/6.1)
 - [x] 6-2: [_Bibliotecas JavaScript e Frameworks CSS_](exercises/bloco_06/6.2)
@@ -55,14 +55,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-5: [_CSS Responsivo - Mobile First_](exercise/bloco_06/6.5)
 - [x] 6-6: _[Projeto - Página inicial do Facebook](https://github.com/tryber/sd-09-project-facebook-signup/pull/31)_
 
-##### <a href="bloco_07">Bloco 7: JavaScript ES6 & Testes Unitários</a>
+##### <a href="exercises/bloco_07">Bloco 7: JavaScript ES6 & Testes Unitários</a>
 
 - [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](exercises/bloco_07/7.1)
 - [x] 7-2: [_JavaScript ES6 - Objects_](exercises/bloco_07/7.2)
 - [x] 7-3: [_Testes unitários em JavaScript_](exercises/bloco_07/7.3)
 - [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/tryber/sd-09-project-js-unit-tests/pull/76)_
 
-##### <a href="bloco_08">Bloco 8: JavaScript ES6</a>
+##### <a href="exercises/bloco_08">Bloco 8: JavaScript ES6</a>
 
 - [x] 8-1: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](exercises/bloco_08/8.1)
 - [x] 8-2: [_JavaScript ES6 - Higher Order Functions - map e filter_](exercises/bloco_08/8.2)
@@ -97,19 +97,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 12-2: [_Eventos e formulários no React_](exercises/bloco_12/12.2)
 - [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tryber/sd-09-project-movie-cards-library-stateful/pull/26)_
 
-##### Bloco 13: React
+##### <a href="exercises/bloco_13">Bloco 13: React</a>
 
 - [x] 13-1: [_Melhorando o reuso de componentes: props.children e PropTypes_](exercises/bloco_13/13.1)
 - [x] 13-2: [_Ciclo de vida de componentes em React_](exercises/bloco_13/13.2)
 - [x] 13-3: [_React Router_](exercises/bloco_13/13.3)
 - [x] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-09-project-movie-card-library-crud/pull/2)_
 
-##### Bloco 14: Metodologias Ãgeis
+##### <a href="exercises/bloco_14">Bloco 14: Metodologias Ãgeis</a>
 
 - [x] 14-1: _Metodologias Ãgeis_
 - [x] 14-2: _[Projeto - Frontend Online Store](https://github.com/tryber/sd-09-project-frontend-online-store/tree/main-group-21)_
 
-##### Bloco 15: Testes em React
+##### <a href="exercises/bloco_15">Bloco 15: Testes em React</a>
 
 - [x] 15-1: [_RTL - Primeiros passos_](exercises/bloco_15/15.1)
 - [x] 15-2: [_RTL - Mocks e Inputs_](exercises/bloco_15/15.2)
