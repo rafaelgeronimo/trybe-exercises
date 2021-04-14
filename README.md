@@ -114,7 +114,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 15-1: [_RTL - Primeiros passos_](exercises/bloco_15/15.1)
 - [x] 15-2: [_RTL - Mocks e Inputs_](exercises/bloco_15/15.2)
 - [x] 15-3: [_RTL - Testando React Router_](exercises/bloco_15/15.3)
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [x] 15-3: _[Projeto - Testes em React](https://github.com/tryber/sd-09-project-react-testing-library/pull/44)_
 
 ##### Bloco 16: Introdução ao Redux
 
@@ -129,7 +129,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 17-1: _[Projeto - Jogo de Trivia]()_
 
-##### Bloco 18: React & Context API
+##### <a href="exercises/bloco_18">Bloco 18: React & Context API</a>
 
 - [ ] 18-1: _Context API do React_
 - [ ] 18-2: _React Hooks - useState e useContext_
