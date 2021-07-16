@@ -83,7 +83,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-3: _[Jest - Simulando comportamentos](exercises/bloco_10/10.3)_
 - [x] 10-4: _[Projeto - Jest Assí­ncrono e Mocking](https://github.com/tryber/sd-09-project-jest/pull/56)_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### <a href="exercises/bloco_11">Bloco 11: Introdução - React</a>
 
