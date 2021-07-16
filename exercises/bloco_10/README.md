@@ -1,5 +1,6 @@
 <!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![jest][jest-shield]][jest-url]
 
 <h2 align="center">Bloco 10 | Testes automatizados com Jest</h2>
 
@@ -44,3 +45,6 @@ Após essa aula nos tornamos capazes de:
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rafaelgeronimo
+
+[jest-shield]: https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white
+[jest-url]: https://jestjs.io/pt-BR/
