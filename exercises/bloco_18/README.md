@@ -1,5 +1,7 @@
 <!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Javascript][javascript-shield]][javascript-url]
+[![React][react-shield]][react-url]
 
 <h2>Bloco 18 | Context API e React Hooks</h2>
 
@@ -34,3 +36,9 @@ Após a aula de hoje, nos tornamos capazes de:
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rafaelgeronimo
+
+[javascript-shield]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+[javascript-url]: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+
+[react-shield]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[react-url]: https://reactjs.org/
