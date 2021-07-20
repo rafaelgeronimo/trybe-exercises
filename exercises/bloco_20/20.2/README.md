@@ -147,8 +147,60 @@ FROM Scientists.Projects;
 ```
 
 10. Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
+| Resposta:
+```sql
+SELECT 
+    Name, Hours
+FROM
+    Scientists.Projects
+ORDER BY Hours DESC
+LIMIT 3;
+```
 11. Escreva uma query para exibir o código de todos os projetos da tabela `AssignedTo` sem que hajam repetições.
+| Resposta:
+```sql
+SELECT DISTINCT
+    Project
+FROM
+    Scientists.AssignedTo;
+```
 12. Escreva uma query para exibir o nome do projeto com maior quantidade de horas.
+| Resposta:
+```sql
+SELECT 
+    Name
+FROM
+    Scientists.Projects
+ORDER BY Hours DESC
+LIMIT 1;
+```
 13. Escreva uma query para exibir o nome do segundo projeto com menor quantidade de horas.
+| Resposta:
+```sql
+SELECT 
+    Name
+FROM
+    Scientists.Projects
+ORDER BY Hours DESC
+LIMIT 1 OFFSET 1;
+```
 14. Escreva uma query para exibir todas as informações dos cinco projetos com a menor quantidade de horas.
+| Resposta:
+```sql
+SELECT 
+    *
+FROM
+    Scientists.Projects
+ORDER BY Hours ASC
+LIMIT 5;
+```
 15. Escreva uma query que exiba a string "Existem `Number` cientistas na tabela Scientists.", em que `Number` se refira a quantidade de cientistas.
+| Resposta:
+```sql
+SELECT 
+    CONCAT('Existem ',
+            COUNT(Name),
+            ' cientistas na tabela Scientists') AS Resultado
+FROM
+    Scientists.Scientists;
+```
