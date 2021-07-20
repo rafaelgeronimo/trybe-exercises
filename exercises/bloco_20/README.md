@@ -26,7 +26,7 @@
   </ol>
 </details>
 
-<!-- Dia 20.1 | Context API do React -->
+<!-- Dia 20.1 | Bancos de dados realcionais -->
 ## <a id="dia-20.1" href="20.1">Dia 20.1 | Bancos de dados relacionais</a>
 Na aula de hoje estudamos alguns conceitos básicos sobre bancos de dados e como o SQL é usado na criação de tabelas. Utilizamos um SGBD para praticar os comandos SQL.
 
@@ -36,6 +36,22 @@ Após a aula de hoje, nos tornamos capazes de:
 - Compreender como as tabelas se encaixam no conceito de banco de dados;
 - Montar um ambiente de desenvolvimento local para praticar SQL;
 - Entender como funciona o MySQL Workbench.
+
+<!-- Dia 20.2 | Encontrando dados em um banco de dados -->
+## <a id="dia-20.2" href="20.2">Dia 20.2 | Bancos de dados relacionais</a>
+Nessa aula começamos a juntas as peças que nos levarão a aprender a manipular e a transformar dados em informação e informação em conhecimento.
+
+Após a aula de hoje, nos tornamos capazes de:
+- Compreender o que é uma *query* SQL e quais são seus tipos de comando;
+- Gerar valroes com `SELECT`;
+- Selecionar colunas individualmente com `SELECT`;
+- Renomear e gerar colunar em uma consulta com `AS`;
+- Concatenar colunas e valores com `CONCAT`;
+- Remover dados duplicados em uma consulta com `DISTINCT`;
+- Contar a quantidade de resultados em uma consulta com `COUNT`;
+- Limitar a quantidade de resultados em uma consulta com `LIMIT`;
+- Pular resultados em uma consulta com `OFFSET`;
+- Ordernar os resultados de uma consulta com `ORDER BY`.
 
 ---
 
