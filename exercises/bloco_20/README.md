@@ -26,7 +26,7 @@
   </ol>
 </details>
 
-<!-- Dia 20.1 | Bancos de dados realcionais -->
+<!-- Dia 20.1 | Bancos de dados relacionais -->
 ## <a id="dia-20.1" href="20.1">Dia 20.1 | Bancos de dados relacionais</a>
 Na aula de hoje estudamos alguns conceitos básicos sobre bancos de dados e como o SQL é usado na criação de tabelas. Utilizamos um SGBD para praticar os comandos SQL.
 
@@ -38,7 +38,7 @@ Após a aula de hoje, nos tornamos capazes de:
 - Entender como funciona o MySQL Workbench.
 
 <!-- Dia 20.2 | Encontrando dados em um banco de dados -->
-## <a id="dia-20.2" href="20.2">Dia 20.2 | Bancos de dados relacionais</a>
+## <a id="dia-20.2" href="20.2">Dia 20.2 | Encontrando dados em um banco de dados</a>
 Nessa aula começamos a juntas as peças que nos levarão a aprender a manipular e a transformar dados em informação e informação em conhecimento.
 
 Após a aula de hoje, nos tornamos capazes de:
@@ -52,6 +52,17 @@ Após a aula de hoje, nos tornamos capazes de:
 - Limitar a quantidade de resultados em uma consulta com `LIMIT`;
 - Pular resultados em uma consulta com `OFFSET`;
 - Ordernar os resultados de uma consulta com `ORDER BY`.
+
+<!-- Dia 20.3 | Filtrando dados de forma específica -->
+## <a id="dia-20.3" href="20.3">Dia 20.3 | Filtrando dados de forma específica</a>
+Nessa aula expandimos ainda mais nosso conhecimento de SQL, permitindo criar consultas mais refinadas, complexas e precisas.
+
+Após a aula de hoje, nos tornamos capazes de:
+- Filtrar resultados de consultas com o `WHERE`;
+- Utilizar operadores booleanos e relacionais em consultas;
+- Criar consultas mais dinâmicas e maleáveis com o `LIKE`;
+- Fazer consultas que englobam uma faixa de resultados com `IN` e `BETWEEN`;
+- Encontrar e separar resultados que incluem datas.
 
 ---
 
