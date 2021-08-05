@@ -36,6 +36,16 @@ Após a aula de hoje, nos tornamos capazes de:
 
 <!-- Dia 22.2 | Normalização, Formas Normais e Dumps -->
 ## <a id="dia-22.2" href="22.2">Dia 22.2 | Normalização, Formas Normais e Dumps</a>
+Hoje aprendemos um importante conceito que vai nos deixar pronto para enfrentar os desafios de modelagem, design e, principalmente, desempenho de banco de dados.
+O foco é a normalização de bancos de dados, que evita desperdícios de espáco e garante bancos mais simples de se entender e manter!  Esse conhecimento diferencia os profissionais iniciantes dos profissionais mais experientes além de agregar mais valor a nossos futuros projetos.
+
+Após essa aula, somos capazes de:
+- Entender o que é a `normalização`;
+- Saber discernir se uma tabela está ou não `normalizada`;
+- Aplicar a `1ª Forma Normal`;
+- Aplicar a `2ª Forma Normal`;
+- Aplicar a `3ª Forma Normal`;
+- Aprender a criar e restaurar _backups_ usando o _MySQL Workbench_ e também o comando `dump`.
 
 
 <!-- Dia 22.3 | Transformando ideias em um modelo de banco de dados - Parte 2 -->
