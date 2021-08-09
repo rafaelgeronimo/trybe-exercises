@@ -50,7 +50,14 @@ Após essa aula, somos capazes de:
 
 <!-- Dia 22.3 | Transformando ideias em um modelo de banco de dados - Parte 2 -->
 ## <a id="dia-22.3" href="22.3">Dia 22.3 | Transformando ideias em um modelo de banco de dados - Parte 2</a>
+Agora completamos nosso arsenal de ferramentas úteis para lidar com a criação e manipulação de tabelas, com o intuito de nos capacitar para os principais passos de uma modelagem de banco de dados.
 
+Após a aula de hoje, nos tornamos capazes de:
+- Clonar tabelas existentes;
+- Lidar com `VIEWS`;
+- Alterar tabelas existentes;
+- Deletar uma tabela;
+- Usar um `INDEX`.
 
 ---
 
