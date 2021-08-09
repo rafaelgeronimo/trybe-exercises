@@ -118,11 +118,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 16: Introdução ao Redux
 
-- [x] 16-1: _Introdução ao Redux_
-- [x] 16-2: _React com Redux - Parte 1_
-- [x] 16-3: _React com Redux - Prática_
-- [x] 16-4: _React com Redux - Parte 2_
-- [x] 16-5: _Testes síncronos com React-Redux_
+- [x] 16-1: [_Introdução ao Redux_](exercises/bloco_16/16.1)
+- [x] 16-2: [_React com Redux - Parte 1_](exercises/bloco_16/16.2)
+- [x] 16-3: [_React com Redux - Prática_](exercises/bloco_16/16.3)
+- [x] 16-4: [_React com Redux - Parte 2_](exercises/bloco_16/16.4)
+- [x] 16-5: [_Testes síncronos com React-Redux_](exercises/bloco_16/16.5)
 - [x] 16-6: _[Projeto - Tabela com filtros de dados]()_
 
 ##### Bloco 17: Projeto React
@@ -131,9 +131,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### <a href="exercises/bloco_18">Bloco 18: React & Context API</a>
 
-- [x] 18-1: _Context API do React_
-- [x] 18-2: _React Hooks - useState e useContext_
-- [x] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 18-1: [_Context API do React_](exercises/bloco_18/18.1)
+- [x] 18-2: [_React Hooks - useState e useContext_](exercises/bloco_18/18.2)
+- [x] 18-3: [_React Hooks - useEffect e Hooks customizados_](exercises/bloco_18/18.3)
 - [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 19: Projeto Final de Front-end
@@ -144,29 +144,29 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
-- [x] 20-1: _Banco de dados SQL_
-- [x] 20-2: _Encontrando dados em um banco de dados_
-- [x] 20-3: _Filtrando dados de forma específica_
-- [x] 20-4: _Manipulando tabelas_
+- [x] 20-1: [_Banco de dados SQL_](exercises/bloco_20/20.1)
+- [x] 20-2: [_Encontrando dados em um banco de dados_](exercises/bloco_20/20.2)
+- [x] 20-3: [_Filtrando dados de forma específica_](exercises/bloco_20/20.3)
+- [x] 20-4: [_Manipulando tabelas_](exercises/bloco_20/20.4)
 - [x] 20-5: _[Projeto - All For One]()_
 
 ##### Bloco 21: Bancos de dados relacionais
 
-- [x] 21-1: _Funções mais usadas no SQL_
-- [x] 21-2: _Descomplicando JOINs e UNIONs_
-- [x] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [x] 21-1: [_Funções mais usadas no SQL_](exercises/bloco_21/21.1)
+- [x] 21-2: [_Descomplicando JOINs e UNIONs_](exercises/bloco_21/21.2)
+- [x] 21-3: [_Stored Routines & Subqueries_](exercises/bloco_21/21.3)
+- [x] 21-4: _[Projeto - Vocabulary Booster]()_
 
 ##### Bloco 22: Bancos de dados relacionais
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [x] 22-1: [_Transformando ideias em um modelo de banco de dados_](exercises/bloco_22/22.1)
+- [x] 22-2: [_Normalização, Formas Normais e Dumps_](exercises/bloco_22/22.2)
+- [x] 22-2: [_Transformando ideias em um modelo de banco de dados - Parte 2_](exercises/bloco_22/22.3)
+- [X] 22-3: _[Projeto - One For All]()_
 
 ##### Bloco 23: Introdução - NoSQL
 
-- [ ] 23-1: _MongoDB - Introdução_
+- [x] 23-1: [_MongoDB - Introdução_](exercises/bloco_23/23.1)
 - [ ] 23-2: _Filter Operators_
 - [ ] 23-3: _[Projeto - Data Flights]()_
 
