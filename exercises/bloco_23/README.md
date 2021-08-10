@@ -38,7 +38,29 @@ Após a aula de hoje, nos tornamos capazes de:
 <!-- Dia 23.2 | Filter Operators -->
 ## <a id="dia-23.2" href="23.2">Dia 23.2 | Filter Operators</a>
 
+Hoje aumentamos o poder de nossas consultas no **MongoDB** através do uso de operadores de filtro, que nos ajudam na recupeção dos dados das coleções.
 
+Após esssa aula, nos tornamos capazes de:
+- Utilizar os operadores de comparação
+    - **$lt** (less than, menor que, <)
+    - **$lte** (less than or equal, menor ou igual a, ≤ )
+    - **$gt** (greater then, maior que, >)
+    - **$gte** (greater then or equal, maior ou igual a, ≥)
+    - **$eq** (equal, igual a, =)
+    - **$ne** (not equal, diferente de, ≠, <>)
+    - **$in** (in, dentro de)
+    - **$nin**(not in, não está dentro de)
+- Utilizar os operadores lógicos
+    - **$and** (and, se todas as condições forem verdadeiras retorna *true*)
+    - **$or** (or, se apenas uma condição for verdadeira retorna *true*)
+- Compor filtros avançados com
+    - **$not** (not, inverte o resultado da expressão)
+    - **$nor** (not or, semelhante ao **or**, porém trabalha com a condição *false*)
+- Utilizar o operador
+    - **$exists** (exists, verifica a existência de um atributo)
+- Utilizar o método
+    - **sort()** (sort, ordenar)
+- Remover documentos
 
 <!-- Dia 23.3 | Projeto - Data Flights -->
 ## <a id="dia-23.3" href="23.3">Dia 23.3 | Projeto - Data Flights</a>
