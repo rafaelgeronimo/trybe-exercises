@@ -134,7 +134,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 18-1: [_Context API do React_](exercises/bloco_18/18.1)
 - [x] 18-2: [_React Hooks - useState e useContext_](exercises/bloco_18/18.2)
 - [x] 18-3: [_React Hooks - useEffect e Hooks customizados_](exercises/bloco_18/18.3)
-- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-010-a-project-starwars-planets-search/pull/22)_
 
 ##### Bloco 19: Projeto Final de Front-end
 
@@ -148,14 +148,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-2: [_Encontrando dados em um banco de dados_](exercises/bloco_20/20.2)
 - [x] 20-3: [_Filtrando dados de forma específica_](exercises/bloco_20/20.3)
 - [x] 20-4: [_Manipulando tabelas_](exercises/bloco_20/20.4)
-- [x] 20-5: _[Projeto - All For One]()_
+- [x] 20-5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/pull/3)_
 
 ##### Bloco 21: Bancos de dados relacionais
 
 - [x] 21-1: [_Funções mais usadas no SQL_](exercises/bloco_21/21.1)
 - [x] 21-2: [_Descomplicando JOINs e UNIONs_](exercises/bloco_21/21.2)
 - [x] 21-3: [_Stored Routines & Subqueries_](exercises/bloco_21/21.3)
-- [x] 21-4: _[Projeto - Vocabulary Booster]()_
+- [x] 21-4: _[Projeto - Vocabulary Booster](https://github.com/tryber/sd-010-a-mysql-vocabulary-booster/pull/3)_
 
 ##### Bloco 22: Bancos de dados relacionais
 
