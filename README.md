@@ -172,8 +172,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 24: Updates
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
+- [x] 24-1: _[Updates Simples](exercises/bloco_24/24.1)_
+- [x] 24-2: _[Updates Complexos - Arrays - Parte 1](exercises/bloco_24/24.2)_
 - [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
 - [ ] 24-4: _[Projeto - Commerce]()_
 

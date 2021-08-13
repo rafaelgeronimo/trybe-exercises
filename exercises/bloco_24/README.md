@@ -33,10 +33,19 @@ Após a aula de aula, nos tornamos capazes de:
 
 <!-- Dia 24.2 | Updates complexos - Array - Parte 1 -->
 ## <a id="dia-24.2" href="24.2">Dia 24.2 | Updates complexos - Array - Parte 1</a>
+Continuando com os métodos `update`, hoje aprendemos como inserir e alterar itens em um `array`.
+
+Após a aula de hoje, somos capazes de:
+- Incorporar dados aos documentos através de `arrays`;
+- Utilizar operadores `$pop`, `$pull` e `$push`;
+- Utilizar o operador `$addToSet`;
+- Utilizar os operadores `$each`, `$slice` e `$sort`.
 
 <!-- Dia 24.3 | Updates complexos - Array - Parte 2 -->
 ## <a id="dia-24.3" href="24.3">Dia 24.3 | Updates complexos - Array - Parte 2</a>
 
+<!-- Dia 24.4 | Projeto - Commerce -->
+## <a id="dia-24.3" href="24.3">Dia 24.3 | Projeto - Commerce</a>
 
 ---
 
