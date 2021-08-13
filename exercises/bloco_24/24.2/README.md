@@ -87,7 +87,7 @@ db.movies.updateOne(
     },
 );
 ```
-> Retonor:
+> Retorno:
 ```jsx
   {
     _id: ObjectId("6116c055c926fb9f2f9aee60"),
@@ -174,11 +174,73 @@ db.movies.updateOne(
 
 Após a execução do método `.find().pretty()` o resultado do filme `Batman` será parecido com o dessa imagem:
 ![](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/mongodb/complex-updates/part-1/img/ex6-dd326ad51dfc81a3e1949e1eea8e0e5b.png)
+> Resposta:
+```jsx
+db.movies.updateOne(
+    { title: 'Batman' },
+    { $push: 
+        {
+            category: 'action'
+        }
+    }
+);
+```
+> Retorno:
+```jsx
+{
+  "_id": "6116c055c926fb9f2f9aee60",
+  "title": "Batman",
+  "category": [
+    "superhero",
+    "villain",
+    "action"
+  ],
+  "imdbRating": 7.7,
+  "budget": 35
+}
+```
 
 **Exercício 7:** Adicione a categoria `"90's"` aos filmes `Batman` e `Home Alone` .
 
 Após a execução do método `.find().pretty()` , o resultado do filme `Batman` e do filme `Home Alone` será parecido com o dessa imagem:
 ![](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/mongodb/complex-updates/part-1/img/ex7-6428d1ab49893f0902aaac1f66d958e6.png)
+> Resposta:
+```jsx
+db.movies.updateMany(
+    { title:
+        { $in: ["Batman", "Home Alone"] } 
+    },
+    {$push:
+        { category: "90's" }
+    }
+);
+```
+
+> Retorno:
+```jsx
+{
+  "_id": "6116c055c926fb9f2f9aee62",
+  "title": "Home Alone",
+  "category": [
+    "family",
+    "comedy",
+    "90's"
+  ],
+  "imdbRating": 7.4
+},
+{
+  "_id": "6116c055c926fb9f2f9aee60",
+  "title": "Batman",
+  "category": [
+    "superhero",
+    "villain",
+    "action",
+    "90's"
+  ],
+  "imdbRating": 7.7,
+  "budget": 35
+}
+```
 
 **Exercício 8**: Crie um *array* de documentos chamado `cast` para o filme `Home Alone` com os seguintes dados:
 
