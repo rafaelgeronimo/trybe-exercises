@@ -59,7 +59,7 @@ Após essa aula, nos tornamos capazes de:
 
 
 <!-- Dia 24.4 | Projeto - Commerce -->
-## <a id="dia-24.3" href="24.3">Dia 24.3 | Projeto - Commerce</a>
+## <a id="dia-24.4" href="24.4">Dia 24.4 | Projeto - Commerce</a>
 
 ---
 

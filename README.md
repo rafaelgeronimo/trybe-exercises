@@ -116,7 +116,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 15-3: [_RTL - Testando React Router_](exercises/bloco_15/15.3)
 - [x] 15-3: _[Projeto - Testes em React](https://github.com/tryber/sd-09-project-react-testing-library/pull/44)_
 
-##### Bloco 16: Introdução ao Redux
+##### <a href="exercises/bloco_16">Bloco 16: Introdução ao Redux</a>
 
 - [x] 16-1: [_Introdução ao Redux_](exercises/bloco_16/16.1)
 - [x] 16-2: [_React com Redux - Parte 1_](exercises/bloco_16/16.2)
@@ -125,7 +125,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 16-5: [_Testes síncronos com React-Redux_](exercises/bloco_16/16.5)
 - [x] 16-6: _[Projeto - Tabela com filtros de dados]()_
 
-##### Bloco 17: Projeto React
+##### <a href="exercises/bloco_17">Bloco 17: Projeto React</a>
 
 - [x] 17-1: _[Projeto - Jogo de Trivia]()_
 
@@ -136,13 +136,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 18-3: [_React Hooks - useEffect e Hooks customizados_](exercises/bloco_18/18.3)
 - [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-010-a-project-starwars-planets-search/pull/22)_
 
-##### Bloco 19: Projeto Final de Front-end
+##### <a href="exercises/bloco_19">Bloco 19: Projeto Final de Front-end</a>
 
 - [x] 19-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### <a href="exercises/bloco_20">Bloco 20: Introdução - Bancos de dados relacionais</a>
 
 - [x] 20-1: [_Banco de dados SQL_](exercises/bloco_20/20.1)
 - [x] 20-2: [_Encontrando dados em um banco de dados_](exercises/bloco_20/20.2)
@@ -150,27 +150,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-4: [_Manipulando tabelas_](exercises/bloco_20/20.4)
 - [x] 20-5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/pull/3)_
 
-##### Bloco 21: Bancos de dados relacionais
+##### <a href="exercises/bloco_15">Bloco 21: Bancos de dados relacionais</a>
 
 - [x] 21-1: [_Funções mais usadas no SQL_](exercises/bloco_21/21.1)
 - [x] 21-2: [_Descomplicando JOINs e UNIONs_](exercises/bloco_21/21.2)
 - [x] 21-3: [_Stored Routines & Subqueries_](exercises/bloco_21/21.3)
 - [x] 21-4: _[Projeto - Vocabulary Booster](https://github.com/tryber/sd-010-a-mysql-vocabulary-booster/pull/3)_
 
-##### Bloco 22: Bancos de dados relacionais
+##### <a href="exercises/bloco_22">Bloco 22: Bancos de dados relacionais</a>
 
 - [x] 22-1: [_Transformando ideias em um modelo de banco de dados_](exercises/bloco_22/22.1)
 - [x] 22-2: [_Normalização, Formas Normais e Dumps_](exercises/bloco_22/22.2)
 - [x] 22-2: [_Transformando ideias em um modelo de banco de dados - Parte 2_](exercises/bloco_22/22.3)
 - [X] 22-3: _[Projeto - One For All](https://github.com/tryber/sd-010-a-mysql-one-for-all/pull/85)_
 
-##### Bloco 23: Introdução - NoSQL
+##### <a href="exercises/bloco_23">Bloco 23: Introdução - NoSQL</a>
 
 - [x] 23-1: [_MongoDB - Introdução_](exercises/bloco_23/23.1)
 - [x] 23-2: [_Filter Operators_](exercises/bloco_23/23.2)
 - [x] 23-3: _[Projeto - Data Flights](https://github.com/tryber/sd-010-a-mongodb-dataflights/pull/2)_
 
-##### Bloco 24: Updates
+##### <a href="exercises/bloco_24">Bloco 24: Updates</a>
 
 - [x] 24-1: _[Updates Simples](exercises/bloco_24/24.1)_
 - [x] 24-2: _[Updates Complexos - Arrays - Parte 1](exercises/bloco_24/24.2)_
