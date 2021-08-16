@@ -17,6 +17,9 @@
     <li>
       <a href="#dia-24.3">Dia 24.3 | Updates complexos - Array - Parte 2</a>
     </li>
+    <li>
+      <a href="#dia-24.4">Dia 24.4 | Projeto: MongoDB Commerce</a>
+    </li>
   </ol>
 </details>
 
@@ -24,7 +27,7 @@
 ## <a id="dia-24.1" href="24.1">Dia 24.1 | Updates Simples</a>
 Após entender e praticar bastante como inserir e buscar dados no **MongoDB** no bloco anterior, hoje vimos como alterar esses dados através de métodos e operadores disponíveis para isso.
 
-Após a aula de aula, nos tornamos capazes de:
+Após a aula de hoje, nos tornamos capazes de:
 - Utilizar o método `updateOne()` ;
 - Utilizar o método `updateMany()` ;
 - Utilizar os operadores `$set` , `$mul` , `$inc` , `$min` , `$max` e `$currentDate` ;
@@ -43,6 +46,17 @@ Após a aula de hoje, somos capazes de:
 
 <!-- Dia 24.3 | Updates complexos - Array - Parte 2 -->
 ## <a id="dia-24.3" href="24.3">Dia 24.3 | Updates complexos - Array - Parte 2</a>
+Hoje chegamos à última parte do conteúdo sobre `updates` no **MongoDB**. Estudamos sobre outros operadores de *update* que podem ser utilizados em *arrays*. Também vimos outros operadores para *queries* mais complexas.
+
+Após essa aula, nos tornamos capazes de:
+- Utilizar o operador `$all` para filtrar documentos;
+- Utilizar o operador `$elemMatch` para filtrar documentos;
+- Utilizar o operador `$size` para filtrar documentos pelo tamanho de *arrays* ;
+- Utilizar o operador `$expr` para criar expressões de agregação;
+- Utilizar expressões regulares e o operador `$regex` para buscar documentos;
+- Utilizar o índice textual e o operador `$text` ;
+- Utilizar o operador `$mod` .
+
 
 <!-- Dia 24.4 | Projeto - Commerce -->
 ## <a id="dia-24.3" href="24.3">Dia 24.3 | Projeto - Commerce</a>

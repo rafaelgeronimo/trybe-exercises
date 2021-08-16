@@ -174,7 +174,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 24-1: _[Updates Simples](exercises/bloco_24/24.1)_
 - [x] 24-2: _[Updates Complexos - Arrays - Parte 1](exercises/bloco_24/24.2)_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
+- [x] 24-3: [_Updates Complexos - Arrays - Parte 2_](exercises/bloco_24/24.3)
 - [ ] 24-4: _[Projeto - Commerce]()_
 
 ##### Bloco 25: Aggregation Framework
