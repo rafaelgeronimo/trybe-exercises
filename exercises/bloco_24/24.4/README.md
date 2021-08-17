@@ -90,8 +90,8 @@ Para isso, escreva no arquivo desafio5.js duas queries, nesta ordem:
 // garantindo que não haja duplicidade nos ingredientes.
 
 db.produtos.updateMany(
-    { nome: { $nin: ["McChicken"] } },
-    { $push: {
+    { nome: { $ne: "McChicken" } },
+    { $addToSet: {
         ingredientes: "ketchup",
     } },
 );
@@ -133,7 +133,7 @@ Para isso, escreva no arquivo desafio7.js duas queries, nesta ordem:
 db.produtos.updateMany(
     {},
     { $pull: {
-        ingredientes: "bacon",
+        ingredientes: "cebola",
     } },
 );
 
@@ -311,34 +311,117 @@ db.produtos.find({}, { nome: 1, tags: 1, _id: 0 }).pretty();
 ```
 
 15 - Conte quantos produtos contêm Mc no nome, sem considerar letras maiúsculas ou minúsculas.
+> Resposta:
+```jsx
+// 15 - Conte quantos produtos contêm Mc no nome, sem considerar letras maiúsculas ou minúsculas.
+db.produtos.count(
+    { nome: { $regex: /mc/i } },
+);
+```
+
 16 - Conte quantos produtos têm 4 ingredientes.
+> Resposta:
+```jsx
+// 16 - Conte quantos produtos têm 4 ingredientes.
+db.produtos.count(
+    { ingredientes: { $size: 4 } },
+);
+```
+
 17 - Conte quantos documentos contêm as palavras frango e hamburguer utilizando o operador $text.
 Para isso, escreva no arquivo desafio17.js duas queries, nesta ordem:
 
-Crie uma query que faça a criação de um índice do tipo text no campo descricao com o idioma padrão portuguese.
+- Crie uma query que faça a criação de um índice do tipo text no campo descricao com o idioma padrão portuguese.
 
-Crie uma query que retorne a quantidade de documentos que contêm as palavras frango e hamburguer utilizando o operador $text.
+- Crie uma query que retorne a quantidade de documentos que contêm as palavras frango e hamburguer utilizando o operador $text.
+> Resposta:
+```jsx
+// 17 - Conte quantos documentos contêm as palavras frango e
+// hamburguer utilizando o operador $text.
+db.produtos.createIndex(
+    { descricao: "text" },
+    { default_language: "portuguese" },
+);
+
+db.produtos.count(
+    { $text: { $search: "frango hamburguer" } },
+);
+```
 
 18 - Conte quantos documentos contêm a expressão feito com utilizando o operador $text.
 Para isso, escreva no arquivo desafio18.js duas queries, nesta ordem:
 
-Crie uma query que faça a criação de um índice do tipo text no campo descricao com o idioma padrão portuguese.
+- Crie uma query que faça a criação de um índice do tipo text no campo descricao com o idioma padrão portuguese.
 
-Crie uma query que retorne a quantidade de documentos que contêm a expressão feito com utilizando o operador $text.
+- Crie uma query que retorne a quantidade de documentos que contêm a expressão feito com utilizando o operador $text.
+> Resposta:
+```jsx
+// 18 - Conte quantos documentos contêm a expressão "feito com" utilizando o operador $text.
+db.produtos.createIndex(
+    { descricao: "text" },
+    { default_language: "portuguese" },
+);
+
+db.produtos.count(
+    { $text: { $search: "\"feito com\"" } },
+);
+```
 
 19 - Renomeie o campo descricao para descricaoSite em todos os documentos.
 Para isso, escreva no arquivo desafio19.js duas queries, nesta ordem:
 
-Crie uma query que faça a renomeação do campo descricao para descricaoSite em todos os documentos.
+- Crie uma query que faça a renomeação do campo descricao para descricaoSite em todos os documentos.
 
-Crie uma query que retorne o nome, descricao e descricaoSite de todos os documentos.
+- Crie uma query que retorne o nome, descricao e descricaoSite de todos os documentos.
+> Resposta:
+```jsx
+// 19 - Renomeie o campo descricao para descricaoSite em todos os documentos.
+db.produtos.updateMany(
+    {},
+    { $rename: {
+        descricao: "descricaoSite",
+    } },
+);
+
+db.produtos.find({}, { nome: 1, descricao: 1, descricaoSite: 1, _id: 0 });
+```
 
 20 - Remova o campo curtidas do item Big Mac.
+
 Para isso, escreva no arquivo desafio20.js duas queries, nesta ordem:
 
-Crie uma query que faça a remoção do campo curtidas do item Big Mac.
+- Crie uma query que faça a remoção do campo curtidas do item Big Mac.
 
-Crie uma query que retorne o nome e curtidas de todos os documentos.
+- Crie uma query que retorne o nome e curtidas de todos os documentos.
+> Resposta:
+```jsx
+// 20 - Remova o campo curtidas do item Big Mac.
+db.produtos.updateOne(
+    { nome: "Big Mac" },
+    { $unset: { curtidas: "" } },
+);
+
+db.produtos.find({}, { nome: 1, curtidas: 1, _id: 0 });
+```
 
 21 - Retorne o nome dos sanduíches em que o número de curtidas é maior que o número de sanduíches vendidos.
+> Resposta:
+```jsx
+// 21 - Retorne o nome dos sanduíches em que o número de curtidas
+// é maior que o número de sanduíches vendidos.
+db.produtos.find(
+    { $expr: { $gt: ["$curtidas", "$vendidos"] } },
+    { nome: 1, _id: 0 },
+);
+```
+
 22 - Retorne o nome e a quantidade de vendas (vendidos) dos sanduíches em que o número de vendas é múltiplo de 5.
+> Resposta:
+```jsx
+// 22 - Retorne o nome e a quantidade de vendas (vendidos) dos
+// sanduíches em que o número de vendas é múltiplo de 5.
+db.produtos.find(
+    { vendidos: { $mod: [5, 0] } },
+    { nome: 1, vendidos: 1, _id: 0 },
+);
+```
