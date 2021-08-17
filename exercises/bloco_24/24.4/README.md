@@ -143,56 +143,161 @@ db.produtos.find({}, { nome: 1, ingredientes: 1, _id: 0 });
 8 - Remova o primeiro ingrediente do sanduíche Quarteirão com Queijo.
 Para isso, escreva no arquivo desafio8.js duas queries, nesta ordem:
 
-Crie uma query que faça a remoção do primeiro ingrediente no sanduíche Quarteirão com Queijo.
+- Crie uma query que faça a remoção do primeiro ingrediente no sanduíche Quarteirão com Queijo.
 
-Crie uma query que retorne o nome e ingredientes de todos os documentos.
+- Crie uma query que retorne o nome e ingredientes de todos os documentos.
+> Resposta:
+```jsx
+// 8 - Remova o primeiro ingrediente do sanduíche Quarteirão com Queijo.
+
+db.produtos.updateOne(
+    { nome: "Quarteirão com Queijo" },
+    { $pop: { ingredientes: -1 } },
+);
+
+db.produtos.find({}, { nome: 1, ingredientes: 1, _id: 0 }).pretty();
+```
 
 9 - Remova o último ingrediente do sanduíche Cheddar McMelt.
 Para isso, escreva no arquivo desafio9.js duas queries, nesta ordem:
 
-Crie uma query que faça a remoção do último ingrediente no sanduíche Cheddar McMelt.
+- Crie uma query que faça a remoção do último ingrediente no sanduíche Cheddar McMelt.
 
-Crie uma query que retorne o nome e ingredientes de todos os documentos.
+- Crie uma query que retorne o nome e ingredientes de todos os documentos.
+```jsx
+// 9 - Remova o último ingrediente do sanduíche Cheddar McMelt.
+
+db.produtos.updateOne(
+    { nome: "Cheddar McMelt" },
+    { $pop: { ingredientes: 1 } },
+);
+
+db.produtos.find({}, { nome: 1, ingredientes: 1, _id: 0 }).pretty();
+```
 
 10 - Adicione a quantidade de vendas dos sanduíches por dia da semana.
 Para isso, escreva no arquivo desafio10.js quatro queries, nesta ordem:
 
-Crie uma query que inclua um array com sete posições em todos os sanduíches. Cada uma delas representará um dia da semana, e cada posição iniciará em 0. O array deve se parecer como abaixo:
+- Crie uma query que inclua um array com sete posições em todos os sanduíches. Cada uma delas representará um dia da semana, e cada posição iniciará em 0. O array deve se parecer como abaixo:
 "vendasPorDia": [0, 0, 0, 0, 0, 0, 0]
 O primeiro item desse array representa as vendas no domingo, o segundo item representa as vendas na segunda-feira, e assim até chegar ao último item, que representa as vendas no sábado.
-Crie uma query que incremente as vendas de Big Mac às quartas-feiras em 60.
 
-Crie uma query que incremente as vendas de todos os sanduíches de carne do tipo bovino e pão aos sábados em 120.
+- Crie uma query que incremente as vendas de Big Mac às quartas-feiras em 60.
 
-Crie uma query que retorne o nome e vendasPorDia de todos os documentos.
+- Crie uma query que incremente as vendas de todos os sanduíches de carne do tipo bovino e pão aos sábados em 120.
+
+- Crie uma query que retorne o nome e vendasPorDia de todos os documentos.
+> Resposta:
+```jsx
+// 10 - Adicione a quantidade de vendas dos sanduíches por dia da semana.
+db.produtos.updateMany(
+    {},
+    { $set: {
+        vendasPorDia: [0, 0, 0, 0, 0, 0, 0],
+    } },
+);
+
+db.produtos.updateOne(
+    { nome: "Big Mac" },
+    { $inc: {
+        "vendasPorDia.3": 60,
+    } },
+);
+
+db.produtos.updateOne(
+    { tags: {
+        $in: ["bovino", "pão"],
+    } },
+    { $inc: {
+        "vendasPorDia.6": 120,
+    } },
+);
+
+db.produtos.find({}, { nome: 1, vendasPorDia: 1, _id: 0 }).pretty();
+```
 
 11 - Insira os elementos combo e tasty no array tags de todos os sanduíches e aproveite para deixar os elementos em ordem alfabética ascendente.
 Para isso, escreva no arquivo desafio11.js duas queries, nesta ordem:
 
-Crie uma query que faça tanto a inserção dos elementos combo e tasty no array tags de todos os sanduíches quanto a ordenação dos elementos de tags em ordem alfabética ascendente.
+- Crie uma query que faça tanto a inserção dos elementos combo e tasty no array tags de todos os sanduíches quanto a ordenação dos elementos de tags em ordem alfabética ascendente.
 
-Crie uma query que retorne o nome e tags de todos os documentos.
+- Crie uma query que retorne o nome e tags de todos os documentos.
+> Resposta:
+```jsx
+ // 11 - Insira os elementos combo e tasty no array tags de todos os sanduíches
+// e aproveite para deixar os elementos em ordem alfabética ascendente.
+db.produtos.updateMany(
+    {},
+    {
+        $push: {
+            tags: {
+                $each: ["combo", "tasty"],
+                $sort: 1,
+            },
+        },
+    },
+);
+
+db.produtos.find({}, { nome: 1, tags: 1, _id: 0 }).pretty();
+```
 
 12 - Ordene em todos os documentos os elementos do array valoresNutricionais pelo campo percentual de forma descendente.
 Para isso, escreva no arquivo desafio12.js duas queries, nesta ordem:
 
-Crie uma query que faça em todos os documentos a ordenação dos elementos do array valoresNutricionais pelo campo percentual de forma descendente. Dica: mesmo sem adicionar nenhum novo elemento, para essa operação é necessário utilizar também o modificador $each.
+- Crie uma query que faça em todos os documentos a ordenação dos elementos do array valoresNutricionais pelo campo percentual de forma descendente. Dica: mesmo sem adicionar nenhum novo elemento, para essa operação é necessário utilizar também o modificador $each.
 
-Crie uma query que retorne o nome e valoresNutricionais de todos os documentos.
+- Crie uma query que retorne o nome e valoresNutricionais de todos os documentos.
+> Resposta:
+```jsx
+// 12 - Ordene em todos os documentos os elementos do array valoresNutricionais
+// pelo campo percentual de forma descendente.
+db.produtos.updateMany(
+    {},
+    {
+        $push: {
+            valoresNutricionais: {
+                $each: [],
+                $sort: { percentual: -1 },
+            },
+        },
+    },
+);
+
+db.produtos.find({}, { nome: 1, valoresNutricionais: 1, _id: 0 }).pretty();
+```
 
 13 - Adicione o elemento muito sódio ao final do array tags nos produtos em que o percentual de sódio seja maior ou igual a 40.
 Para isso, escreva no arquivo desafio13.js duas queries, nesta ordem:
 
-Crie uma query que faça a adição do elemento muito sódio ao final do array tags nos produtos em que o percentual de sódio seja maior ou igual a 40.
+- Crie uma query que faça a adição do elemento muito sódio ao final do array tags nos produtos em que o percentual de sódio seja maior ou igual a 40.
 
-Crie uma query que retorne o nome e tags de todos os documentos.
+- Crie uma query que retorne o nome e tags de todos os documentos.
+> Resposta:
+```jsx
+// 13 - Adicione o elemento muito sódio ao final do array tags nos produtos em que
+// o percentual de sódio seja maior ou igual a 40.
+db.produtos.updateMany(
+    { valoresNutricionais: { $elemMatch: { tipo: "sódio", percentual: { $gte: 40 } } } },
+    {
+        $push: {
+            tags: "muito sódio",
+        },
+    },
+);
+
+db.produtos.find({}, { nome: 1, tags: 1, _id: 0 }).pretty();
+```
 
 14 - Adicione o elemento contém sódio ao final do array tags nos produtos em que o percentual de sódio seja maior do que 20 e menor do que 40.
 Para isso, escreva no arquivo desafio14.js duas queries, nesta ordem:
 
-Crie uma query que faça a adição do elemento contém sódio ao final do array tags nos produtos em que o percentual de sódio seja maior do que 20 e menor do que 40.
+- Crie uma query que faça a adição do elemento contém sódio ao final do array tags nos produtos em que o percentual de sódio seja maior do que 20 e menor do que 40.
 
-Crie uma query que retorne o nome e tags de todos os documentos.
+- Crie uma query que retorne o nome e tags de todos os documentos.
+> Resposta:
+```jsx
+
+```
 
 15 - Conte quantos produtos contêm Mc no nome, sem considerar letras maiúsculas ou minúsculas.
 16 - Conte quantos produtos têm 4 ingredientes.
