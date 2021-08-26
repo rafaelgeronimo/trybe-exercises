@@ -329,5 +329,11 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 ```
 > Resposta:
 ```jsx
-
+db.air_routes.aggregate([
+  {
+    $match: { {
+      airplane: { $in: {"747", "380"} } },
+      },
+  },
+]);
 ```
