@@ -42,10 +42,29 @@ Após a aula de hoje, nos tornamos capazes de:
 
 <!-- Dia 26.2 |Node.js - Fluxo Assíncrono -->
 ## <a id="dia-26.2" href="26.2">Dia 26.2 |Node.js - Fluxo Assíncrono</a>
+Hoje aprendemos o que é e como funciona uma operação assíncrona e também entedemos qual a sua importância no Node.js.
+Para isso, revimos duas formas de realizar operações assíncronas em JavaScript: callbacks e Promises, e quais as diferenças entre elas.
+Além disso, vimos como é feito **input** (leitura) e **output** (escrita) em arquivos localmente com Node.js!
 
+Após essa aula, somos capazes de:
+- Realizar operações assíncronas utilizando callbacks;
+- Realizar operações assíncronas utilizando Promises;
+- Ler e escrever arquivos localmente com Node.js;
+- Escrever nossos próprios scripts que criam e consome Promises;
+- Reescrever código que usa callbacks para que use Promises.
 
 <!-- Dia 26.3 | Testes com NodeJS -->
 ## <a id="dia-26.3" href="26.3">Dia 26.3 | Testes com NodeJS</a>
+Hoje aprendemos mais sobre testes e como testar nossos scripts NodesJS. Revimos conceitos de testes e os benefícios de escrever testes automatizados.
+Para isso, conhecemos três ferramentas bastante populares para testes com NodeJS: **Mocha**, **Chai** e **Sinon**. Nos aprofundamos em cada uma dessas, aprendendo sobre suas funções e como utilizá-las.
+Além disso, revisitamos conceitos importantes como **asserts**, **testes unitários** e **TDD**.
+
+Após a aula de hoje, nos tornamos capazes de:
+- Entender o que são e para que servem testes automatizados;
+- Escrever códigos para NodeJS aplicando o conceito de TDD;
+- Escrever testes utilizando ferramentas populares;
+- Estruturar cenários de testes de acordo com os requisitos;
+- Criar *mocks* de funções para testes.
 
 <!-- Dia 26.4 | Express: HTTP com Node.js -->
 ## <a id="dia-26.4" href="26.4">Dia 26.4 | Express: HTTP com Node.js</a>
