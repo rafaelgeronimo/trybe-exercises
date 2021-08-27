@@ -331,9 +331,94 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 ```jsx
 db.air_routes.aggregate([
   {
-    $match: { {
-      airplane: { $in: {"747", "380"} } },
-      },
+    $match: {
+      airplane: { $in: ["747", "380"] },
+    },
+  },
+  {
+    $lookup: {
+      from: "air_alliances",
+      let: { airlineName: "$airline.name" },
+      pipeline: [
+        { $unwind: "$airlines" },
+        {
+          $match: {
+            $expr: {
+              $eq: ["$airlines", "$$airlineName"],
+            },
+          },
+        },
+        {
+          $project: { _id: 0, name: 1 },
+        },
+      ],
+      as: "routes_alliances",
+    },
+  },
+  {
+    $unwind: "$routes_alliances",
+  },
+  {
+    $group: {
+      _id: "$routes_alliances.name",
+      totalRotas: { $sum: 1 },
+    },
+  },
+  { $sort: { totalRotas: -1 } },
+  { $limit: 1 },
+]);
+```
+## Desafio 9
+A partir da coleção `trips`, determine o menor e o maior ano de nascimento.
+
+- Guarde essa informação, você precisará dela mais tarde.
+- Não considere documentos com valores vazios ("") e em que o campo não existe!
+- Para este desafio utilize o operador $toInt para converter de string para valor inteiro.
+
+O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ordem dos campos):
+```js
+{ "maiorAnoNascimento" : <ano>, "menorAnoNascimento" : <ano> }
+```
+> Resposta:
+```jsx
+db.trips.aggregate([
+  {
+    $match: {
+      birthYear: { $exists: true, $ne: "" },
+    },
+  },
+  {
+    $group: {
+      _id: null,
+      maiorAnoNascimento: { $max: { $toInt: "$birthYear" } },
+      menorAnoNascimento: { $min: { $toInt: "$birthYear" } },
+    },
+  },
+  {
+    $project: {
+      _id: 0,
+    },
+  },
+]);
+```
+
+## Desafio 10
+**Encontre a duração média de viagens por tipo de usuário**.
+- Exiba o valor em horas com apenas duas casas decimais
+- Exiba a média de viagens ordenada de forma crescente.
+
+Para arredondar a média use o [`$round`](https://docs.mongodb.com/manual/reference/operator/aggregation/round/index.html).
+
+O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ordem dos campos):
+```js
+{ "tipo" : <tipo>, "duracaoMedia" : <duracaoMedia> }
+// ...
+```
+> Resposta:
+```jsx
+db.trips.aggregate([
+  {
+  
   },
 ]);
 ```
