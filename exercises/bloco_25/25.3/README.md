@@ -418,7 +418,56 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 ```jsx
 db.trips.aggregate([
   {
-  
+    $group: {
+      _id: "$usertype",
+      time: { $avg: { $subtract: ["$stopTime", "$startTime"] } },
+    },
+  },
+  {
+    $project: {
+      tipo: "$_id",
+      duracaoMedia: {
+        $round: [{ $divide: ["$time", 3600000] }, 2],
+      },
+      _id: 0,
+    },
+  },
+  {
+    $sort: { duracaoMedia: 1 },
+  },
+]);
+```
+
+## Desafio 11
+
+**Determine qual o dia da semana com maior número de viagens iniciadas.**
+Dica: Utilize o operador [`$dayOfWeek`](https://docs.mongodb.com/manual/reference/operator/aggregation/dayOfWeek/index.html) para extrair o dia da semana como um número de uma data.
+
+O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ordem dos campos):
+```json
+{ "diaDaSemana" : <dia_da_semana>, "total" : <total_de_viagens> }
+```
+> Resposta:
+```jsx
+db.trips.aggregate([
+  {
+    $group: {
+      _id: { $dayOfWeek: "$startTime" },
+      total: { $sum: 1 },
+    },
+  },
+  {
+    $project: {
+      diaDaSemana: "$_id",
+      total: "$total",
+      _id: 0,
+    },
+  },
+  {
+    $sort: { total: -1 },
+  },
+  {
+    $limit: 1,
   },
 ]);
 ```
